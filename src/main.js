@@ -51,7 +51,7 @@ const skel=n=>Array.from({length:n},()=>'<div class="sk"></div>').join('');
 function ring(p){const r=34,c=2*Math.PI*r;return `<svg viewBox="0 0 80 80" class="ring"><circle cx="40" cy="40" r="${r}" class="rb"/><circle cx="40" cy="40" r="${r}" class="rf" stroke-dasharray="${c}" stroke-dashoffset="${c*(1-p)}" transform="rotate(-90 40 40)"/></svg>`}
 function cal(){const set=new Set(S.days),d=new Date();d.setDate(d.getDate()-34);let h='';for(let i=0;i<35;i++){const k=dkey(d);h+=`<i class="${set.has(k)?'on':''} ${k===today()?'td':''}"></i>`;d.setDate(d.getDate()+1)}return `<div class="cal">${h}</div>`}
 async function home(){
- app.innerHTML=topbar('脑总投资课','系统学投资 · 先学会不亏大钱')+`<main class="pg">${skel(3)}</main>`+tabbar('home');bindTheme();
+ app.innerHTML=topbar('Brainvest','系统学投资 · 先学会不亏大钱')+`<main class="pg">${skel(3)}</main>`+tabbar('home');bindTheme();
  const idx=await get('index.json');const ready=idx.filter(u=>u.ready);const all=ready.flatMap(u=>u.lessons.map((t,i)=>({u,t,id:u.id.toLowerCase()+'l'+(i+1)})));
  const done=all.filter(l=>S.lessons[l.id]?.done).length;const next=all.find(l=>!S.lessons[l.id]?.done)||all[0];
  const stars=Object.values(S.lessons).reduce((a,b)=>a+(b.stars||0),0);const total=idx.reduce((a,u)=>a+u.lessons.length,0);
