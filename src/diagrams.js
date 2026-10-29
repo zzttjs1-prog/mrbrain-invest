@@ -2,6 +2,16 @@ const A='var(--acc)',M='var(--mut)',T='var(--txt)',L='var(--line)',R='var(--red)
 const t=(x,y,s,o='')=>`<text x="${x}" y="${y}" ${o}>${s}</text>`;
 const wrap=(h,vb='0 0 340 200')=>`<svg viewBox="${vb}" class="dg" role="img">${h}</svg>`;
 export const DIAGRAMS={
+bars(d){const r=d.rows,mx=d.max||Math.max(...r.map(q=>Math.abs(q[1]))),H=r.length*34+30;let h='';
+  r.forEach((q,i)=>{const y=14+i*34,w=Math.max(3,Math.abs(q[1])/mx*125);h+=t(10,y+13,q[0],'class="s"')+`<rect x="120" y="${y}" width="${w}" height="20" rx="6" fill="${q[2]==='r'?R:q[2]==='m'?M:A}" opacity=".85"/>`+t(126+w,y+15,(q[3]||q[1]+(d.unit||'')),'class="v"')});
+  return wrap(h+(d.foot?t(10,H,d.foot,'class="s"'):''),`0 0 340 ${H+8}`);},
+chain(d){const s=d.steps,n=s.length,H=n*40+(d.foot?26:6);let h='';
+  s.forEach((q,i)=>{const y=6+i*40;h+=`<rect x="20" y="${y}" width="300" height="30" rx="10" fill="none" stroke="${q[2]==='r'?R:A}" stroke-width="1.5"/>`+t(32,y+20,q[0],'class="v"')+t(310,y+20,q[1]||'','class="s" text-anchor="end"');if(i<n-1)h+=`<path d="M170,${y+31} l0,7 m-4,-4 l4,4 4,-4" stroke="${M}" fill="none"/>`});
+  return wrap(h+(d.foot?t(20,H-4,d.foot,'class="s"'):''),`0 0 340 ${H}`);},
+quad(d){const q=d.cells;let h=`<line x1="170" y1="10" x2="170" y2="170" stroke="${L}"/><line x1="20" y1="90" x2="320" y2="90" stroke="${L}"/>`;
+  [[95,40],[245,40],[95,125],[245,125]].forEach((p,i)=>{h+=t(p[0],p[1],q[i][0],`class="v ${q[i][2]==='r'?'r':''}" text-anchor="middle"`)+t(p[0],p[1]+20,q[i][1],'class="s" text-anchor="middle"')});
+  return wrap(h+t(170,190,d.x||'','class="s" text-anchor="middle"')+t(14,90,d.y||'','class="s" transform="rotate(-90 14 90)" text-anchor="middle"'),'0 0 340 200');},
+
 ladder(){const lv=['货币基金','国债','可转债','指数基金','股票','加密/另类','期权'];let h='';
   lv.forEach((n,i)=>{const y=168-i*22,x=20+i*24,w=300-i*24*1;h+=`<rect x="${x}" y="${y}" width="${150}" height="18" rx="6" fill="${i<2?A:i>5?R:M}" opacity="${i<2?.9:.35+i*.06}"/>`+t(x+8,y+13,(i+1)+'级 '+n,`class="s" fill="${i<2?'#0b0b0d':T}"`)});
   return wrap(h+t(20,40,'风险 / 难度 ↑','class="s"')+t(210,175,'新手从这里学“价值”','class="s"'),'0 0 340 195');},
