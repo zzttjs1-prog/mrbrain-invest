@@ -1,4 +1,4 @@
-const V='mb-v7';const B='/mrbrain-invest/';
+const V='mb-v8';const B='/mrbrain-invest/';
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll([B,B+'data/index.json',B+'data/news.json',B+'data/qa.json',B+'manifest.webmanifest'])).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin)return;
