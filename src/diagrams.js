@@ -2,6 +2,25 @@ const A='var(--acc)',M='var(--mut)',T='var(--txt)',L='var(--line)',R='var(--red)
 const t=(x,y,s,o='')=>`<text x="${x}" y="${y}" ${o}>${s}</text>`;
 const wrap=(h,vb='0 0 340 200')=>`<svg viewBox="${vb}" class="dg" role="img">${h}</svg>`;
 export const DIAGRAMS={
+ladder(){const lv=['货币基金','国债','可转债','指数基金','股票','加密/另类','期权'];let h='';
+  lv.forEach((n,i)=>{const y=168-i*22,x=20+i*24,w=300-i*24*1;h+=`<rect x="${x}" y="${y}" width="${150}" height="18" rx="6" fill="${i<2?A:i>5?R:M}" opacity="${i<2?.9:.35+i*.06}"/>`+t(x+8,y+13,(i+1)+'级 '+n,`class="s" fill="${i<2?'#0b0b0d':T}"`)});
+  return wrap(h+t(20,40,'风险 / 难度 ↑','class="s"')+t(210,175,'新手从这里学“价值”','class="s"'),'0 0 340 195');},
+owner(){const v=[[0,150],[60,130],[120,110],[180,90],[240,70],[300,50]],p=[[0,150],[30,120],[60,140],[90,95],[120,130],[150,85],[180,110],[210,60],[240,95],[270,40],[300,62]];
+  const pl=a=>a.map((q,i)=>(i?'L':'M')+(25+q[0])+','+q[1]).join(' ');
+  return wrap(`<path d="${pl(v)}" fill="none" stroke="${M}" stroke-width="3" stroke-dasharray="5 4"/><path d="${pl(p)}" fill="none" stroke="${A}" stroke-width="2.2"/>`+t(30,186,'灰：每股利润（人）  绿：股价（狗）','class="s"'),'0 0 340 195');},
+nikkei(){const pts=[[1985,13000],[1989.99,38916],[1992,16900],[1996,22000],[2003,7600],[2007,18000],[2009,7055],[2013,16000],[2018,24000],[2021,29000],[2024.15,39099]];
+  const X=y=>20+(y-1985)/40*300,Y=v=>160-v/40000*140;
+  return wrap(`<line x1="20" y1="${Y(38916)}" x2="320" y2="${Y(38916)}" stroke="${M}" stroke-dasharray="3 4"/><path d="${pts.map((q,i)=>(i?'L':'M')+X(q[0])+','+Y(q[1])).join(' ')}" fill="none" stroke="${A}" stroke-width="2.2"/>`+t(X(1990)-10,Y(38916)-6,'1989-12 38,916','class="s"')+t(X(2024)-70,Y(39099)-6,'2024-02 收复','class="s"')+t(X(2009)-8,Y(7055)+14,'≈−80%','class="v r"')+t(20,186,'日经 225（关键点为真实收盘，路径为示意）','class="s"'),'0 0 340 195');},
+dca(){const pr=[10,8,5,6,10],sh=pr.map(x=>1000/x),avg=5000/sh.reduce((a,b)=>a+b);let h='';
+  pr.forEach((x,i)=>{const X=40+i*58,bh=x*12;h+=`<rect x="${X}" y="${150-bh}" width="34" height="${bh}" rx="5" fill="${A}" opacity=".8"/>`+t(X+17,145-bh,x+'元','class="s" text-anchor="middle"')+t(X+17,168,Math.round(sh[i])+'份','class="s" text-anchor="middle"')});
+  const ya=150-avg*12;return wrap(h+`<line x1="30" y1="${ya}" x2="320" y2="${ya}" stroke="${T}" stroke-dasharray="4 3"/>`+t(30,188,'虚线 = 平均成本 '+avg.toFixed(2)+' 元（价格均值 7.80）','class="s"'),'0 0 340 195');},
+fx(){const b=[['资产(日元)',20,A],['日元兑美元',-29,R],['换回美元',-15,R]];let h='';
+  b.forEach((r,i)=>{const X=50+i*95,v=r[1],bh=Math.abs(v)*2,y=v>0?80-bh:80;h+=`<rect x="${X}" y="${y}" width="50" height="${bh}" rx="5" fill="${r[2]}"/>`+t(X+25,v>0?y-5:y+bh+14,(v>0?'+':'')+v+'%','class="v" text-anchor="middle"')+t(X+25,180,r[0],'class="s" text-anchor="middle"')});
+  return wrap(`<line x1="30" y1="80" x2="320" y2="80" stroke="${L}"/>`+h,'0 0 340 190');},
+hedge(){const r=[['黄金 1980→1999',-70,'28 年收复'],['比特币 2021→2022',-77,'含交易所倒闭'],['纳指 2000→2002',-78,'15 年收复']];let h='';
+  r.forEach((q,i)=>{const y=30+i*50,w=Math.abs(q[1])*3;h+=t(10,y-6,q[0],'class="s"')+`<rect x="10" y="${y}" width="${w}" height="20" rx="6" fill="${R}" opacity=".8"/>`+t(w+16,y+15,q[1]+'% · '+q[2],'class="s"')});
+  return wrap(h,'0 0 340 175');},
+
 ruin(){ // survival prob 0.9^n vs 10% bet
   const ns=[1,5,10,20,30,50];let h='';
   ns.forEach((n,i)=>{const p=Math.pow(.9,n),x=30+i*50,bh=p*120;
@@ -32,7 +51,7 @@ cashflow(){
 positions(){
   const rowsY=[40,95,150];const lab=[['前锋','小仓位 · 高波动'],['中场','好公司 / 宽基'],['后卫','跌幅有限 · 真稳']];const w=[60,160,240];let h='';
   rowsY.forEach((y,i)=>{h+=`<rect x="${170-w[i]/2}" y="${y-18}" width="${w[i]}" height="36" rx="18" fill="${A}" opacity="${[.3,.6,.95][i]}"/>`+t(170,y-1,lab[i][0],`class="${i==2?'k':'w'} h" text-anchor="middle"`)+t(170,y+12,lab[i][1],`class="${i==2?'k':'w'} s2" text-anchor="middle"`);});
-  return wrap(h+t(10,190,'底盘越宽越稳：前锋最小，后卫最大（示意，非配比建议）','class="s"'),'0 0 340 198');},
+  return wrap(h+t(10,190,'底盘越宽越稳：前锋最小，后卫最大（示意，非配比建议）','class="s"'),'0 0 340 190');},
 barbell(){
   return wrap(`<line x1="70" y1="90" x2="270" y2="90" stroke="${M}" stroke-width="4" stroke-linecap="round"/>`+
   `<rect x="20" y="30" width="80" height="120" rx="12" fill="${A}"/><rect x="262" y="66" width="44" height="48" rx="10" fill="${R}" opacity=".9"/>`+

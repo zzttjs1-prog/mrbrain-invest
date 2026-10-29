@@ -19,7 +19,18 @@ const ic=(n,c='')=>`<svg class="ic ${c}" viewBox="0 0 24 24" fill="none" stroke=
 // ---------- state ----------
 const KEY='mb-progress-v2';
 const S=Object.assign({theme:'dark',xp:0,days:[],lessons:{}},JSON.parse(localStorage.getItem(KEY)||'{}'));
-const save=()=>localStorage.setItem(KEY,JSON.stringify(S));
+const save=()=>{localStorage.setItem(KEY,JSON.stringify(S));clearTimeout(save.t);save.t=setTimeout(()=>cloudPush().catch(()=>{}),1500)};
+// ---------- sync ----------
+function merge(o){if(!o)return;S.xp=Math.max(S.xp||0,o.xp||0);S.days=[...new Set([...(S.days||[]),...(o.days||[])])].sort();
+ for(const [k,v] of Object.entries(o.lessons||{})){const c=S.lessons[k]||{};S.lessons[k]={done:c.done||v.done,stars:Math.max(c.stars||0,v.stars||0),best:Math.max(c.best||0,v.best||0)}}}
+const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify({xp:o.xp,days:o.days,lessons:o.lessons}))));
+const dec=c=>JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
+let SB=null,USER=null;
+async function cloud(){if(SB!==null)return SB;SB=false;try{const c=await fetch(import.meta.env.BASE_URL+'data/config.json').then(r=>r.json());
+ if(c.supabaseUrl&&c.supabaseAnonKey){const m=await import(/* @vite-ignore */'https://esm.sh/@supabase/supabase-js@2');SB=m.createClient(c.supabaseUrl,c.supabaseAnonKey);
+  const {data}=await SB.auth.getSession();USER=data.session?.user||null;if(USER)await cloudPull()}}catch(e){SB=false}return SB}
+async function cloudPull(){const {data}=await SB.from('progress').select('data').eq('user_id',USER.id).maybeSingle();if(data)merge(data.data);localStorage.setItem(KEY,JSON.stringify(S));await cloudPush()}
+async function cloudPush(){if(!SB||!USER)return;await SB.from('progress').upsert({user_id:USER.id,data:{xp:S.xp,days:S.days,lessons:S.lessons},updated_at:new Date().toISOString()})}
 const today=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
 const dkey=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 function streak(){const set=new Set(S.days);let d=new Date(),n=0;if(!set.has(dkey(d)))d.setDate(d.getDate()-1);while(set.has(dkey(d))){n++;d.setDate(d.getDate()-1)}return n}
@@ -47,25 +58,44 @@ async function home(){
  $('.pg').innerHTML=`
  <section class="hero card in"><div class="hl"><div class="lbl">精品课进度</div><div class="big">${done}<small> / ${all.length}</small></div><div class="ts">全部 ${total} 课正在逐单元升级为精品版</div></div><div class="rw">${ring(all.length?done/all.length:0)}<b>${Math.round(all.length?done/all.length*100:0)}%</b></div></section>
  <section class="stats in d1"><div class="st">${ic('flame','a')}<b>${streak()}</b><span>连续天数</span></div><div class="st">${ic('bolt','a')}<b>${S.xp}</b><span>经验值</span></div><div class="st">${ic('star','a')}<b>${stars}</b><span>星星</span></div></section>
+ <a class="cont card in d2 syn" href="#/sync"><div><div class="lbl">账号与进度同步</div><div class="ts">${USER?'已登录 · 进度自动同步':'进度保存在本机 · 可登录或用同步码换设备'}</div></div><span class="go">${ic('arrow')}</span></a>
  <a class="cont card in d2" href="#/l/${next.id}"><div><div class="lbl">${done?'继续学习':'从这里开始'} · ${shortT(next.u.title)}</div><div class="ct">${esc(next.t)}</div><div class="ts">约 8 分钟 · 讲解 + 真实案例 + 情景题</div></div><span class="go">${ic('arrow')}</span></a>
  <section class="card in d3"><div class="row"><div class="lbl">学习日历</div><div class="ts">近 5 周</div></div>${cal()}</section>
  <p class="disc">${DISC}</p>`;}
 // ---------- path ----------
 async function path(){
- app.innerHTML=topbar('课程路线','13 个单元 · 精品版逐批上线')+`<main class="pg">${skel(4)}</main>`+tabbar('path');bindTheme();
- const idx=await get('index.json');
- $('.pg').innerHTML=idx.map((u,ui)=>`<section class="unit in" style="animation-delay:${Math.min(ui,6)*40}ms"><div class="uh"><span class="un">${u.id}</span><div><div class="ut">${esc(shortT(u.title))}</div><div class="ts">${u.ready?u.lessons.length+' 课 · 精品版':'升级中 · 精品版即将上线'}</div></div>${u.ready?'':`<span class="pill">${ic('lock')}升级中</span>`}</div>
+ app.innerHTML=topbar('课程路线','13 个单元 · 按学习阶段编排')+`<main class="pg">${skel(4)}</main>`+tabbar('path');bindTheme();
+ const idx=await get('index.json');const cm=await get('curriculum.json').catch(()=>({units:[]}));const C=Object.fromEntries(cm.units.map(u=>[u.id,u]));
+ const map=`<section class="card cmap in"><div class="lbl">课程地图</div><p class="ts">${esc(cm.note||'')}</p><div class="cm">${cm.units.map(u=>`<a class="cmu ${u.ready?'r':''}" href="#u-${u.id}"><b>${u.id}</b><span>${esc(u.stageName)}</span></a>`).join('')}</div></section>`;
+ $('.pg').innerHTML=map+idx.map((u,ui)=>`<section id="u-${u.id}" class="unit in" style="animation-delay:${Math.min(ui,6)*40}ms"><div class="uh"><span class="un">${u.id}</span><div><div class="ut">${esc(shortT(u.title))}</div><div class="ts">${u.ready?u.lessons.length+' 课 · 精品版':'升级中 · 精品版即将上线'}</div></div>${u.ready?'':`<span class="pill">${ic('lock')}升级中</span>`}</div>${C[u.id]?`<p class="ts ug">阶段 ${C[u.id].stage} · ${esc(C[u.id].stageName)} · 先修 ${esc(C[u.id].pre)}<br>学完能：${esc(C[u.id].goal)}${C[u.id].check.length?` · 对应检查清单第 ${C[u.id].check.join('、')} 条`:''}</p>`:''}
  ${u.ready?`<div class="nodes">${u.lessons.map((t,i)=>{const id=u.id.toLowerCase()+'l'+(i+1),st=S.lessons[id];return `<a class="node ${st?.done?'done':''}" href="#/l/${id}"><span class="dot">${st?.done?ic('check'):i+1}</span><span class="nt">${esc(t)}</span><span class="sr">${[0,1,2].map(k=>ic('star',k<(st?.stars||0)?'a':'dim')).join('')}</span></a>`}).join('')}</div>`
  :`<div class="lockd">${u.lessons.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`}</section>`).join('')+`<p class="disc">${DISC}</p>`;}
 // ---------- news / qa ----------
 async function news(){
- app.innerHTML=topbar('今日新内容','用课程里的工具读真实新闻')+`<main class="pg">${skel(3)}</main>`+tabbar('news');bindTheme();
- let d;try{d=await get('news.json')}catch{ $('.pg').innerHTML='<div class="empty">离线状态，暂时无法加载</div>';return}
- $('.pg').innerHTML=d.items.map((n,i)=>`<article class="card nw in" style="animation-delay:${i*50}ms"><div class="row"><span class="pill a">${esc(n.co)}</span><span class="ts">${esc(n.date)}</span></div><h3>${esc(n.title)}</h3>${Array.isArray(n.facts)?`<ul>${n.facts.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:`<p class="nf">${esc(n.facts)}</p>`}${n.href?`<a class="src" href="${esc(n.href)}" target="_blank" rel="noopener">${ic('link')}${esc(n.site||'来源')}</a>`:''}</article>`).join('')+`<p class="disc">新闻仅作学习材料，不构成任何买卖建议。</p>`;}
+ app.innerHTML=topbar('每日复盘','用课程里的框架读当天市场')+`<main class="pg">${skel(3)}</main>`+tabbar('news');bindTheme();
+ let d,n;try{[d,n]=await Promise.all([get('daily.json'),get('news.json')])}catch{ $('.pg').innerHTML='<div class="empty">离线状态，暂时无法加载</div>';return}
+ const pc=x=>(x>=0?'+':'')+Number(x).toFixed(2)+'%',tone=c=>String(c).startsWith('-')?'dn':'up';
+ const grp=g=>d.items.filter(i=>i.grp===g).map(i=>`<details class="stk"><summary><b>${esc(i.sym)}</b><span class="ts">${esc(i.name.replace(i.sym,'').trim())}</span><span class="px">${esc(i.close)}</span><span class="${i.chg>=0?'up':'dn'}">${pc(i.chg)}</span></summary><dl><dt>阶段</dt><dd>${esc(i.stage)}</dd><dt>估值</dt><dd>${esc(i.val)} · ${esc(i.pe)}</dd><dt>基本面</dt><dd>${esc(i.fund)}</dd><dt>相对大盘</dt><dd>${esc(i.rel)} · ${esc(i.vol)} · ${esc(i.nh)}</dd><dt>均线</dt><dd>${esc(i.ma)}</dd><dt>脑总说过（带日期）</dt><dd>${esc(i.view)}（之后市场已变化）</dd>${i.earn?`<dt>下次财报</dt><dd>${esc(i.earn)}</dd>`:''}</dl></details>`).join('');
+ $('.pg').innerHTML=`<section class="card in"><div class="row"><span class="pill a">美东 ${esc(d.day)} 收盘</span><span class="ts">${esc(d.mood)}</span></div><p class="hdl">${esc(d.headline)}</p><div class="mk">${d.market.slice(0,6).map(m=>`<div><span class="ts">${esc(m.k)}</span><b>${esc(m.v)}</b><span class="${tone(m.c)}">${esc(m.c)}</span></div>`).join('')}</div></section>
+ <h3 class="sh">核心三只</h3><section class="card in">${grp('核心')}</section><h3 class="sh">重点跟踪</h3><section class="card in">${grp('重点')}</section>
+ <section class="card in"><div class="lbl">资金流向</div><p>${esc(d.flow)}</p></section>
+ <h3 class="sh">市场新闻</h3>${n.items.map((x,i)=>`<article class="card nw in" style="animation-delay:${i*50}ms"><div class="ts">${esc(x.date)}</div><p>${esc(x.title)}</p><p class="ts">${esc(x.rel||'')}</p><div class="srcs">${(x.links||[]).map(l=>`<a class="src" href="${esc(l.href)}" target="_blank" rel="noopener">${ic('link')}${esc(l.site)}</a>`).join('')}</div></article>`).join('')}
+ <details class="card"><summary class="ts">数据来源</summary><ul class="ts">${d.sources.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>
+ <p class="disc">由 ${esc(d.by)}整理。只做教育，不给买卖点、目标价或仓位；不加杠杆、不碰期权合约。${DISC}</p>`;}
 async function qa(){
  app.innerHTML=topbar('问答本','你问过的问题会整理在这里')+`<main class="pg">${skel(2)}</main>`+tabbar('qa');bindTheme();
  const d=await get('qa.json').catch(()=>[]);
  $('.pg').innerHTML=d.length?d.map(q=>`<article class="card in"><div class="ts">${esc(q.date)}</div><h3>${esc(q.q)}</h3><p>${esc(q.a)}</p></article>`).join(''):`<div class="empty card in">${ic('qa','big')}<h3>还没有问答</h3><p class="ts">学习中遇到的问题，在对话里直接问我。整理好的答案会出现在这里。</p></div>`;}
+async function sync(){
+ app.innerHTML=topbar('账号与同步','不登录也能用，进度存在本机')+`<main class="pg">${skel(2)}</main>`+tabbar('home');bindTheme();
+ const sb=await cloud();
+ $('.pg').innerHTML=`<section class="card in"><div class="lbl">GitHub 登录（跨设备自动同步）</div>${sb?(USER?`<p>已登录：${esc(USER.user_metadata?.user_name||USER.email||'')}</p><button class="btn ghost" id="out">退出登录</button>`:`<p class="ts">用 GitHub 账号登录，进度会保存到云端，换手机也能接着学。</p><button class="btn" id="gh">用 GitHub 登录</button>`):`<p class="ts">云端登录还在开通中（需要管理员完成一次免费配置）。现在可以先用下面的同步码在设备之间搬进度。</p>`}</section>
+ <section class="card in"><div class="lbl">同步码（无需账号）</div><p class="ts">在旧设备复制同步码，到新设备粘贴导入。导入会合并进度，不会覆盖。</p><textarea id="code" rows="4" placeholder="在这里粘贴同步码"></textarea><div class="row2"><button class="btn" id="cp">复制我的同步码</button><button class="btn ghost" id="im">导入</button></div><p class="ts" id="msg"></p></section><p class="disc">同步码只包含学习进度（经验值、学习日期、每课星级），不含任何个人信息。</p>`;
+ const msg=t=>$('#msg').textContent=t;
+ $('#cp').onclick=async()=>{const c=enc(S);$('#code').value=c;try{await navigator.clipboard.writeText(c);msg('已复制')}catch{msg('已显示在上方，长按复制')}};
+ $('#im').onclick=()=>{try{merge(dec($('#code').value));save();msg('导入成功，进度已合并')}catch{msg('同步码无效')}};
+ $('#gh')&&($('#gh').onclick=()=>SB.auth.signInWithOAuth({provider:'github',options:{redirectTo:location.origin+import.meta.env.BASE_URL+'#/sync'}}));
+ $('#out')&&($('#out').onclick=async()=>{await SB.auth.signOut();USER=null;sync()});}
 // ---------- lesson ----------
 async function lesson(id){
  const uid=id.match(/^u\d+/)[0].toUpperCase();
@@ -100,8 +130,8 @@ async function lesson(id){
 }
 // ---------- router ----------
 function route(){const h=location.hash.slice(1)||'/';window.scrollTo(0,0);
- if(h.startsWith('/l/'))return lesson(h.slice(3));({'/':home,'/path':path,'/news':news,'/qa':qa}[h]||home)();}
-addEventListener('hashchange',route);route();
+ if(h.startsWith('/l/'))return lesson(h.slice(3));({'/':home,'/path':path,'/news':news,'/qa':qa,'/sync':sync}[h]||home)();}
+addEventListener('hashchange',route);cloud().finally(route);
 if('serviceWorker' in navigator&&import.meta.env.PROD)navigator.serviceWorker.register(BASE+'sw.js');
 // prefetch ready units for offline
 get('index.json').then(ix=>ix.filter(u=>u.ready).forEach(u=>get(u.id+'.json'))).catch(()=>{});
