@@ -27,7 +27,7 @@ const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify({xp:o.xp,days:o.day
 const dec=c=>JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
 let SB=null,USER=null;
 async function cloud(){if(SB!==null)return SB;SB=false;try{const c=await fetch(import.meta.env.BASE_URL+'data/config.json').then(r=>r.json());
- if(c.supabaseUrl&&c.supabaseAnonKey){const m=await import(/* @vite-ignore */'https://esm.sh/@supabase/supabase-js@2');SB=m.createClient(c.supabaseUrl,c.supabaseAnonKey);
+ if(c.supabaseUrl&&c.supabaseAnonKey){const m=await import(/* @vite-ignore */'https://esm.sh/@supabase/supabase-js@2');SB=m.createClient(c.supabaseUrl,c.supabaseAnonKey,{auth:{flowType:'pkce',detectSessionInUrl:true,persistSession:true}});
   const {data}=await SB.auth.getSession();USER=data.session?.user||null;if(USER)await cloudPull()}}catch(e){SB=false}return SB}
 async function cloudPull(){const {data}=await SB.from('progress').select('data').eq('user_id',USER.id).maybeSingle();if(data)merge(data.data);localStorage.setItem(KEY,JSON.stringify(S));await cloudPush()}
 async function cloudPush(){if(!SB||!USER)return;await SB.from('progress').upsert({user_id:USER.id,data:{xp:S.xp,days:S.days,lessons:S.lessons},updated_at:new Date().toISOString()})}
@@ -94,7 +94,7 @@ async function sync(){
  const msg=t=>$('#msg').textContent=t;
  $('#cp').onclick=async()=>{const c=enc(S);$('#code').value=c;try{await navigator.clipboard.writeText(c);msg('已复制')}catch{msg('已显示在上方，长按复制')}};
  $('#im').onclick=()=>{try{merge(dec($('#code').value));save();msg('导入成功，进度已合并')}catch{msg('同步码无效')}};
- $('#gh')&&($('#gh').onclick=()=>SB.auth.signInWithOAuth({provider:'github',options:{redirectTo:location.origin+import.meta.env.BASE_URL+'#/sync'}}));
+ $('#gh')&&($('#gh').onclick=()=>SB.auth.signInWithOAuth({provider:'github',options:{redirectTo:location.origin+import.meta.env.BASE_URL}}));
  $('#out')&&($('#out').onclick=async()=>{await SB.auth.signOut();USER=null;sync()});}
 // ---------- lesson ----------
 async function lesson(id){
