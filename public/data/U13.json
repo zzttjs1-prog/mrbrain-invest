@@ -79,7 +79,8 @@
             {
               "n": "SEC · 风险承受能力",
               "u": "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance",
-              "d": "2026-10-29 访问"
+              "d": "2026-10-29 访问",
+              "audit": "本轮HEAD与GET均返回404，旧链接保留追踪，尚待更正来源"
             }
           ]
         },

@@ -13,3 +13,17 @@ test('217 principles and 65 check items are counted from actual records, not lab
 test('all legacy quizzes remain structurally answerable and explanations exist',()=>{for(const l of lessons){assert.ok(l.quiz.length>=4);for(const q of l.quiz){assert.ok(q.q&&q.why);assert.ok(q.opts.length>=3);assert.ok(Number.isInteger(q.ans)&&q.ans>=0&&q.ans<q.opts.length)}assert.ok(l.examples.every(e=>Array.isArray(e.rows)&&Array.isArray(e.src)));assert.ok(l.quotes.every(q=>q.date&&q.src&&q.kind))}});
 test('audited corrections remove universal two-quarter threshold and explain cash-flow meaning of mindset',()=>{const down=lessons.find(l=>l.id==='u7l5'),mind=lessons.find(l=>l.id==='u13l1');assert.match(down.deep.mechanism,/杀估值、杀业绩、杀逻辑/);assert.match(down.cards[1].b,/未支持统一/);assert.match(mind.cards[0].b,/不是靠多亏钱/);assert.match(lessons.find(l=>l.id==='u9l1').deep.mechanism,/不是真实|不是所有/)});
 test('paused review source data is unchanged',()=>{for(const f of ['daily.json','news.json'])assert.equal(createHash('sha256').update(readFileSync('public/data/'+f)).digest('hex'),baseline.unchangedData[f])});
+test('final audit keeps author periods distinct and qualifies financial arithmetic',()=>{
+ const graham=lessons.find(l=>l.id==='u6l7'),exit=lessons.find(l=>l.id==='u12l3'),debt=lessons.find(l=>l.id==='u4l5');
+ assert.match(graham.cards[0].b,/5–10.*7–10/);assert.match(graham.cards[2].b,/125/);assert.match(graham.cards[2].b,/期限/);
+ assert.ok(Math.abs(5/.04-125)<1e-10);assert.ok(Math.abs(31*(1-.03)-30-.07)<1e-10);
+ assert.match(debt.examples[1].note,/不等于偿债必然安全/);assert.match(exit.cards[1].b,/并不保证/);assert.match(exit.cards[0].b,/未给出可核实题名/);
+ assert.equal(exit.examples[1].tag,'教学假设 · 止损与再入场');assert.equal(90/100*105,94.5);
+ assert.equal(knowledge.principles.filter(p=>!p.lessons.length).length,75);
+ assert.match(books.find(b=>b.id==='B13').case,/时点晚约两年/);
+});
+test('legacy unavailable URLs are labeled and citations never imply a full verification',()=>{
+ const checks=read('content/source-link-checks.json');let flagged=0;
+ for(const l of lessons)for(const e of l.examples)for(const s of e.src)if(checks[s.u]){assert.match(s.audit,/404/);flagged++;}
+ assert.ok(flagged>0);for(const s of knowledge.sources){assert.ok(s.access);if(s.url)assert.match(s.url,/^https:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9_-]{11}$/);}
+});

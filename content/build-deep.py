@@ -43,3 +43,21 @@ for uid in range(1,14):
   if l['id']=='u7l5':l['quiz'][2]={'q':'判断经营拐点时，以下做法哪项更可靠？','opts':['按具体行业检查连续经营证据，不把固定季度数冒充普遍规律','必须连续两个季度才算脑总统一门槛','PE最低就一定见底','新闻少了就代表风险消失'],'ans':0,'why':'本次已有提炼没有证明他设过通用“两季度”规则。数据口径与行业时滞不同，需写清证据与未知。'}
   if l['id']=='u13l1':l['quiz'][0]={'q':'V10中“心态用钱堆出来”的关键含义是？','opts':['安全垫、稳定现金流与输得起，而不是多亏钱练胆','只要亏得多自然就不怕了','本金再小也该全仓练习','模拟盘不紧张就能加杠杆'],'ans':0,'why':'2025-11-16的语境是赢得起、输得起和场外现金流，不能误解为通过损失训练胆量。'}
  dump(p,u)
+# Final read-through corrections are explicit source data, not generated lesson templates.
+corrections=json.loads((root/'content/audit-corrections.json').read_text())
+for uid in range(1,14):
+ p=root/'public/data'/f'U{uid}.json';u=json.loads(p.read_text())
+ for l in u['lessons']:
+  patch=corrections.get(l['id'],{})
+  assert not ({'id','title'} & patch.keys())
+  l.update(patch)
+ dump(p,u)
+# Reachability findings are disclosed, never treated as proof of historical claims.
+link_checks=json.loads((root/'content/source-link-checks.json').read_text())
+for uid in range(1,14):
+ p=root/'public/data'/f'U{uid}.json';u=json.loads(p.read_text())
+ for l in u['lessons']:
+  for example in l['examples']:
+   for source in example['src']:
+    if source.get('u') in link_checks:source['audit']=link_checks[source['u']]
+ dump(p,u)

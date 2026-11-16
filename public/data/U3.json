@@ -1256,7 +1256,8 @@
             {
               "n": "CNET：Pets.com to shut down",
               "u": "https://www.cnet.com/tech/tech-industry/pets-com-to-shut-down/",
-              "d": "2026-10-29 访问"
+              "d": "2026-10-29 访问",
+              "audit": "本轮HEAD与GET均返回404，旧链接保留追踪，尚待更正来源"
             }
           ]
         },
