@@ -1,3 +1,4 @@
+import {mergeDraft} from './quiz-content.js';
 // Keep the original key: installed copies already have progress here.
 export const KEY = 'mb-progress-v2';
 export const BACKUP = KEY + '-backup';
@@ -13,7 +14,7 @@ export function normalize(raw) {
   }
   const drafts = {};
   for (const [id,d] of Object.entries(object(raw.drafts)?raw.drafts:{})) {
-    if (/^u\d+l\d+$/.test(id) && object(d)) drafts[id]={slide:number(d.slide)?d.slide:0, answers:object(d.answers)?d.answers:{}};
+    if (/^u\d+l\d+$/.test(id) && object(d)) drafts[id]={slide:number(d.slide)?d.slide:0, answers:object(d.answers)?d.answers:{},...(typeof d.revision==='string'?{revision:d.revision}:{}),...(Array.isArray(d.history)?{history:d.history.filter(object).map(h=>({revision:typeof h.revision==='string'?h.revision:'legacy',slide:number(h.slide)?h.slide:0,answers:object(h.answers)?h.answers:{}}))}: {})};
   }
   const reading = {};
   for (const [id,r] of Object.entries(object(raw.reading)?raw.reading:{})) {
@@ -47,7 +48,8 @@ export function mergeProgress(state, incoming) {
   out.xp=Math.max(out.xp,other.xp);out.days=[...new Set([...out.days,...other.days])].sort();
   for(const [id,v] of Object.entries(other.lessons)){const c=out.lessons[id]||{};out.lessons[id]={...c,done:!!(c.done||v.done),stars:Math.max(c.stars||0,v.stars),best:Math.max(c.best||0,v.best)};}
   // Existing local drafts win; legacy codes cannot erase newer personal data.
-  for(const key of ['drafts','wrong','notes'])out[key]={...other[key],...out[key]};
+  for(const key of ['wrong','notes'])out[key]={...other[key],...out[key]};
+  for(const [id,d] of Object.entries(other.drafts))out.drafts[id]=mergeDraft(out.drafts[id],d,id);
   for(const [id,r] of Object.entries(other.reading)) {
     const local=out.reading[id];out.reading[id]=local?{...r,...local,responses:{...r.responses,...local.responses}}:r;
   }

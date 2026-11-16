@@ -1,3 +1,4 @@
+import {reconcileQuiz,quizRevision,outdatedWrong} from './quiz-content.js';
 import {principleCoverage} from './knowledge-coverage.js';
 import {CHAPTERS,COVERAGE} from './chapter-manifest.js';
 import {courseUnit,scrollCourseUnit} from './navigation.js';
@@ -26,7 +27,7 @@ const storage={getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.se
 const loaded=loadProgress(storage);let S=loaded.state,storageWarning=loaded.warning,cloudMessage='云同步尚未在此设备验证';
 const status=()=>{let el=$('#save-status');if(!el){el=document.createElement('div');el.id='save-status';el.setAttribute('role','status');document.body.append(el)}el.textContent=storageWarning;el.hidden=!storageWarning};
 const save=()=>{storageWarning=persist(storage,S);status();clearTimeout(save.t);save.t=setTimeout(()=>cloudPush().catch(()=>{}),1500)};
-function merge(o){const merged=mergeProgress(S,o);for(const [id,d] of Object.entries(S.drafts))merged.drafts[id]=d;Object.assign(S,merged)}
+function merge(o){const merged=mergeProgress(S,o);Object.assign(S,merged)}
 const enc=encode,dec=decode;
 let SB=null,USER=null;
 async function cloud(){if(SB!==null)return SB;SB=false;try{const c=await fetch(import.meta.env.BASE_URL+'data/config.json').then(r=>r.json());
@@ -62,7 +63,7 @@ async function home(){
  const stars=Object.values(S.lessons).reduce((a,b)=>a+(b.stars||0),0);const total=idx.reduce((a,u)=>a+u.lessons.length,0);
  $('.pg').innerHTML=`
  <section class="hero card in"><div class="hl"><div class="lbl">精品课进度</div><div class="big">${done}<small> / ${all.length}</small></div><div class="ts">${total}课新增核心研习 · 13本书概念融入</div></div><div class="rw">${ring(all.length?done/all.length:0)}<b>${Math.round(all.length?done/all.length*100:0)}%</b></div></section>
- <p class="note">68课均已有8节分章长讲与独立题解；${COVERAGE.thematicBookModules}本书有材料范围内独立主题研习。原则独立解释${COVERAGE.independentPrinciples}/217、检查流程${COVERAGE.evidenceChecks}/65，仍非13书全部讲透。<a class="src" href="#/coverage">查看逐项覆盖与缺口</a></p>
+ <p class="note">68课均已有至少8节分章长讲与独立题解；${COVERAGE.thematicBookModules}本书有材料范围内独立主题研习。原则独立解释${COVERAGE.independentPrinciples}/217、检查流程${COVERAGE.evidenceChecks}/65，仍非13书全部讲透。<a class="src" href="#/coverage">查看逐项覆盖与缺口</a></p>
  <section class="stats in d1"><div class="st">${ic('flame','a')}<b>${streak()}</b><span>连续天数</span></div><div class="st">${ic('bolt','a')}<b>${S.xp}</b><span>经验值</span></div><div class="st">${ic('star','a')}<b>${stars}</b><span>星星</span></div></section>
  <a class="cont card in d2 syn" href="#/sync"><div><div class="lbl">账号与进度同步</div><div class="ts">${USER?esc(cloudMessage):'本机浏览器保存 · 建议定期导出同步码备份'}</div></div><span class="go">${ic('arrow')}</span></a>
  <a class="cont card in d2" href="${learningHref(next.id)}"><div><div class="lbl">${done?'继续学习':'从这里开始'} · ${shortT(next.u.title)}</div><div class="ct">${esc(next.t)}</div><div class="ts">可分段学 · 机制/边界/反例/练习解析</div></div><span class="go">${ic('arrow')}</span></a>
@@ -92,7 +93,7 @@ async function qa(){
  app.innerHTML=topbar('我的问答与错题','只保存在此浏览器 · 可随同步码搬迁')+`<main class="pg"></main>`+tabbar('qa');bindTheme();
  const d=await get('qa.json').catch(()=>[]);
  $('.pg').innerHTML=`<section class="card"><h2>学习笔记</h2><label for="personal-note">自己的问题与想法</label><textarea id="personal-note" rows="5">${esc(S.notes.personal||'')}</textarea><p class="ts">输入即保存到本机；不会自动发给助手或他人。</p></section><h2>错题本（${Object.keys(S.wrong).length}）</h2>`+
- Object.values(S.wrong).map(w=>`<article class="card"><a class="src" href="#/l/${esc(w.lesson)}">回到课程 ${esc(w.lesson)}</a><h3>${esc(w.q)}</h3><p>我的选择：${esc(w.chosen)}</p><details><summary>正确答案与解析</summary><p>${esc(w.correct)}</p><p>${esc(w.why)}</p></details></article>`).join('')+
+ Object.values(S.wrong).map(w=>outdatedWrong(w)?`<article class="card"><h3>旧版错题已失效（仅存档）</h3><p>本课内容已校正，旧答案不再用于学习或评分。完成与经验保留，请进入新版重答；原记录仍保存在本机与同步码。</p><a class="src" href="#/l/${esc(w.lesson)}">新版课程 ${esc(w.lesson)}</a></article>`:`<article class="card"><a class="src" href="#/l/${esc(w.lesson)}">回到课程 ${esc(w.lesson)}</a><h3>${esc(w.q)}</h3><p>我的选择：${esc(w.chosen)}</p><details><summary>正确答案与解析</summary><p>${esc(w.correct)}</p><p>${esc(w.why)}</p></details></article>`).join('')+
  `<h2>课内练习与笔记</h2>`+Object.entries(S.notes).filter(([k])=>k!=='personal').map(([id,n])=>`<article class="card"><a class="src" href="#/l/${esc(id)}">${esc(id)} · 回到课程</a><p>${esc(n)}</p></article>`).join('')+
  `<details class="card"><summary>已有历史问答（${d.length}）</summary>${d.map(q=>`<h3>${esc(q.q)}</h3><p>${esc(q.a)}</p><p class="ts">${esc(q.date)} · 静态历史整理，非实时问答</p>`).join('')}</details>`;
  $('#personal-note').oninput=e=>{S.notes.personal=e.target.value;save()};}
@@ -124,8 +125,8 @@ async function lesson(id){
  app.innerHTML=`<div class="ls"><header class="lt glass"><a class="ibtn" href="#/path">${ic('x')}</a><div class="bar"></div><span class="ts cnt"></span></header><div class="pager"><div class="slide"><div class="pad">${skel(3)}</div></div></div></div>`;
  let unit;try{unit=await get(uid+'.json')}catch{app.querySelector('.pad').innerHTML='<div class="empty">该单元暂时无法读取，请联网重试；请勿清理网站数据。</div>';return}
  if(location.hash!=='#/l/'+id)return;const L=unit.lessons.find(l=>l.id===id);if(!L){location.hash='#/path';return}
- S.current=id;S.drafts[id]||={slide:0,answers:{}};const draft=S.drafts[id];save();const slides=[];
- slides.push(`<div class="kick">${esc(shortT(unit.title))}</div><h1>${esc(L.title)}</h1><p class="lead">${esc(L.cards[0].b)}</p><div class="meta"><span>${L.cards.length} 张讲解卡</span><span>${L.examples.length} 个案例/教学示例</span><span>${L.quiz.length} 道情景题</span></div>${longformIds.has(id)?`<a class="btn" href="#/reader/${id}">进入8节长讲 · 目录 / 搜索 / 保存推理</a>`:''}<div class="swipe">左滑开始 ${ic('arrow')}</div>`);
+ S.current=id;const draft=reconcileQuiz(S,id);save();const slides=[];
+ slides.push(`<div class="kick">${esc(shortT(unit.title))}</div><h1>${esc(L.title)}</h1><p class="lead">${esc(L.cards[0].b)}</p><div class="meta"><span>${L.cards.length} 张讲解卡</span><span>${L.examples.length} 个案例/教学示例</span><span>${L.quiz.length} 道情景题</span></div>${longformIds.has(id)?`<a class="btn" href="#/reader/${id}">进入${CHAPTERS[id]?.sectionCount||8}节长讲 · 目录 / 搜索 / 保存推理</a>`:''}${draft.history?.length?'<p class="note">本课题目内容已校正，旧选择已失效并存档，请按新版重答；已完成课程、星级与经验不清除、不重复发放。</p>':''}<div class="swipe">左滑开始 ${ic('arrow')}</div>`);
  L.cards.slice(1).forEach((c,i)=>slides.push(`<div class="kick">${String(i+2).padStart(2,'0')} · ${esc(c.t)}</div><p class="body">${esc(c.b)}</p>`));
  slides.push(`<div class="kick">图解</div><div class="card dgw">${DIAGRAMS[L.diagram.type]?.(L.diagram)||''}</div>${L.diagram.type==='drawdown'?`<div class="rt">${[[10,11],[20,25],[30,43],[50,100],[80,400]].map(r=>`<div><b>−${r[0]}%</b><span>需 +${r[1]}%</span></div>`).join('')}</div>`:''}<p class="dcap">${esc(L.diagram.cap||'')}</p>`);
  L.examples.forEach(e=>slides.push(`<div class="kick">${esc(e.tag)}</div><p class="note">${esc(e.auditNotice||'旧版案例与链接保留供追踪；本轮未逐项核实全部数字。标签“真实”不等于本次已完成核验。')}</p><h2>${esc(e.title)}</h2><div class="tbl">${e.rows.map(r=>`<div><span>${esc(r[0])}</span><b>${esc(r[1])}</b></div>`).join('')}</div><p class="note">${esc(e.note)}</p><div class="srcs">${e.src.map(s=>s.u?`<a href="${esc(s.u)}" target="_blank" rel="noopener">${ic('link')}${esc(s.n)} <i>${esc(s.d)}</i>${s.audit?`<strong class="r"> · ${esc(s.audit)}</strong>`:''}</a>`:`<span>${esc(s.n)} <i>${esc(s.d)}</i>${s.audit?`<strong class="r"> · ${esc(s.audit)}</strong>`:''}</span>`).join('')}</div>`));
@@ -145,7 +146,7 @@ async function lesson(id){
  const upd=()=>{if(!pager.isConnected)return;const k=Math.round(pager.scrollLeft/pager.clientWidth);document.querySelectorAll('.bar i').forEach((b,i)=>b.classList.toggle('on',i<=k));$('.cnt').textContent=(k+1)+'/'+slides.length;if(draft.slide!==k){draft.slide=k;save()}if(k===slides.length-1)finish()};
  pager.addEventListener('scroll',()=>requestAnimationFrame(upd),{passive:true});requestAnimationFrame(upd);
  function displayAnswer(box,qi,j){const q=Qs[qi];box.classList.add('done');box.querySelectorAll('.opt').forEach((o,k)=>o.classList.add(k===q.ans?'ok':k===j?'bad':'off'));const w=box.nextElementSibling;w.hidden=false;w.innerHTML=`<div class="wh ${res[qi]?'g':'r'}">${res[qi]?'答对了':'正确答案是 '+'ABCD'[q.ans]}</div><p>${esc(q.why)}</p><button class="btn nx">下一题 ${ic('arrow')}</button>`;w.querySelector('.nx').onclick=()=>pager.scrollBy({left:pager.clientWidth,behavior:'smooth'});}
- pager.querySelectorAll('.opts').forEach(box=>{const qi=+box.dataset.q;if(res[qi]!==null)displayAnswer(box,qi,draft.answers[qi]);box.onclick=e=>{const b=e.target.closest('.opt');if(!b||box.classList.contains('done'))return;const q=Qs[qi],j=+b.dataset.j;res[qi]=j===q.ans;draft.answers[qi]=j;if(!res[qi])S.wrong[id+'-'+qi]={lesson:id,q:q.q,chosen:q.opts[j],correct:q.opts[q.ans],why:q.why};save();displayAnswer(box,qi,j)}});
+ pager.querySelectorAll('.opts').forEach(box=>{const qi=+box.dataset.q;if(res[qi]!==null)displayAnswer(box,qi,draft.answers[qi]);box.onclick=e=>{const b=e.target.closest('.opt');if(!b||box.classList.contains('done'))return;const q=Qs[qi],j=+b.dataset.j;res[qi]=j===q.ans;draft.answers[qi]=j;if(!res[qi])S.wrong[id+'-'+qi]={lesson:id,q:q.q,chosen:q.opts[j],correct:q.opts[q.ans],why:q.why,...(quizRevision(id)?{revision:quizRevision(id)}:{})};save();displayAnswer(box,qi,j)}});
  const nav=document.createElement('footer');nav.className='lesson-nav';nav.innerHTML='<button class="btn ghost" id="prev-slide">上一页</button><a href="#/sync" class="ts">备份进度</a><button class="btn" id="next-slide">下一页</button>';$('.ls').append(nav);$('#prev-slide').onclick=()=>pager.scrollBy({left:-pager.clientWidth,behavior:'smooth'});$('#next-slide').onclick=()=>pager.scrollBy({left:pager.clientWidth,behavior:'smooth'});
  const restoreSlide=Math.min(draft.slide,slides.length-1);requestAnimationFrame(()=>{pager.scrollLeft=pager.clientWidth*restoreSlide});
  let fin=false;function finish(){const end=$('.end');const answered=res.filter(r=>r!==null).length,right=res.filter(Boolean).length;
@@ -158,7 +159,7 @@ async function lesson(id){
 
 const studyLabels={meaning:'独立解释 · AI释义',boundary:'条件与失效边界',counterexample:'对照反例 · AI教学假设',method:'研究步骤',exercise:'开放练习',answer:'答案与理由',ask:'问什么',how:'怎么查',evidence:'什么算证据',failure:'不通过时的研究限制'};
 function studyFields(study){return '<p class="tag">新增AI教学解释，不是脑总逐字原话或当前买卖建议</p>'+Object.entries(studyLabels).filter(([key])=>study[key]).map(([key,label])=>`<h3>${label}</h3>${key==='answer'?`<details><summary>先思考再看解析</summary><p>${esc(study[key])}</p></details>`:`<p>${esc(study[key])}</p>`}`).join('')+`<a class="src" href="#/reader/${esc(study.lesson)}/${esc(study.section)}">在长讲语境里学习</a>`;}
-const depthLabels={'eight-section-longform':'本轮新增8节长讲（仍需教学审阅）','legacy-core-supplement':'仍为旧版核心补充，长讲待写','independent-explanation':'新增独立解释、边界、反例与题解','linked-not-independent':'已有主题关联，独立讲解未完成','index-only':'仅索引，独立讲解未完成','evidence-procedure':'新增查证流程与证据限制','question-only':'仅历史检查问题，证据流程待写','source-bounded-thematic-longform':'材料范围内的独立主题研习，不是整本书完成','eight-field-core-summary':'仍为八字段提要，逐主题长讲待写'};
+const depthLabels={'eight-section-longform':'本轮新增分章长讲（8节起，仍需教学审阅）','legacy-core-supplement':'仍为旧版核心补充，长讲待写','independent-explanation':'新增独立解释、边界、反例与题解','linked-not-independent':'已有主题关联，独立讲解未完成','index-only':'仅索引，独立讲解未完成','evidence-procedure':'新增查证流程与证据限制','question-only':'仅历史检查问题，证据流程待写','source-bounded-thematic-longform':'材料范围内的独立主题研习，不是整本书完成','eight-field-core-summary':'仍为八字段提要，逐主题长讲待写'};
 async function coverage(){
  app.innerHTML=topbar('覆盖与缺口','工作账不是完备证书')+'<main class="pg">正在加载…</main>'+tabbar('path');bindTheme();
  const d=await get('coverage.json');if(location.hash!=='#/coverage')return;

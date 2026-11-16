@@ -33,10 +33,10 @@ test('all 217 principles have distinct substantive fields and honest caveats, no
  assert.match(studies['215'].boundary,/2026-11-02/);assert.match(studies['161'].boundary,/不能.*科学共识/);
 });
 
-test('all 13 books have bounded original thematic modules, with the eight additions 15 independent sections each',()=>{
+test('all 13 books have bounded original thematic modules, with all eight additions retaining 15 original sections plus reviewed worked cases',()=>{
  const ids=Array.from({length:13},(_,i)=>'B'+(i+1));
  for(const id of ids){const b=book(id);assert.ok(b.scope);assert.ok(b.sources.some(s=>s.ref===id));assert.ok(b.proseCharacters>1000);assert.ok(b.exerciseCount>=1);assert.match(JSON.stringify(b),/本轮.*(?:未|不|非)|不是本轮/);}
- for(const id of ['B3','B5','B6','B7','B8','B9','B10','B11']){assert.equal(book(id).sections.length,15);assert.equal(book(id).exerciseCount,2);assert.ok(book(id).proseCharacters>2500,id);}
+ for(const id of ['B3','B5','B6','B7','B8','B9','B10','B11']){assert.equal(book(id).sections.length,['B6','B9','B11'].includes(id)?18:15);assert.equal(book(id).exerciseCount,['B9','B11'].includes(id)?3:2);assert.ok(book(id).proseCharacters>2500,id);}
  assert.match(body('B3'),/三元大表.*缺失/);assert.match(body('B5'),/文学化人物/);assert.match(body('B6'),/60\/55日/);
  assert.match(body('B7'),/表13-2\/14-6/);assert.match(body('B8'),/正文.*编者|编者.*正文/);assert.match(body('B9'),/OCR空白|OCR.*打散/);
  assert.match(body('B10'),/1997正文、2020序与译者导读/);assert.match(body('B11'),/没有新查2026人口数据/);

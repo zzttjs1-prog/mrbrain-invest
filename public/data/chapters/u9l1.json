@@ -1,6 +1,6 @@
 {
   "id": "u9l1",
-  "title": "均线：市场的平均成本",
+  "title": "均线：历史价格均值与边界",
   "principles": [
     25,
     91,
@@ -131,5 +131,5 @@
   ],
   "proseCharacters": 1223,
   "exerciseCount": 2,
-  "edition": "material-grounded-stage-4"
+  "edition": "review-corrected-stage-5"
 }

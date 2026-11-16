@@ -110,7 +110,7 @@
     },
     {
       "id": "exercise",
-      "title": "练习：二分之三不是魔法",
+      "title": "练习：三分之二不是魔法",
       "attribution": "AI计算练习",
       "paragraphs": [
         "问题：现金60、应收50、库存40、总负债90，NCAV及2/3多少？若应收实际回25、库存回20，另需退出费10，股东回收多少？"
@@ -133,5 +133,5 @@
   ],
   "proseCharacters": 1336,
   "exerciseCount": 2,
-  "edition": "material-grounded-stage-4"
+  "edition": "review-corrected-stage-5"
 }

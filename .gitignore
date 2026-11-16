@@ -1,2 +1,6 @@
 node_modules
 dist
+
+# Python content-builder bytecode is local only.
+__pycache__/
+*.pyc

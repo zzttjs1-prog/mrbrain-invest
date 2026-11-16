@@ -1,0 +1,872 @@
+{
+  "dcf": {
+    "attribution": "AI原创假设，非任何真实公司财报或原作者案例",
+    "inputs": {
+      "cash": 20,
+      "receivables": 20,
+      "inventory": 10,
+      "ppe": 70,
+      "debt": 40,
+      "payables": 10,
+      "equity": 70,
+      "shares": 10,
+      "revenue": 100,
+      "growth": 0.1,
+      "margin": 0.2,
+      "tax": 0.25,
+      "interestRate": 0.05,
+      "depreciation": 5,
+      "maintenanceCapex": 5,
+      "expansionPerExtraSales": 0.4,
+      "arRatio": 0.2,
+      "inventoryRatio": 0.1,
+      "apRatio": 0.1,
+      "dividend": 6,
+      "annualDebtDue": 20,
+      "refinance": 20,
+      "wacc": 0.1,
+      "terminalGrowth": 0.03,
+      "terminalMarginalROIC": 0.15
+    },
+    "forecast": [
+      {
+        "year": 1,
+        "revenue": 110.00000000000001,
+        "ebit": 22.000000000000004,
+        "interest": 2.0,
+        "tax": 5.000000000000001,
+        "netIncome": 15.000000000000004,
+        "nopat": 16.500000000000004,
+        "ar": 22.000000000000004,
+        "inventory": 11.000000000000002,
+        "payables": 11.000000000000002,
+        "nwc": 22.000000000000007,
+        "deltaNWC": 2.000000000000007,
+        "depreciation": 5,
+        "maintenanceCapex": 5,
+        "expansionCapex": 4.000000000000007,
+        "capex": 9.000000000000007,
+        "cfo": 17.999999999999996,
+        "dividend": 6,
+        "cash": 22.99999999999999,
+        "ppe": 74.0,
+        "debt": 40,
+        "equity": 79.0,
+        "assets": 130.0,
+        "liabilitiesAndEquity": 130.0,
+        "fcff": 10.49999999999999,
+        "fcfe": 8.99999999999999
+      },
+      {
+        "year": 2,
+        "revenue": 121.00000000000003,
+        "ebit": 24.200000000000006,
+        "interest": 2.0,
+        "tax": 5.550000000000002,
+        "netIncome": 16.650000000000006,
+        "nopat": 18.150000000000006,
+        "ar": 24.200000000000006,
+        "inventory": 12.100000000000003,
+        "payables": 12.100000000000003,
+        "nwc": 24.20000000000001,
+        "deltaNWC": 2.200000000000003,
+        "depreciation": 5,
+        "maintenanceCapex": 5,
+        "expansionCapex": 4.400000000000006,
+        "capex": 9.400000000000006,
+        "cfo": 19.450000000000003,
+        "dividend": 6,
+        "cash": 27.049999999999986,
+        "ppe": 78.4,
+        "debt": 40,
+        "equity": 89.65,
+        "assets": 141.75,
+        "liabilitiesAndEquity": 141.75,
+        "fcff": 11.549999999999997,
+        "fcfe": 10.049999999999997
+      },
+      {
+        "year": 3,
+        "revenue": 133.10000000000005,
+        "ebit": 26.62000000000001,
+        "interest": 2.0,
+        "tax": 6.155000000000003,
+        "netIncome": 18.46500000000001,
+        "nopat": 19.96500000000001,
+        "ar": 26.62000000000001,
+        "inventory": 13.310000000000006,
+        "payables": 13.310000000000006,
+        "nwc": 26.620000000000015,
+        "deltaNWC": 2.4200000000000053,
+        "depreciation": 5,
+        "maintenanceCapex": 5,
+        "expansionCapex": 4.8400000000000105,
+        "capex": 9.84000000000001,
+        "cfo": 21.045000000000005,
+        "dividend": 6,
+        "cash": 32.25499999999998,
+        "ppe": 83.24000000000001,
+        "debt": 40,
+        "equity": 102.11500000000001,
+        "assets": 155.425,
+        "liabilitiesAndEquity": 155.425,
+        "fcff": 12.704999999999995,
+        "fcfe": 11.204999999999995
+      }
+    ],
+    "base": {
+      "wacc": 0.1,
+      "g": 0.03,
+      "roic": 0.15,
+      "terminalFCF": 16.451160000000012,
+      "terminalValue": 235.01657142857158,
+      "explicitPV": 28.636363636363612,
+      "terminalPV": 176.57142857142864,
+      "ev": 205.20779220779224,
+      "equityValue": 185.20779220779224,
+      "perShare": 18.520779220779225,
+      "terminalWeight": 0.8604518701348018
+    },
+    "sensitivity": [
+      {
+        "wacc": 0.08,
+        "g": 0.01,
+        "roic": 0.15,
+        "terminalFCF": 18.820340000000012,
+        "terminalValue": 268.86200000000014,
+        "explicitPV": 29.710124218869055,
+        "terminalPV": 213.43132398516494,
+        "ev": 243.141448204034,
+        "equityValue": 223.14144820403396,
+        "perShare": 22.314144820403396,
+        "terminalWeight": 0.8778072416763036
+      },
+      {
+        "wacc": 0.08,
+        "g": 0.03,
+        "roic": 0.15,
+        "terminalFCF": 16.451160000000012,
+        "terminalValue": 329.0232000000002,
+        "explicitPV": 29.710124218869055,
+        "terminalPV": 261.18922420362765,
+        "ev": 290.8993484224967,
+        "equityValue": 270.8993484224967,
+        "perShare": 27.08993484224967,
+        "terminalWeight": 0.8978680276185472
+      },
+      {
+        "wacc": 0.08,
+        "g": 0.05,
+        "roic": 0.15,
+        "terminalFCF": 13.975500000000007,
+        "terminalValue": 465.85000000000025,
+        "explicitPV": 29.710124218869055,
+        "terminalPV": 369.8067494792462,
+        "ev": 399.51687369811526,
+        "equityValue": 379.51687369811526,
+        "perShare": 37.95168736981152,
+        "terminalWeight": 0.9256348700773055
+      },
+      {
+        "wacc": 0.1,
+        "g": 0.01,
+        "roic": 0.15,
+        "terminalFCF": 18.820340000000012,
+        "terminalValue": 209.114888888889,
+        "explicitPV": 28.636363636363612,
+        "terminalPV": 157.11111111111114,
+        "ev": 185.74747474747477,
+        "equityValue": 165.74747474747477,
+        "perShare": 16.574747474747475,
+        "terminalWeight": 0.845831747240198
+      },
+      {
+        "wacc": 0.1,
+        "g": 0.03,
+        "roic": 0.15,
+        "terminalFCF": 16.451160000000012,
+        "terminalValue": 235.01657142857158,
+        "explicitPV": 28.636363636363612,
+        "terminalPV": 176.57142857142864,
+        "ev": 205.20779220779224,
+        "equityValue": 185.20779220779224,
+        "perShare": 18.520779220779225,
+        "terminalWeight": 0.8604518701348018
+      },
+      {
+        "wacc": 0.1,
+        "g": 0.05,
+        "roic": 0.15,
+        "terminalFCF": 13.975500000000007,
+        "terminalValue": 279.5100000000001,
+        "explicitPV": 28.636363636363612,
+        "terminalPV": 210.00000000000003,
+        "ev": 238.63636363636363,
+        "equityValue": 218.63636363636363,
+        "perShare": 21.863636363636363,
+        "terminalWeight": 0.8800000000000001
+      },
+      {
+        "wacc": 0.12,
+        "g": 0.01,
+        "roic": 0.15,
+        "terminalFCF": 18.820340000000012,
+        "terminalValue": 171.0940000000001,
+        "explicitPV": 27.625757334183653,
+        "terminalPV": 121.7813297193878,
+        "ev": 149.40708705357144,
+        "equityValue": 129.40708705357144,
+        "perShare": 12.940708705357144,
+        "terminalWeight": 0.8150974101765457
+      },
+      {
+        "wacc": 0.12,
+        "g": 0.03,
+        "roic": 0.15,
+        "terminalFCF": 16.451160000000012,
+        "terminalValue": 182.79066666666682,
+        "explicitPV": 27.625757334183653,
+        "terminalPV": 130.1067860179787,
+        "ev": 157.73254335216234,
+        "equityValue": 137.73254335216234,
+        "perShare": 13.773254335216233,
+        "terminalWeight": 0.8248569588299552
+      },
+      {
+        "wacc": 0.12,
+        "g": 0.05,
+        "roic": 0.15,
+        "terminalFCF": 13.975500000000007,
+        "terminalValue": 199.65000000000012,
+        "explicitPV": 27.625757334183653,
+        "terminalPV": 142.10692647594757,
+        "ev": 169.73268381013122,
+        "equityValue": 149.73268381013122,
+        "perShare": 14.973268381013122,
+        "terminalWeight": 0.8372396128191388
+      }
+    ],
+    "lowROIC": {
+      "wacc": 0.1,
+      "g": 0.03,
+      "roic": 0.05,
+      "terminalFCF": 8.225580000000006,
+      "terminalValue": 117.50828571428579,
+      "explicitPV": 28.636363636363612,
+      "terminalPV": 88.28571428571432,
+      "ev": 116.92207792207793,
+      "equityValue": 96.92207792207793,
+      "perShare": 9.692207792207792,
+      "terminalWeight": 0.7550816394535157
+    },
+    "issue": {
+      "newShares": 2,
+      "issuePrice": 10,
+      "repayDebt": 20,
+      "perShare": 17.100649350649352
+    }
+  },
+  "backtest": {
+    "inputs": {
+      "close": [
+        100,
+        102,
+        101,
+        104,
+        103,
+        105,
+        100,
+        101,
+        104
+      ],
+      "opens": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        104,
+        101,
+        102,
+        103,
+        104
+      ],
+      "initialCash": 1000,
+      "shares": 1,
+      "feePerSide": 0.5,
+      "trainingEndsCloseDay": 5,
+      "signal": "SMA2严格大于，次日开盘执行；第9日强制清算"
+    },
+    "history": [
+      {
+        "day": 0,
+        "open": 100,
+        "close": 100,
+        "action": "空仓",
+        "cash": 1000,
+        "position": 0,
+        "equity": 1000
+      },
+      {
+        "day": 1,
+        "open": 101,
+        "close": 102,
+        "action": "空仓",
+        "cash": 1000,
+        "position": 0,
+        "equity": 1000
+      },
+      {
+        "day": 2,
+        "open": 102,
+        "close": 101,
+        "action": "买1股",
+        "cash": 897.5,
+        "position": 1,
+        "equity": 998.5
+      },
+      {
+        "day": 3,
+        "open": 103,
+        "close": 104,
+        "action": "卖1股",
+        "cash": 1000.0,
+        "position": 0,
+        "equity": 1000.0
+      },
+      {
+        "day": 4,
+        "open": 104,
+        "close": 103,
+        "action": "买1股",
+        "cash": 895.5,
+        "position": 1,
+        "equity": 998.5
+      },
+      {
+        "day": 5,
+        "open": 104,
+        "close": 105,
+        "action": "卖1股",
+        "cash": 999.0,
+        "position": 0,
+        "equity": 999.0
+      },
+      {
+        "day": 6,
+        "open": 101,
+        "close": 100,
+        "action": "买1股",
+        "cash": 897.5,
+        "position": 1,
+        "equity": 997.5
+      },
+      {
+        "day": 7,
+        "open": 102,
+        "close": 101,
+        "action": "卖1股",
+        "cash": 999.0,
+        "position": 0,
+        "equity": 999.0
+      },
+      {
+        "day": 8,
+        "open": 103,
+        "close": 104,
+        "action": "买1股",
+        "cash": 895.5,
+        "position": 1,
+        "equity": 999.5
+      },
+      {
+        "day": 9,
+        "open": 104,
+        "close": null,
+        "action": "卖1股",
+        "cash": 999.0,
+        "position": 0,
+        "equity": 999.0
+      }
+    ],
+    "trades": [
+      {
+        "entryDay": 2,
+        "exitDay": 3,
+        "buy": 102,
+        "sell": 103,
+        "gross": 1,
+        "cost": 1,
+        "net": 0
+      },
+      {
+        "entryDay": 4,
+        "exitDay": 5,
+        "buy": 104,
+        "sell": 104,
+        "gross": 0,
+        "cost": 1,
+        "net": -1
+      },
+      {
+        "entryDay": 6,
+        "exitDay": 7,
+        "buy": 101,
+        "sell": 102,
+        "gross": 1,
+        "cost": 1,
+        "net": 0
+      },
+      {
+        "entryDay": 8,
+        "exitDay": 9,
+        "buy": 103,
+        "sell": 104,
+        "gross": 1,
+        "cost": 1,
+        "net": 0
+      }
+    ],
+    "finalCash": 999.0
+  },
+  "renko": {
+    "base": 100,
+    "brick": 5,
+    "close": [
+      107,
+      112,
+      108,
+      105,
+      100,
+      96,
+      95,
+      105
+    ],
+    "rows": [
+      {
+        "close": 107,
+        "bricks": [
+          [
+            100,
+            105
+          ]
+        ],
+        "endpoint": 105
+      },
+      {
+        "close": 112,
+        "bricks": [
+          [
+            105,
+            110
+          ]
+        ],
+        "endpoint": 110
+      },
+      {
+        "close": 108,
+        "bricks": [],
+        "endpoint": 110
+      },
+      {
+        "close": 105,
+        "bricks": [],
+        "endpoint": 110
+      },
+      {
+        "close": 100,
+        "bricks": [
+          [
+            105,
+            100
+          ]
+        ],
+        "endpoint": 100
+      },
+      {
+        "close": 96,
+        "bricks": [],
+        "endpoint": 100
+      },
+      {
+        "close": 95,
+        "bricks": [
+          [
+            100,
+            95
+          ]
+        ],
+        "endpoint": 95
+      },
+      {
+        "close": 105,
+        "bricks": [
+          [
+            100,
+            105
+          ]
+        ],
+        "endpoint": 105
+      }
+    ],
+    "initialization": "AI明确启动约定；反向需越过前砖另一端一砖，不把1砖回撤画成反砖"
+  },
+  "kagi": {
+    "base": 100,
+    "reversal": 4,
+    "close": [
+      103,
+      106,
+      104,
+      102,
+      99,
+      101,
+      103,
+      106,
+      107,
+      105,
+      103,
+      99,
+      98
+    ],
+    "initialStyle": "细（AI启动约定，非原书唯一初始化）",
+    "rows": [
+      {
+        "close": 103,
+        "column": 0,
+        "end": 103,
+        "direction": 1,
+        "style": "细",
+        "shoulder": null,
+        "waist": null,
+        "event": "启动"
+      },
+      {
+        "close": 106,
+        "column": 0,
+        "end": 106,
+        "direction": 1,
+        "style": "细",
+        "shoulder": null,
+        "waist": null,
+        "event": "顺向延伸"
+      },
+      {
+        "close": 104,
+        "column": 0,
+        "end": 106,
+        "direction": 1,
+        "style": "细",
+        "shoulder": null,
+        "waist": null,
+        "event": "不画"
+      },
+      {
+        "close": 102,
+        "column": 1,
+        "end": 102,
+        "direction": -1,
+        "style": "细",
+        "shoulder": 106,
+        "waist": null,
+        "event": "右移反向"
+      },
+      {
+        "close": 99,
+        "column": 1,
+        "end": 99,
+        "direction": -1,
+        "style": "细",
+        "shoulder": 106,
+        "waist": null,
+        "event": "顺向延伸"
+      },
+      {
+        "close": 101,
+        "column": 1,
+        "end": 99,
+        "direction": -1,
+        "style": "细",
+        "shoulder": 106,
+        "waist": null,
+        "event": "不画"
+      },
+      {
+        "close": 103,
+        "column": 2,
+        "end": 103,
+        "direction": 1,
+        "style": "细",
+        "shoulder": 106,
+        "waist": 99,
+        "event": "右移反向"
+      },
+      {
+        "close": 106,
+        "column": 2,
+        "end": 106,
+        "direction": 1,
+        "style": "细",
+        "shoulder": 106,
+        "waist": 99,
+        "event": "顺向延伸"
+      },
+      {
+        "close": 107,
+        "column": 2,
+        "end": 107,
+        "direction": 1,
+        "style": "粗",
+        "shoulder": 106,
+        "waist": 99,
+        "event": "越肩106，穿越处细转粗"
+      },
+      {
+        "close": 105,
+        "column": 2,
+        "end": 107,
+        "direction": 1,
+        "style": "粗",
+        "shoulder": 106,
+        "waist": 99,
+        "event": "不画"
+      },
+      {
+        "close": 103,
+        "column": 3,
+        "end": 103,
+        "direction": -1,
+        "style": "粗",
+        "shoulder": 107,
+        "waist": 99,
+        "event": "右移反向"
+      },
+      {
+        "close": 99,
+        "column": 3,
+        "end": 99,
+        "direction": -1,
+        "style": "粗",
+        "shoulder": 107,
+        "waist": 99,
+        "event": "顺向延伸"
+      },
+      {
+        "close": 98,
+        "column": 3,
+        "end": 98,
+        "direction": -1,
+        "style": "细",
+        "shoulder": 107,
+        "waist": 99,
+        "event": "破腰99，穿越处粗转细"
+      }
+    ]
+  },
+  "population": {
+    "ages": [
+      "0–4",
+      "5–9",
+      "10–14",
+      "15–19",
+      "20–24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50+"
+    ],
+    "initialFemale": [
+      500,
+      550,
+      600,
+      1000,
+      900,
+      800,
+      700,
+      600,
+      500,
+      400,
+      1000
+    ],
+    "initialMale": [
+      500,
+      550,
+      600,
+      1000,
+      900,
+      800,
+      700,
+      600,
+      500,
+      400,
+      1000
+    ],
+    "asfr": [
+      0,
+      0,
+      0,
+      0.02,
+      0.08,
+      0.12,
+      0.1,
+      0.04,
+      0.02,
+      0,
+      0
+    ],
+    "survival": [
+      0.99,
+      0.995,
+      0.995,
+      0.99,
+      0.99,
+      0.99,
+      0.985,
+      0.98,
+      0.97,
+      0.96,
+      0.9
+    ],
+    "netMigrationPerSex": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      -5
+    ],
+    "birthSurvival": 0.99,
+    "femaleShare": 0.5,
+    "stepYears": 5,
+    "tfr": 1.9,
+    "initialAnnualBirths": 292.0,
+    "periods": [
+      {
+        "yearStart": 0,
+        "yearEnd": 5,
+        "births": 1460.0,
+        "female": [
+          722.7,
+          495.0,
+          547.25,
+          597.0,
+          990.0,
+          911.0,
+          792.0,
+          689.5,
+          588.0,
+          485.0,
+          1279.0
+        ],
+        "male": [
+          722.7,
+          495.0,
+          547.25,
+          597.0,
+          990.0,
+          911.0,
+          792.0,
+          689.5,
+          588.0,
+          485.0,
+          1279.0
+        ],
+        "deaths": 397.09999999999945,
+        "netMigration": 30,
+        "total": 16192.9
+      },
+      {
+        "yearStart": 5,
+        "yearEnd": 10,
+        "births": 1595.0,
+        "female": [
+          789.525,
+          715.4730000000001,
+          492.525,
+          544.51375,
+          591.03,
+          1000.1,
+          901.89,
+          780.12,
+          675.71,
+          570.36,
+          1611.7
+        ],
+        "male": [
+          789.525,
+          715.4730000000001,
+          492.525,
+          544.51375,
+          591.03,
+          1000.1,
+          901.89,
+          780.12,
+          675.71,
+          570.36,
+          1611.7
+        ],
+        "deaths": 472.00650000000314,
+        "netMigration": 30,
+        "total": 17345.8935
+      }
+    ]
+  },
+  "inventory": {
+    "initialStock": 100,
+    "units": "同一种产品的件数；全为原创假设",
+    "rows": [
+      {
+        "period": 1,
+        "opening": 100,
+        "sales": 100,
+        "change": -10,
+        "stock": 90,
+        "production": 90,
+        "changeOfChange": null
+      },
+      {
+        "period": 2,
+        "opening": 90,
+        "sales": 100,
+        "change": -20,
+        "stock": 70,
+        "production": 80,
+        "changeOfChange": -10
+      },
+      {
+        "period": 3,
+        "opening": 70,
+        "sales": 100,
+        "change": -10,
+        "stock": 60,
+        "production": 90,
+        "changeOfChange": 10
+      },
+      {
+        "period": 4,
+        "opening": 60,
+        "sales": 100,
+        "change": 0,
+        "stock": 60,
+        "production": 100,
+        "changeOfChange": 10
+      },
+      {
+        "period": 5,
+        "opening": 60,
+        "sales": 100,
+        "change": 10,
+        "stock": 70,
+        "production": 110,
+        "changeOfChange": 10
+      }
+    ]
+  }
+}

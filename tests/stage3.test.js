@@ -13,7 +13,7 @@ const near=(a,b,epsilon=1e-4)=>assert.ok(Math.abs(a-b)<epsilon,`${a} != ${b}`);
 test('all 68 stable IDs retain authored chapters; 217 principle studies and 13 source-bounded thematic book modules exist',()=>{
  const lessons=Array.from({length:13},(_,i)=>read('public/data/U'+(i+1)+'.json').lessons).flat();
  assert.equal(lessons.length,68);assert.equal(new Set(lessons.map(l=>l.id)).size,68);
- for(const l of lessons){const c=chapter(l.id);assert.ok(c.title);if(Number(l.id.split('l')[0].slice(1))>=6)assert.equal(c.title,l.title);assert.equal(c.sections.length,8);assert.equal(c.exerciseCount,2);assert.ok(c.proseCharacters>1100,l.id);}
+ for(const l of lessons){const c=chapter(l.id);assert.ok(c.title);if(Number(l.id.split('l')[0].slice(1))>=6)assert.equal(c.title,l.title);assert.equal(c.sections.length,({u3l5:24,u6l6:16})[l.id]||8);assert.equal(c.exerciseCount,({u3l5:17,u6l6:3})[l.id]||2);assert.ok(c.proseCharacters>1100,l.id);}
  const summary=read('public/data/coverage.json').summary;
  assert.equal(summary.longformLessons,68);assert.equal(summary.independentPrinciples,217);assert.equal(summary.evidenceChecks,65);assert.equal(summary.thematicBookModules,13);
  assert.equal(217-summary.independentPrinciples,0);assert.equal(13-summary.thematicBookModules,0);

@@ -12,7 +12,7 @@ test('stage has all 68 distinct course longforms and 13 explicitly source-bounde
  assert.deepEqual(chapters.filter(c=>c.id.startsWith('u')).map(c=>c.id),[7,6,7,8,6,9,5,5,3,3,2,4,3].flatMap((n,u)=>Array.from({length:n},(_,i)=>'u'+(u+1)+'l'+(i+1))).sort());
  assert.equal(chapters.length,81);for(const c of chapters){assert.ok(c.sections.length>=8);assert.equal(new Set(c.sections.map(s=>s.id)).size,c.sections.length);for(const s of c.sections)assert.ok(s.attribution&&s.paragraphs.length);}
  assert.equal(new Set(all).size,81);assert.match(chapters.find(c=>c.id==='B4').scope,/不是全书/);
- assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,161);
+ assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,180);
 });
 test('all 363 matrix rows have support, actual depth, explicit gaps and planned targets',()=>{
  assert.equal(ledger.rows.length,363);assert.equal(new Set(ledger.rows.map(r=>r.id)).size,363);

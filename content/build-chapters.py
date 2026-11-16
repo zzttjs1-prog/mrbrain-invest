@@ -6,8 +6,14 @@ def dump(p,v):
  p=root/p;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
 k=read('public/data/knowledge.json');books=read('content/books.json');plan=read('content/coverage-plan.json')
 sources={s['id']:s for s in k['sources']};chapters=[]
+from worked import build
+worked,tables=build()
+dump('public/data/worked-examples.json',worked)
 for path in sorted((root/'content/chapters').glob('*.md')):
- text=path.read_text();meta,body=text.split('\n',1);c=json.loads(meta);assert c['id']==path.stem;c['sections']=[]
+ text=path.read_text()
+ for key,value in tables.items():text=text.replace('@@'+key+'@@',value)
+ assert '@@' not in text,path
+ meta,body=text.split('\n',1);c=json.loads(meta);assert c['id']==path.stem;c['sections']=[]
  for block in re.split(r'^## ',body,flags=re.M)[1:]:
   heading,prose=block.split('\n',1);sid,title,attribution=heading.split(' | ')
   paragraphs=prose.strip().split('\n\n');answer=[]
@@ -20,7 +26,7 @@ for path in sorted((root/'content/chapters').glob('*.md')):
    original=sources[src['ref']];assert src.get('date')==original['date'],(c['id'],src)
    src['url']=original.get('url');src['access']=original.get('access');src['reliability']=original['reliability']
  c['proseCharacters']=sum(len(p) for section in c['sections'] for p in section['paragraphs']+section['answer']);c['exerciseCount']=sum(bool(section['answer']) for section in c['sections'])
- c['edition']='material-grounded-stage-4';chapters.append(c);dump('public/data/chapters/'+c['id']+'.json',c)
+ c['edition']='review-corrected-stage-5';chapters.append(c);dump('public/data/chapters/'+c['id']+'.json',c)
 ps=read('content/principle-studies.json');cs=read('content/check-studies.json')
 for p in k['principles']:
  p['lessons']=sorted(set(p['lessons']+[c['id'] for c in chapters if c['id'].startswith('u') and p['id'] in c['principles']]))
@@ -72,7 +78,7 @@ for b in books:
  ledger.append(dict(type='book',id=b['id'],title=b['title'],supportedTopics='；'.join(s['title'] for s in c['sections'] if not s['answer']) if c else b['concept'],sources=c['sources'] if c else [dict(kind='既有书籍笔记',ref=b['id'],locator=b['loc'],access='本地已有笔记；本轮未重新通读原书')],depth='source-bounded-thematic-longform' if c else 'eight-field-core-summary',targets=([b['id']] if c else [])+[l['id'] for l in lessons if b['id'] in l['deep']['books']],gaps=c['scope'] if c else '独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节'))
 assert len(ledger)==363
 summary=dict(lessons=len(lessons),longformLessons=sum(c['id'].startswith('u') for c in chapters),books=len(books),thematicBookModules=sum(c['id'].startswith('B') for c in chapters),independentPrinciples=len(ps),evidenceChecks=len(cs),principleIndexOnly=sum(p['depth']=='index-only' for p in k['principles']),principleLinkedOnly=sum(p['depth']=='linked-not-independent' for p in k['principles']),principlesWithCourseLinks=sum(bool(p['lessons']) for p in k['principles']),unresolvedReferences=len(unresolved))
-coverage=dict(edition='material-grounded-stage-4',notice='覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。',summary=summary,rows=ledger,unresolvedReferences=unresolved)
+coverage=dict(edition='review-corrected-stage-5',notice='覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。',summary=summary,rows=ledger,unresolvedReferences=unresolved)
 dump('public/data/coverage.json',coverage)
 dump('public/data/chapters/index.json',dict(edition=coverage['edition'],notice=coverage['notice'],summary=summary,chapters=[{k:v for k,v in c.items() if k!='sections'}|dict(sectionCount=len(c['sections'])) for c in chapters]))
 lines=['# 材料支持与实际教学深度矩阵','',coverage['notice'],'','统计：'+json.dumps(summary,ensure_ascii=False),'','|类型 / ID|主题|实际深度|材料|目标（含规划，不等于完成）|明确缺口|','|---|---|---|---|---|---|']
