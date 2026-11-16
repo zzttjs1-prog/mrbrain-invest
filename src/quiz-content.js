@@ -11,11 +11,18 @@ export function reconcileQuiz(state,id) {
  }
  return d;
 }
+const answersOf = d => Object.fromEntries(Object.entries(d.answers||{}).filter(([q,a])=>/^(0|[1-9]\d*)$/.test(q)&&Number.isInteger(a)&&a>=0));
 export function mergeDraft(local,incoming,id) {
  if(!local)return incoming;if(!incoming)return local;
  const revision=quizRevision(id);
  const useIncoming=revision&&incoming.revision===revision&&local.revision!==revision;
- const chosen=useIncoming?incoming:local,other=useIncoming?local:incoming;
+ let chosen=useIncoming?incoming:local;const other=useIncoming?local:incoming;
+ if(local.revision===incoming.revision){
+  const left=answersOf(local),right=answersOf(incoming);
+  // Supplement missing choices, including index 0; a genuine conflict keeps the local choice.
+  // Resume the richer answer draft, not an empty peer's stale result-page cursor. Ties stay local.
+  chosen={...local,answers:{...right,...left},slide:Object.keys(right).length>Object.keys(left).length?incoming.slide:local.slide};
+ }
  const history=[...(chosen.history||[]),...(other.history||[])];
  if(revision&&chosen.revision!==other.revision)history.push(snapshot(other));
  return history.length?{...chosen,history:[...new Map(history.map(h=>[JSON.stringify(h),h])).values()]}:chosen;

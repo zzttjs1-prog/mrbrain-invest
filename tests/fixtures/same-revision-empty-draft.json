@@ -1,0 +1,53 @@
+{
+  "label": "Controlled synthetic browser-test exports; target draft projection only, no personal notes/auth/user data",
+  "sourceCommit": "fe15717df180285702102202f3cae5c4bff956c0",
+  "sourceFiles": {
+    "local": "127-before.txt",
+    "remote": "localhost-after-oldreimport.txt",
+    "failed": "127-after-oldreimport.txt"
+  },
+  "local": {
+    "slide": 0,
+    "answers": {},
+    "revision": "semantic-review-20261116b"
+  },
+  "remote": {
+    "slide": 20,
+    "answers": {
+      "0": 3,
+      "1": 0,
+      "2": 1,
+      "3": 2
+    },
+    "revision": "semantic-review-20261116b",
+    "history": [
+      {
+        "revision": "legacy",
+        "slide": 16,
+        "answers": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 2
+        }
+      }
+    ]
+  },
+  "failed": {
+    "slide": 20,
+    "answers": {},
+    "revision": "semantic-review-20261116b",
+    "history": [
+      {
+        "revision": "legacy",
+        "slide": 16,
+        "answers": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 2
+        }
+      }
+    ]
+  }
+}

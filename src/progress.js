@@ -47,7 +47,8 @@ export function mergeProgress(state, incoming) {
   const out=normalize(state);
   out.xp=Math.max(out.xp,other.xp);out.days=[...new Set([...out.days,...other.days])].sort();
   for(const [id,v] of Object.entries(other.lessons)){const c=out.lessons[id]||{};out.lessons[id]={...c,done:!!(c.done||v.done),stars:Math.max(c.stars||0,v.stars),best:Math.max(c.best||0,v.best)};}
-  // Existing local drafts win; legacy codes cannot erase newer personal data.
+  // Notes/wrong conflicts stay local; quiz drafts supplement answers only within the same revision.
+  // Legacy codes cannot erase current semantic answers or newer personal data.
   for(const key of ['wrong','notes'])out[key]={...other[key],...out[key]};
   for(const [id,d] of Object.entries(other.drafts))out.drafts[id]=mergeDraft(out.drafts[id],d,id);
   for(const [id,r] of Object.entries(other.reading)) {
