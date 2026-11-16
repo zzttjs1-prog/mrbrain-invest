@@ -8,20 +8,20 @@ const catalog=read('public/data/chapters/index.json');
 const chapters=catalog.chapters.map(c=>read('public/data/chapters/'+c.id+'.json'));
 const ledger=read('public/data/coverage.json');
 const all=chapters.map(c=>c.sections.flatMap(s=>[...s.paragraphs,...s.answer]).join('\n'));
-test('stage has seven distinct 8-section lesson longforms and one explicitly limited book module',()=>{
- assert.deepEqual(chapters.filter(c=>c.id.startsWith('u')).map(c=>c.id),Array.from({length:7},(_,i)=>'u1l'+(i+1)));
- assert.equal(chapters.length,8);for(const c of chapters){assert.equal(c.sections.length,8);assert.equal(new Set(c.sections.map(s=>s.id)).size,8);for(const s of c.sections)assert.ok(s.attribution&&s.paragraphs.length);}
- assert.equal(new Set(all).size,8);assert.match(chapters.find(c=>c.id==='B4').scope,/不是全书/);
- assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,15);
+test('stage has U1–U5 distinct longforms and three explicitly source-bounded book modules',()=>{
+ assert.deepEqual(chapters.filter(c=>c.id.startsWith('u')).map(c=>c.id),[7,6,7,8,6].flatMap((n,u)=>Array.from({length:n},(_,i)=>'u'+(u+1)+'l'+(i+1))));
+ assert.equal(chapters.length,37);for(const c of chapters){assert.ok(c.sections.length>=8);assert.equal(new Set(c.sections.map(s=>s.id)).size,c.sections.length);for(const s of c.sections)assert.ok(s.attribution&&s.paragraphs.length);}
+ assert.equal(new Set(all).size,37);assert.match(chapters.find(c=>c.id==='B4').scope,/不是全书/);
+ assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,73);
 });
 test('all 363 matrix rows have support, actual depth, explicit gaps and planned targets',()=>{
  assert.equal(ledger.rows.length,363);assert.equal(new Set(ledger.rows.map(r=>r.id)).size,363);
  for(const r of ledger.rows){assert.ok(r.supportedTopics&&r.depth&&r.gaps&&r.targets.length,r.id);assert.ok(r.sources.length,r.id+' source');}
- assert.equal(ledger.rows.filter(r=>r.type==='lesson'&&r.depth==='eight-section-longform').length,7);
- assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='independent-explanation').length,10);
- assert.equal(ledger.rows.filter(r=>r.type==='check'&&r.depth==='evidence-procedure').length,7);
- assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only').length,63);
- assert.equal(ledger.rows.filter(r=>r.type==='book'&&r.depth==='eight-field-core-summary').length,12);
+ assert.equal(ledger.rows.filter(r=>r.type==='lesson'&&r.depth==='eight-section-longform').length,34);
+ assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='independent-explanation').length,54);
+ assert.equal(ledger.rows.filter(r=>r.type==='check'&&r.depth==='evidence-procedure').length,37);
+ assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only').length,62);
+ assert.equal(ledger.rows.filter(r=>r.type==='book'&&r.depth==='eight-field-core-summary').length,10);
 });
 test('principle and checklist explanations link to actual stable sections, not invented anchors',()=>{
  const k=read('public/data/knowledge.json');

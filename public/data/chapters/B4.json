@@ -127,5 +127,7 @@
       ]
     }
   ],
-  "edition": "material-grounded-stage-1"
+  "proseCharacters": 2032,
+  "exerciseCount": 1,
+  "edition": "material-grounded-stage-2"
 }
