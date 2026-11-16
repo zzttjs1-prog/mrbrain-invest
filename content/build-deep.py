@@ -1,6 +1,9 @@
 """Reproducible curriculum upgrade; authored lesson text is in deep-lessons.tsv."""
-import csv,json,pathlib,re
+import csv,json,pathlib,re,runpy,sys
 root=pathlib.Path(__file__).resolve().parents[1]
+# Rebuild reviewed legacy sources before overlays, rather than preserving wrong generated cards.
+sys.path.insert(0,str(root/'content'))
+for source in ['u6.py','u9.py']:runpy.run_path(str(root/'content'/source))
 def dump(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 rows=list(csv.DictReader((root/'content/deep-lessons.tsv').open(),delimiter='\t'))
 books=json.loads((root/'content/books.json').read_text())
@@ -11,11 +14,25 @@ for r in rows:
  l['deep']={k:v for k,v in r.items() if k not in ['id','principles','books']}
  l['deep']['principles']=[int(x) for x in r['principles'].split(',')]
  l['deep']['books']=r['books'].split(',')
- l['edition']='2026-11-16';l['minutes']='约15–25分钟，可分段学'
+ l['edition']='2026-11-16';l['minutes']='建议分多次阅读与演算' if r['id'] in ['u3l5','u6l6'] else '约15–25分钟，可分段学'
  # Every old quote was already AI paraphrase; label it honestly rather than imply verbatim.
  for q in l['quotes']:q['kind']='脑总历史观点 · AI转述，非逐字引语'
  dump(p,u)
 dump(root/'public/data/books.json',books)
+revisions=json.loads((root/'content/quiz-revisions.json').read_text())
+(root/'src/quiz-revisions.js').write_text('export const QUIZ_REVISIONS = '+json.dumps(revisions,ensure_ascii=False)+';\n')
+for uid in ['U2','U6','U9']:
+ p=root/'public/data'/f'{uid}.json';unit=json.loads(p.read_text())
+ for lesson in unit['lessons']:
+  if lesson['id'] in revisions:lesson['quizRevision']=revisions[lesson['id']]
+ dump(p,unit)
+# Retitle one misleading display label without changing identity or course order.
+titles=json.loads((root/'content/lesson-title-corrections.json').read_text())
+p=root/'public/data/index.json';index=json.loads(p.read_text())
+for unit in index:
+ for i,title in enumerate(unit['lessons']):
+  unit['lessons'][i]=titles.get(unit['id'].lower()+'l'+str(i+1),title)
+p.write_text(json.dumps(index,ensure_ascii=False,indent=1))
 # Source metadata is versioned so rebuilding requires no private skill installation.
 k=json.loads((root/'content/source-index.json').read_text())
 assert len(k['principles'])==217 and len(k['checklist'])==65
@@ -61,3 +78,7 @@ for uid in range(1,14):
    for source in example['src']:
     if source.get('u') in link_checks:source['audit']=link_checks[source['u']]
  dump(p,u)
+
+# Longform authored modules and transparent unfinished coverage.
+import runpy
+runpy.run_path(str(root/"content/build-chapters.py"))

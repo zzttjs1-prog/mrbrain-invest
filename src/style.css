@@ -86,3 +86,7 @@ textarea{font-family:inherit;line-height:1.7;font-size:16px;resize:vertical;min-
 #save-status{position:fixed;top:0;left:0;right:0;z-index:100;padding:10px;background:#8b210f;color:white;font-size:14px;box-shadow:0 2px 10px #0008}
 button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
 @media(max-width:360px){.pad{padding:18px 16px}.body{font-size:16px}.lesson-nav .btn{padding:0 12px}.tab{padding:4px 10px}}
+/* Longform uses stable section anchors; prose always wraps on narrow phones. */
+.longform{line-height:1.95;overflow-wrap:anywhere}.longform p{margin:1em 0}.longform textarea{font:inherit;width:100%;box-sizing:border-box}.reader-toc{display:block;padding:.55rem 0;overflow-wrap:anywhere}.reader-toc[aria-current]{font-weight:750;text-decoration:underline}#coverage-rows .card{overflow-wrap:anywhere}#coverage-rows summary{line-height:1.7}#chapter-results{max-height:16rem;overflow:auto}
+
+.unit{scroll-margin-top:5.5rem}

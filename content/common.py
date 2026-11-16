@@ -7,7 +7,7 @@ C=lambda t,b:dict(t=t,b=b)
 E=lambda tag,title,rows,note,src:dict(tag=tag,title=title,rows=rows,note=note,src=src)
 MT=lambda n,u:W("Macrotrends · "+n,u)
 def save(uid,title,L):
-    json.dump(dict(id=uid,title=title,lessons=L),open(f'/workspace/mrbrain-app/public/data/{uid}.json','w'),ensure_ascii=False);print(uid,len(L))
+    json.dump(dict(id=uid,title=title,lessons=L),open(__import__('pathlib').Path(__file__).resolve().parents[1]/f'public/data/{uid}.json','w'),ensure_ascii=False);print(uid,len(L))
 S=dict(
 V05=("V05《普通人别学投资是最荒谬的蠢话》","2025-10-15"),
 V06=("V06《股票卖点的秘密》","2025-10-18"),
