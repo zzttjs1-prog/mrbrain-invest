@@ -1,14 +1,16 @@
 {
-  "edition": "material-grounded-stage-3",
+  "edition": "material-grounded-stage-4",
   "notice": "覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。",
   "summary": {
     "lessons": 68,
     "longformLessons": 68,
     "books": 13,
-    "thematicBookModules": 5,
-    "independentPrinciples": 88,
+    "thematicBookModules": 13,
+    "independentPrinciples": 217,
     "evidenceChecks": 65,
-    "principleIndexOnly": 59,
+    "principleIndexOnly": 0,
+    "principleLinkedOnly": 0,
+    "principlesWithCourseLinks": 217,
     "unresolvedReferences": 4
   },
   "rows": [
@@ -3155,7 +3157,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u13l3"
       ],
@@ -3163,7 +3165,7 @@
         "u13l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3180,15 +3182,17 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
         "u13l3"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
         "u13l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3205,17 +3209,21 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
+        "B11",
         "u13l3",
         "u1l4"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
+        "B11",
         "u13l3",
         "u1l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3232,17 +3240,19 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B6",
         "u1l2",
         "u6l9"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B6",
         "u1l2",
         "u6l9"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3259,15 +3269,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u2l3",
         "u2l4"
       ],
       "plannedOnly": [
         "u2l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3288,12 +3299,16 @@
       "targets": [
         "B1",
         "B4",
+        "B6",
+        "B7",
         "u1l1"
       ],
       "plannedOnly": [],
       "authoredLinks": [
         "B1",
         "B4",
+        "B6",
+        "B7",
         "u1l1"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -3323,11 +3338,15 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B7",
+        "B9",
         "u1l2",
         "u1l5"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B7",
+        "B9",
         "u1l2",
         "u1l5"
       ],
@@ -3409,10 +3428,12 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B3",
         "u1l6"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B3",
         "u1l6"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -3434,12 +3455,14 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B3",
         "u1l3",
         "u1l6",
         "u3l7"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B3",
         "u1l3",
         "u1l6",
         "u3l7"
@@ -3469,15 +3492,19 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
+        "B3",
         "u1l6"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
+        "B3",
         "u1l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3519,7 +3546,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l1"
       ],
@@ -3527,7 +3554,7 @@
       "authoredLinks": [
         "u6l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3579,6 +3606,9 @@
       "targets": [
         "B1",
         "B4",
+        "B6",
+        "B7",
+        "B9",
         "u1l2"
       ],
       "plannedOnly": [
@@ -3587,6 +3617,9 @@
       "authoredLinks": [
         "B1",
         "B4",
+        "B6",
+        "B7",
+        "B9",
         "u1l2"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -3726,7 +3759,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u3l5"
       ],
@@ -3734,7 +3767,7 @@
         "u3l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3796,15 +3829,17 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
         "u12l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
         "u12l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3821,15 +3856,19 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
+        "B7",
         "u12l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
+        "B7",
         "u12l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -3937,10 +3976,16 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B6",
+        "B8",
+        "B9",
         "u9l1"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B6",
+        "B8",
+        "B9",
         "u9l1"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -3962,10 +4007,12 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B11",
         "u7l1"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B11",
         "u7l1"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -4025,7 +4072,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l2",
         "u7l3"
@@ -4035,7 +4082,7 @@
         "u7l2",
         "u7l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4062,13 +4109,18 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B6",
+        "B8",
         "u11l1",
         "u9l2"
       ],
       "plannedOnly": [
         "u11l1"
       ],
-      "authoredLinks": [],
+      "authoredLinks": [
+        "B6",
+        "B8"
+      ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
@@ -4160,15 +4212,17 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
         "u2l5"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
         "u2l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4201,9 +4255,10 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
-        "u1l4"
+        "u1l4",
+        "u4l5"
       ],
       "plannedOnly": [
         "u1l4"
@@ -4211,7 +4266,7 @@
       "authoredLinks": [
         "u1l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4228,7 +4283,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u8l5"
       ],
@@ -4236,7 +4291,7 @@
         "u8l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4253,15 +4308,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u1l7",
         "u3l7"
       ],
       "plannedOnly": [
         "u3l7"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4278,17 +4334,19 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B3",
         "u1l6"
       ],
       "plannedOnly": [
         "u1l6"
       ],
       "authoredLinks": [
+        "B3",
         "u1l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4305,7 +4363,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u13l2"
       ],
@@ -4313,7 +4371,7 @@
       "authoredLinks": [
         "u13l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4354,7 +4412,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u13l3"
       ],
@@ -4362,7 +4420,7 @@
       "authoredLinks": [
         "u13l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4395,15 +4453,17 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
         "u13l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
         "u13l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4430,11 +4490,13 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B3",
         "B4",
         "u1l1"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B3",
         "B4",
         "u1l1"
       ],
@@ -4457,12 +4519,14 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B3",
         "B4",
         "u1l4",
         "u1l6"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B3",
         "B4",
         "u1l4",
         "u1l6"
@@ -4529,15 +4593,17 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
         "u1l7"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
         "u1l7"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4557,14 +4623,22 @@
       "depth": "independent-explanation",
       "targets": [
         "B1",
+        "B10",
+        "B11",
         "B2",
+        "B3",
+        "B6",
         "u1l1",
         "u8l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
         "B1",
+        "B10",
+        "B11",
         "B2",
+        "B3",
+        "B6",
         "u1l1",
         "u8l2"
       ],
@@ -4633,12 +4707,22 @@
       "depth": "independent-explanation",
       "targets": [
         "B1",
+        "B11",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
         "u12l4",
         "u8l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
         "B1",
+        "B11",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
         "u8l2"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -4666,7 +4750,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u10l2"
       ],
@@ -4674,7 +4758,7 @@
       "authoredLinks": [
         "u10l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4750,18 +4834,21 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
         "B2",
-        "u10l3"
+        "u10l3",
+        "u11l2"
       ],
       "plannedOnly": [
         "u10l3"
       ],
       "authoredLinks": [
+        "B10",
         "B2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4818,15 +4905,17 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
         "u2l6"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B10",
         "u2l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4843,9 +4932,12 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "B2",
+        "B3",
+        "B5",
+        "u11l2",
         "u1l1"
       ],
       "plannedOnly": [
@@ -4853,9 +4945,11 @@
       ],
       "authoredLinks": [
         "B2",
+        "B3",
+        "B5",
         "u1l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -4872,9 +4966,10 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
-        "u1l5"
+        "u1l5",
+        "u1l6"
       ],
       "plannedOnly": [
         "u1l5"
@@ -4882,7 +4977,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5015,15 +5110,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u3l2",
         "u3l3"
       ],
       "plannedOnly": [
         "u3l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5077,15 +5173,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u3l1",
         "u4l1"
       ],
       "plannedOnly": [
         "u4l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5102,15 +5199,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l1"
+        "u11l1",
+        "u3l5"
       ],
       "plannedOnly": [
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5151,15 +5249,20 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "B10",
+        "B11",
         "u2l2"
       ],
       "plannedOnly": [
         "u2l2"
       ],
-      "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "authoredLinks": [
+        "B10",
+        "B11"
+      ],
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5271,7 +5374,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u6l3"
       ],
@@ -5279,7 +5382,7 @@
         "u6l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5296,7 +5399,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l4"
       ],
@@ -5304,7 +5407,7 @@
         "u7l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5415,7 +5518,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l1",
         "u6l4"
@@ -5425,7 +5528,7 @@
         "u6l1",
         "u6l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5582,7 +5685,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l5"
       ],
@@ -5590,7 +5693,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5647,7 +5750,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l6"
       ],
@@ -5655,7 +5758,7 @@
       "authoredLinks": [
         "u3l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5736,15 +5839,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u3l2",
         "u5l4"
       ],
       "plannedOnly": [
         "u5l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5769,15 +5873,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u12l4"
       ],
       "plannedOnly": [
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5804,10 +5909,12 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B11",
         "u10l3"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B11",
         "u10l3"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -5843,7 +5950,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l1"
       ],
@@ -5851,7 +5958,7 @@
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5884,7 +5991,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u2l1"
       ],
@@ -5892,7 +5999,7 @@
       "authoredLinks": [
         "u2l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5909,15 +6016,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u1l5"
+        "u1l5",
+        "u7l3"
       ],
       "plannedOnly": [
         "u1l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5934,7 +6042,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l6"
       ],
@@ -5942,7 +6050,7 @@
       "authoredLinks": [
         "u6l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -5967,15 +6075,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u5l5"
+        "u5l5",
+        "u6l5"
       ],
       "plannedOnly": [
         "u5l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6067,7 +6176,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u3l3"
       ],
@@ -6075,7 +6184,7 @@
         "u3l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6205,7 +6314,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l1",
         "u3l4"
@@ -6215,7 +6324,7 @@
         "u3l1",
         "u3l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6272,7 +6381,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l7",
         "u6l8"
@@ -6282,7 +6391,7 @@
         "u6l7",
         "u6l8"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6315,7 +6424,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l8",
         "u7l5"
@@ -6325,7 +6434,7 @@
         "u6l8",
         "u7l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6521,7 +6630,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l1",
         "u7l2",
@@ -6533,7 +6642,7 @@
         "u7l2",
         "u7l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6558,7 +6667,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l1"
       ],
@@ -6566,7 +6675,7 @@
         "u7l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6647,17 +6756,25 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
+        "B7",
+        "B8",
+        "B9",
         "u9l1",
         "u9l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
+        "B7",
+        "B8",
+        "B9",
         "u9l1",
         "u9l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6740,7 +6857,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u11l2"
       ],
@@ -6748,7 +6865,7 @@
       "authoredLinks": [
         "u11l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6781,15 +6898,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l2"
+        "u11l2",
+        "u4l6"
       ],
       "plannedOnly": [
         "u11l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6830,7 +6948,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u4l5",
         "u6l3"
@@ -6840,7 +6958,7 @@
         "u4l5",
         "u6l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6873,15 +6991,18 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
         "u12l4"
       ],
       "plannedOnly": [
         "u12l4"
       ],
-      "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "authoredLinks": [
+        "B5"
+      ],
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -6922,7 +7043,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u10l1",
         "u10l3",
@@ -6934,7 +7055,7 @@
         "u10l3",
         "u7l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7027,7 +7148,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l3"
       ],
@@ -7035,7 +7156,7 @@
         "u7l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7068,7 +7189,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l2"
       ],
@@ -7076,7 +7197,7 @@
         "u7l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7146,7 +7267,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l5"
       ],
@@ -7154,7 +7275,7 @@
       "authoredLinks": [
         "u6l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7179,7 +7300,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u8l5"
       ],
@@ -7187,7 +7308,7 @@
       "authoredLinks": [
         "u8l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7239,9 +7360,10 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
-        "u1l5"
+        "u1l5",
+        "u1l6"
       ],
       "plannedOnly": [
         "u1l5"
@@ -7249,7 +7371,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7282,7 +7404,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u8l3"
       ],
@@ -7290,7 +7412,7 @@
       "authoredLinks": [
         "u8l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7388,7 +7510,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l5"
       ],
@@ -7396,7 +7518,7 @@
       "authoredLinks": [
         "u7l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7421,15 +7543,17 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B6",
         "u8l3"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B6",
         "u8l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7462,7 +7586,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l5"
       ],
@@ -7470,7 +7594,7 @@
       "authoredLinks": [
         "u6l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7532,15 +7656,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l2"
+        "u11l2",
+        "u3l2"
       ],
       "plannedOnly": [
         "u11l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7557,7 +7682,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u8l4"
       ],
@@ -7565,7 +7690,7 @@
         "u8l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7590,17 +7715,21 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
+        "B8",
         "u8l5",
         "u9l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
+        "B8",
         "u8l5",
         "u9l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7650,8 +7779,9 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u1l5"
       ],
       "plannedOnly": [
@@ -7660,7 +7790,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7693,7 +7823,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l3"
       ],
@@ -7701,7 +7831,7 @@
       "authoredLinks": [
         "u7l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7726,7 +7856,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l8"
       ],
@@ -7734,7 +7864,7 @@
       "authoredLinks": [
         "u6l8"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7796,7 +7926,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u12l4"
       ],
@@ -7804,7 +7934,7 @@
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7845,7 +7975,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u11l2"
       ],
@@ -7853,7 +7983,7 @@
       "authoredLinks": [
         "u11l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7878,7 +8008,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u11l1"
       ],
@@ -7886,7 +8016,7 @@
       "authoredLinks": [
         "u11l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7935,15 +8065,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l1"
+        "u11l1",
+        "u11l2"
       ],
       "plannedOnly": [
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -7976,15 +8107,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u12l2"
+        "u12l2",
+        "u6l5"
       ],
       "plannedOnly": [
         "u12l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8001,7 +8133,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l2"
       ],
@@ -8009,7 +8141,7 @@
         "u11l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8026,13 +8158,13 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l5"
       ],
       "plannedOnly": [],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8057,15 +8189,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u8l4"
+        "u8l4",
+        "u8l5"
       ],
       "plannedOnly": [
         "u8l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8106,7 +8239,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l7"
       ],
@@ -8114,7 +8247,7 @@
       "authoredLinks": [
         "u3l7"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8155,7 +8288,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l2"
       ],
@@ -8163,7 +8296,7 @@
       "authoredLinks": [
         "u3l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8180,7 +8313,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l6"
       ],
@@ -8188,7 +8321,7 @@
       "authoredLinks": [
         "u3l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8205,7 +8338,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l1"
       ],
@@ -8213,7 +8346,7 @@
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8256,10 +8389,12 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B9",
         "u9l3"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B9",
         "u9l3"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -8429,12 +8564,16 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B8",
+        "B9",
         "u11l2",
         "u9l1",
         "u9l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B8",
+        "B9",
         "u11l2",
         "u9l1",
         "u9l2"
@@ -8472,15 +8611,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u10l1",
         "u10l2"
       ],
       "plannedOnly": [
         "u10l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8531,6 +8671,7 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B6",
         "u12l3",
         "u13l1",
         "u1l2",
@@ -8538,6 +8679,7 @@
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B6",
         "u12l3",
         "u13l1",
         "u1l3"
@@ -8627,7 +8769,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l4"
       ],
@@ -8635,7 +8777,7 @@
       "authoredLinks": [
         "u3l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8652,7 +8794,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u3l1"
       ],
@@ -8660,7 +8802,7 @@
         "u3l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8701,15 +8843,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u3l1"
       ],
       "plannedOnly": [
         "u3l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8750,7 +8893,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l4"
       ],
@@ -8758,7 +8901,7 @@
       "authoredLinks": [
         "u7l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8775,15 +8918,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u7l5"
       ],
       "plannedOnly": [
         "u7l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8808,7 +8952,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u8l1",
         "u8l3"
@@ -8818,7 +8962,7 @@
         "u8l1",
         "u8l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8843,15 +8987,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u3l7"
+        "u3l7",
+        "u4l6"
       ],
       "plannedOnly": [
         "u3l7"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -8919,11 +9064,13 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B11",
         "u10l1",
         "u10l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B11",
         "u10l1",
         "u10l2"
       ],
@@ -8952,15 +9099,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u3l1",
         "u3l6"
       ],
       "plannedOnly": [
         "u3l6"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9010,15 +9158,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u4l5"
       ],
       "plannedOnly": [
         "u4l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9043,7 +9192,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u3l3"
       ],
@@ -9051,7 +9200,7 @@
       "authoredLinks": [
         "u3l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9068,7 +9217,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l2"
       ],
@@ -9076,7 +9225,7 @@
       "authoredLinks": [
         "u7l2"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9101,7 +9250,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l3"
       ],
@@ -9109,7 +9258,7 @@
       "authoredLinks": [
         "u1l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9128,12 +9277,16 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B5",
+        "B9",
         "u12l1",
         "u2l4",
         "u9l3"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B5",
+        "B9",
         "u12l1",
         "u2l4",
         "u9l3"
@@ -9155,15 +9308,18 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "B3",
         "u12l4"
       ],
       "plannedOnly": [
         "u12l4"
       ],
-      "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "authoredLinks": [
+        "B3"
+      ],
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9218,15 +9374,17 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B11",
         "u10l1"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B11",
         "u10l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9243,7 +9401,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l5"
       ],
@@ -9251,7 +9409,7 @@
         "u7l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9268,15 +9426,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u4l5"
+        "u4l5",
+        "u8l5"
       ],
       "plannedOnly": [
         "u4l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9301,7 +9460,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "B4",
         "u1l1"
@@ -9311,7 +9470,7 @@
         "B4",
         "u1l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9355,12 +9514,14 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B7",
         "u1l2"
       ],
       "plannedOnly": [
         "u1l2"
       ],
       "authoredLinks": [
+        "B7",
         "u1l2"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -9500,7 +9661,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l4"
       ],
@@ -9508,7 +9669,7 @@
       "authoredLinks": [
         "u1l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9525,15 +9686,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u12l4"
+        "u12l4",
+        "u3l5"
       ],
       "plannedOnly": [
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9550,7 +9712,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u4l7"
       ],
@@ -9558,7 +9720,7 @@
         "u4l7"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9575,7 +9737,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l2",
         "u6l4"
@@ -9585,7 +9747,7 @@
         "u6l2",
         "u6l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9610,7 +9772,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u6l1"
       ],
@@ -9618,7 +9780,7 @@
         "u6l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9643,17 +9805,19 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B7",
         "u1l5"
       ],
       "plannedOnly": [
         "u1l5"
       ],
       "authoredLinks": [
+        "B7",
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9686,15 +9850,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u12l4"
+        "u12l4",
+        "u7l5"
       ],
       "plannedOnly": [
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9765,7 +9930,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u8l5"
       ],
@@ -9773,7 +9938,7 @@
       "authoredLinks": [
         "u8l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9790,7 +9955,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u12l2"
       ],
@@ -9798,7 +9963,7 @@
         "u12l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9815,7 +9980,7 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u7l2"
       ],
@@ -9823,7 +9988,7 @@
         "u7l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9840,15 +10005,16 @@
           "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u8l3",
         "u8l5"
       ],
       "plannedOnly": [
         "u8l5"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -9873,7 +10039,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l1"
       ],
@@ -9881,7 +10047,7 @@
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10017,17 +10183,19 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
+        "B5",
         "u1l7"
       ],
       "plannedOnly": [
         "u1l7"
       ],
       "authoredLinks": [
+        "B5",
         "u1l7"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10044,7 +10212,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l2"
       ],
@@ -10052,7 +10220,7 @@
         "u11l2"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10077,7 +10245,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u7l4"
       ],
@@ -10085,7 +10253,7 @@
       "authoredLinks": [
         "u7l4"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10157,7 +10325,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l5"
       ],
@@ -10167,7 +10335,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10184,7 +10352,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u10l1",
         "u2l1"
@@ -10194,7 +10362,7 @@
         "u10l1",
         "u2l1"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10211,15 +10379,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l1"
+        "u11l1",
+        "u11l2"
       ],
       "plannedOnly": [
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10236,15 +10405,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u12l4"
+        "u12l4",
+        "u3l2"
       ],
       "plannedOnly": [
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10261,7 +10431,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l5"
       ],
@@ -10271,7 +10441,7 @@
       "authoredLinks": [
         "u1l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10338,7 +10508,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u1l6"
       ],
@@ -10346,7 +10516,7 @@
       "authoredLinks": [
         "u1l6"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10365,10 +10535,12 @@
       ],
       "depth": "independent-explanation",
       "targets": [
+        "B7",
         "u12l2"
       ],
       "plannedOnly": [],
       "authoredLinks": [
+        "B7",
         "u12l2"
       ],
       "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
@@ -10388,7 +10560,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u6l5"
       ],
@@ -10396,7 +10568,7 @@
       "authoredLinks": [
         "u6l5"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10413,7 +10585,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u3l1"
       ],
@@ -10421,7 +10593,7 @@
         "u3l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10438,7 +10610,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "linked-not-independent",
+      "depth": "independent-explanation",
       "targets": [
         "u8l3"
       ],
@@ -10446,7 +10618,7 @@
       "authoredLinks": [
         "u8l3"
       ],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10463,15 +10635,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u6l1"
+        "u6l1",
+        "u7l3"
       ],
       "plannedOnly": [
         "u6l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10491,6 +10664,10 @@
       "depth": "independent-explanation",
       "targets": [
         "B4",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
         "u12l3",
         "u13l1",
         "u1l5"
@@ -10498,6 +10675,10 @@
       "plannedOnly": [],
       "authoredLinks": [
         "B4",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
         "u12l3",
         "u13l1",
         "u1l5"
@@ -10519,15 +10700,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u11l2",
         "u12l4"
       ],
       "plannedOnly": [
         "u12l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10544,15 +10726,19 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "B8",
+        "u8l1",
         "u9l2"
       ],
       "plannedOnly": [
         "u9l2"
       ],
-      "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "authoredLinks": [
+        "B8"
+      ],
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10594,7 +10780,7 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
         "u11l1"
       ],
@@ -10602,7 +10788,7 @@
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10619,15 +10805,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u8l3",
         "u8l4"
       ],
       "plannedOnly": [
         "u8l4"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10644,15 +10831,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
-        "u11l1"
+        "u11l1",
+        "u7l4"
       ],
       "plannedOnly": [
         "u11l1"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -10749,15 +10937,16 @@
           "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址"
         }
       ],
-      "depth": "index-only",
+      "depth": "independent-explanation",
       "targets": [
+        "u7l5",
         "u8l3"
       ],
       "plannedOnly": [
         "u8l3"
       ],
       "authoredLinks": [],
-      "gaps": "尚缺本条独立的机制、条件、反例和题解；主题关联与规划不算完成"
+      "gaps": "已有独立解释、条件、反例、方法与题解；仍待更广材料对照"
     },
     {
       "type": "principle",
@@ -12662,17 +12851,36 @@
       "type": "book",
       "id": "B3",
       "title": "反脆弱",
-      "supportedTopics": "脆弱受波动伤害，强韧抵抗波动，反脆弱在一定冲击范围内受益。能承受不等于能获益。",
+      "supportedTopics": "本模块所据材料与不覆盖的内容；三元结构是在同一种冲击范围内比较后果；整体从失败中进化，不等于个体从毁灭获益；冗余的成本买了什么权利；不干预与过度干预都需要看净后果；杠铃先隔离不可承受损失，才有实验空间；选择权包括放弃，也包括识别何时值得保留；试错不是原地重复失败；平均冲击可能把非线性后果藏掉；不知危机日期，也能检查哪里会被迫行动；林迪效应是存续启发，绝非年龄即安全；不可让自己的选择权由别人支付尾部；否定法先去已知坏结构，不保证剩下必优",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V18",
+          "date": "2026-01-12",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=vBu6zJAWcGs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B3",
           "locator": "三元结构、可选择性、非线性、否定法、切身利害诸卷；已有逐章笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B3",
         "u1l4",
         "u1l6",
         "u3l2",
@@ -12680,7 +12888,7 @@
         "u5l4",
         "u13l2"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "实读既有两段笔记的十五节投资与学习主题讲解；三元表、部分公式/图缺失，未补造；医疗营养政治内容不转为建议，非重新通读原书或全附录证明"
     },
     {
       "type": "book",
@@ -12727,17 +12935,45 @@
       "type": "book",
       "id": "B5",
       "title": "股票大作手回忆录",
-      "supportedTopics": "书中主张耐心跟随大趋势、保留安全垫、不让希望和消息代替独立判断。它是文学化交易叙事，不是可逐条核实的实盘审计。",
+      "supportedTopics": "先辨书、叙述者与历史年表；报价游戏与真实成交不是同一世界；大行情收益与频繁证明正确有张力；方向正确却资源先耗尽的机制；市场证明是规则语言，不是哲学上的永远正确；盈利后加码与价值下跌后重估是两种身份；结果错误与违反流程分开记录；极有说服力的数据也需要检查产生者；要市场替你付刚性账单会扭曲规则；大头寸不能假设随时变成显示市值；后半部派发故事是风险教育，不是操作手册；价格纪律与估值纪律都不能借对方豁免自己；把文学战绩变成可审计学习材料",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V38",
+          "date": "2025-12-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=wvTHsJ7UjZs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B5",
           "locator": "第1–10章及后半部消息、派发叙述；已有逐章笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B5",
         "u1l4",
         "u2l4",
         "u9l2",
@@ -12745,45 +12981,83 @@
         "u12l2",
         "u13l1"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "基于实读24章及附录既有笔记的十五节主题；文学化历史非逐项核史，不沿用笔记均价冲突；后半操纵故事只教辨险，非执行方法，未重新通读原书"
     },
     {
       "type": "book",
       "id": "B6",
       "title": "海龟交易法则",
-      "supportedTopics": "系统需同时规定入场、出场、仓位、相关性与执行，不能只复制突破信号。多数交易亏损也可能与正期望并存。",
+      "supportedTopics": "专业资金、期货规则与个人学习边界；规则不是一个入场信号，而是闭合决策系统；高胜率与系统优势为何分离；N是波动尺度，不是灾难损失上限；波动均衡与金额均衡不是同一个分散；同源风险叠加比单笔数字更关键；不设显式止损未必没有退出，更不等于不认错；回撤的幅度、长度与进入点都重要；参数峭壁说明你可能在拟合一次偶然；回测分母、可得时间与代表性；随机重排为什么可能把坏日子拆得太温柔；坚持与系统死亡之间须有可审计界线；与脑总的相通点和真实冲突",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B6",
           "locator": "第4–12章的风险、规则、回撤与拟合；已有逐章笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B6",
         "u1l3",
         "u1l5",
         "u9l2",
         "u9l3"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "实读既有逐章笔记与附录的十五节主题；正文/附录参数差异和表格错位未抹平；缺公式不复原、不承诺历史回报，非期货执行课程或本轮新通读原书"
     },
     {
       "type": "book",
       "id": "B7",
       "title": "通向财务自由之路",
-      "supportedTopics": "以初始计划风险为1R，评价每笔结果分布，再把系统期望、交易次数、成本、错误与仓位联系到目标。入场点只是系统的一部分。",
+      "supportedTopics": "谁的观点，哪种实践语境；先写资源与约束，才知道系统是否适合；系统把你的市场信念变成后果；系统包含设置、触发、退出、规模与应急；1R是事前比较单位，不是整笔投入或保证损失；期望要保留正负号和完整尾部；系统期望、机会次数与犯错都要在同一单位；退出在改变分布，不仅是在保护一笔浮盈；等金额、固定份数、按计划风险和按波动各隐含什么；算术期望未描绘账户经历；更多交易为何常需要更强优势而非更小心态；对结果负责，不等于责怪受害者或控制一切；撒普、尼森、脑总的风险语言不完全兼容",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B7",
           "locator": "第7、10–14章；第10–12章已有原文对校笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B7",
         "u1l5",
         "u2l3",
         "u2l4",
@@ -12793,93 +13067,178 @@
         "u12l4",
         "u13l1"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "据实读既有两段笔记的十五节主题；表13-2/14-6原有错误不充证据，客座观点分层；未重新通读原书，不是专业期货/期权/高频执行课程"
     },
     {
       "type": "book",
       "id": "B8",
       "title": "股市趋势技术分析",
-      "supportedTopics": "用价格与成交观察供需和趋势，强调主趋势互相确认与避免大额亏损；不能把图表名称当作确定因果。",
+      "supportedTopics": "经典正文和后版编者不能同署一种声音；价格图是供求结果，不完整记录供求原因；互证与多层趋势是为了少被局部动作误导；等差图与半对数图会改变你看见的斜率；形态是完成条件，不是相似轮廓；成交量必须放在位置与可比口径里读；支撑阻力是条件性买卖意愿，不是地板天花板合同；缺口的标签不能代替随后验证；量度目标是条件投影，不是估值；股票价格好看与个人责任可承担不同；技术确认、基准点与跳空的代价；机械系统与主观读图各有审计难点；不将经典经验百分比当当代胜率",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B8",
           "locator": "道氏理论、形态、趋势与交易策略诸章；已有逐章笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B8",
         "u1l2",
         "u9l1",
         "u9l2",
         "u11l2"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "实读第10版既有笔记的十五节主题；正文与编者分层，未重绘全部形态/核证原命中率，不提供做空/衍生品执行，非本轮重读全书"
     },
     {
       "type": "book",
       "id": "B9",
       "title": "日本蜡烛图技术新解",
-      "supportedTopics": "K线实体记录开收盘差，上下影线记录该时段极值；组合形态表达多空行为的一种解释，位置与确认比单根名称更重要。",
+      "supportedTopics": "图页缺失时不能声称复刻整本图例；四价能压缩信息，也必然丢掉信息；同形异义先问之前发生了什么；合成蜡烛线为什么不保留中间路径；吞噬、包孕和刺穿的关键在实体与条件；组合需要等后续，等待本身有成本；窗口定义与机械除权须先分开；理想形态也可能是坏的研究机会；失效条件要在你最愿意坚持前写；偏离均线是相对价格，不是相对价值；三线、砖形、钥匙图各自舍弃了什么；不同压缩图不能凭视觉宽度比较时间；先画得可重复，再问是否有价值",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B9",
           "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B9",
         "u9l1",
         "u9l3",
         "u12l3"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "实读OCR笔记的十五节主题与原创手算例；p290–292/312–314/359–361方格图和多组练习表缺失，未复刻；非逐图全书通读或短线执行课程"
     },
     {
       "type": "book",
       "id": "B10",
       "title": "主权个人",
-      "supportedTopics": "作者以技术改变暴力、组织与资产流动成本解释社会转型，并强调信息经济的技能溢价。它是有立场的宏观历史论述，不是已证定律。",
+      "supportedTopics": "1997正文、2020序与译者导读各自归属；暴力经济学是作者的解释模型，不是历史唯一原因；公司边界由哪几种交易成本决定；数字复制放大规模，也可放大竞争；人力资本要能跨工具迁移并被验收；技术提高总产出未必同时改善每个人处境；网络货币预言不等于全部现实加密资产；管辖竞争、退出与公共品不能只算一面；债务会让等待时代变化变成有期限赌局；把预言拆成对象、方向、数量与期限；作者对卖方利益的批评也适用于作者自己；宏大方向论与反预测哲学保持真实张力；读宏观书应留下两份不同产出",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V32",
+          "date": "2026-02-23",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=fPxaaKn7GEA",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V38",
+          "date": "2025-12-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=wvTHsJ7UjZs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B10",
           "locator": "第1–11章、后记与附录；已有逐章笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B10",
         "u2l5",
         "u2l6",
         "u3l7",
         "u10l2",
         "u13l3"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "据实读两段笔记的十五节技术/组织/技能/预测审计主题；1997正文、2020序与导读推广分层，未新核全部史料与预言，不含政治、税务或身份操作建议，非重读原书"
     },
     {
       "type": "book",
       "id": "B11",
       "title": "大国空巢",
-      "supportedTopics": "人口是长期需求、劳动力和信用的重要条件，但不是经济增长充分条件。年龄队列比总人数更能对应特定行业的潜在需求。",
+      "supportedTopics": "2013版论战书与后来笔记对照分开；总人数、年龄结构与人口流量不是同一变量；总和生育率不是今年出生数除总人口；队列账的基本关系可核，不代表未来参数已知；同一个抚养比可藏不同责任；从人口到产出至少再过参与和生产率两桥；出生队列到行业收入之间有多个可变乘数；房地产看人，还要看户与供给存量；人口统计争议不能靠选择喜欢的分母解决；政策变化与人数变化之间有长滞后；资源承载力既非永恒固定，也非无限免费；同作者多个情景不应事后挑中那个当唯一预测；金融养老最后仍要兑换真实商品与服务",
       "sources": [
         {
-          "kind": "既有书籍笔记",
+          "kind": "脑总带日期历史观点",
+          "ref": "V57",
+          "date": "2026-09-06",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V10",
+          "date": "2025-11-16",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=Xa0mv5KAKE8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
           "ref": "B11",
           "locator": "第1–9章；已有扫描版OCR全文笔记",
-          "access": "本地已有笔记；本轮未重新通读原书"
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "depth": "eight-field-core-summary",
+      "depth": "source-bounded-thematic-longform",
       "targets": [
+        "B11",
         "u10l3",
         "u13l3"
       ],
-      "gaps": "独立逐主题长讲、跨书分歧及充分题解尚待扩写；原书版本和缺失原文须先核，不能杜撰章节"
+      "gaps": "据实读2013版OCR笔记的十五节人口/队列/传导主题；旧数据非2026现值，事后比较非本轮新核；不复刻普查、不输出生育/婚姻政策建议或宏观择时，非新通读原书"
     },
     {
       "type": "book",

@@ -1,14 +1,16 @@
 {
-  "edition": "material-grounded-stage-3",
+  "edition": "material-grounded-stage-4",
   "notice": "覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。",
   "summary": {
     "lessons": 68,
     "longformLessons": 68,
     "books": 13,
-    "thematicBookModules": 5,
-    "independentPrinciples": 88,
+    "thematicBookModules": 13,
+    "independentPrinciples": 217,
     "evidenceChecks": 65,
-    "principleIndexOnly": 59,
+    "principleIndexOnly": 0,
+    "principleLinkedOnly": 0,
+    "principlesWithCourseLinks": 217,
     "unresolvedReferences": 4
   },
   "chapters": [
@@ -57,8 +59,107 @@
       "scope": "基于实读既有逐章笔记的十二节主题长讲；本轮未重新通读原书；图3-1/6-1/11-1等缺失，未补造；不是所有版本与技术细节的完备替代",
       "proseCharacters": 1919,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 12
+    },
+    {
+      "id": "B10",
+      "title": "《主权个人》：技术、组织与宏大预测的可检验边界",
+      "principles": [
+        2,
+        3,
+        11,
+        31,
+        38,
+        43,
+        49,
+        50,
+        61
+      ],
+      "checks": [],
+      "books": [
+        "B10"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V32",
+          "date": "2026-02-23",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=fPxaaKn7GEA",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V38",
+          "date": "2025-12-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=wvTHsJ7UjZs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B10",
+          "locator": "第1–11章、后记与附录；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "据实读两段笔记的十五节技术/组织/技能/预测审计主题；1997正文、2020序与导读推广分层，未新核全部史料与预言，不含政治、税务或身份操作建议，非重读原书",
+      "proseCharacters": 2787,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
+    },
+    {
+      "id": "B11",
+      "title": "《大国空巢》：队列、需求与人口推演的误差",
+      "principles": [
+        3,
+        26,
+        43,
+        45,
+        61,
+        74,
+        150,
+        160
+      ],
+      "checks": [],
+      "books": [
+        "B11"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V57",
+          "date": "2026-09-06",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V10",
+          "date": "2025-11-16",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=Xa0mv5KAKE8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B11",
+          "locator": "第1–9章；已有扫描版OCR全文笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "据实读2013版OCR笔记的十五节人口/队列/传导主题；旧数据非2026现值，事后比较非本轮新核；不复刻普查、不输出生育/婚姻政策建议或宏观择时，非新通读原书",
+      "proseCharacters": 2841,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
     },
     {
       "id": "B12",
@@ -106,7 +207,7 @@
       "scope": "依据实读既有笔记展开14节主要研究主题；不是本轮通读原书或整书全部讲透；历史全部案例、附录契约法律细节与逐表原文仍未逐一复核。",
       "proseCharacters": 3207,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 14
     },
     {
@@ -153,7 +254,7 @@
       "scope": "依据实读既有笔记展开12节可证主题与带日期预测审计；非原书18章逐章全覆盖，405图表完整数据及逐项行情核验仍缺，本轮不称整书讲透。",
       "proseCharacters": 2608,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 12
     },
     {
@@ -200,8 +301,58 @@
       "scope": "依据实读既有epub逐章笔记的十二节主题长讲；原图表及部分公式缺失，未重建证明；非本轮重读全书，未覆盖全部章节争论与技术附录",
       "proseCharacters": 1852,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 12
+    },
+    {
+      "id": "B3",
+      "title": "《反脆弱》：先画冲击与后果，再谈选择权",
+      "principles": [
+        9,
+        10,
+        11,
+        35,
+        39,
+        40,
+        43,
+        51,
+        158
+      ],
+      "checks": [],
+      "books": [
+        "B3"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V18",
+          "date": "2026-01-12",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=vBu6zJAWcGs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B3",
+          "locator": "三元结构、可选择性、非线性、否定法、切身利害诸卷；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "实读既有两段笔记的十五节投资与学习主题讲解；三元表、部分公式/图缺失，未补造；医疗营养政治内容不转为建议，非重新通读原书或全附录证明",
+      "proseCharacters": 2911,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
     },
     {
       "id": "B4",
@@ -251,8 +402,277 @@
       ],
       "proseCharacters": 2032,
       "exerciseCount": 1,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
+    },
+    {
+      "id": "B5",
+      "title": "《股票大作手回忆录》：传奇叙事、执行与不可模仿的风险",
+      "principles": [
+        22,
+        23,
+        42,
+        51,
+        91,
+        96,
+        115,
+        157,
+        187
+      ],
+      "checks": [],
+      "books": [
+        "B5"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V38",
+          "date": "2025-12-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=wvTHsJ7UjZs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B5",
+          "locator": "第1–10章及后半部消息、派发叙述；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "基于实读24章及附录既有笔记的十五节主题；文学化历史非逐项核史，不沿用笔记均价冲突；后半操纵故事只教辨险，非执行方法，未重新通读原书",
+      "proseCharacters": 2855,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
+    },
+    {
+      "id": "B6",
+      "title": "《海龟交易法则》：优势、规模与回测可靠性",
+      "principles": [
+        4,
+        6,
+        15,
+        25,
+        28,
+        43,
+        45,
+        110,
+        139,
+        205
+      ],
+      "checks": [],
+      "books": [
+        "B6"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B6",
+          "locator": "第4–12章的风险、规则、回撤与拟合；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "实读既有逐章笔记与附录的十五节主题；正文/附录参数差异和表格错位未抹平；缺公式不复原、不承诺历史回报，非期货执行课程或本轮新通读原书",
+      "proseCharacters": 2657,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
+    },
+    {
+      "id": "B7",
+      "title": "《通向财务自由之路》：从目标到R分布与可执行系统",
+      "principles": [
+        6,
+        7,
+        15,
+        23,
+        45,
+        91,
+        165,
+        175,
+        200,
+        205
+      ],
+      "checks": [],
+      "books": [
+        "B7"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "据实读既有两段笔记的十五节主题；表13-2/14-6原有错误不充证据，客座观点分层；未重新通读原书，不是专业期货/期权/高频执行课程",
+      "proseCharacters": 2789,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
+    },
+    {
+      "id": "B8",
+      "title": "《股市趋势技术分析》：图形语言与证据限制",
+      "principles": [
+        25,
+        28,
+        45,
+        91,
+        115,
+        137,
+        205,
+        207
+      ],
+      "checks": [],
+      "books": [
+        "B8"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B8",
+          "locator": "道氏理论、形态、趋势与交易策略诸章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "实读第10版既有笔记的十五节主题；正文与编者分层，未重绘全部形态/核证原命中率，不提供做空/衍生品执行，非本轮重读全书",
+      "proseCharacters": 2713,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
+    },
+    {
+      "id": "B9",
+      "title": "《日本蜡烛图技术新解》：从四个价格到条件判断",
+      "principles": [
+        7,
+        15,
+        25,
+        45,
+        91,
+        133,
+        137,
+        157,
+        205
+      ],
+      "checks": [],
+      "books": [
+        "B9"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B9",
+          "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "实读OCR笔记的十五节主题与原创手算例；p290–292/312–314/359–361方格图和多组练习表缺失，未复刻；非逐图全书通读或短线执行课程",
+      "proseCharacters": 2753,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-4",
+      "sectionCount": 15
     },
     {
       "id": "u10l1",
@@ -302,7 +722,7 @@
       ],
       "proseCharacters": 1212,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -354,7 +774,7 @@
       ],
       "proseCharacters": 1273,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -406,7 +826,7 @@
       ],
       "proseCharacters": 1241,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -470,7 +890,7 @@
       ],
       "proseCharacters": 1239,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -535,7 +955,7 @@
       ],
       "proseCharacters": 1236,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -587,7 +1007,7 @@
       ],
       "proseCharacters": 1235,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -648,7 +1068,7 @@
       ],
       "proseCharacters": 1243,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -717,7 +1137,7 @@
       ],
       "proseCharacters": 1255,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -785,7 +1205,7 @@
       ],
       "proseCharacters": 1282,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -853,7 +1273,7 @@
       ],
       "proseCharacters": 1248,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -903,7 +1323,7 @@
       ],
       "proseCharacters": 1256,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -962,7 +1382,7 @@
       ],
       "proseCharacters": 1291,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1015,7 +1435,7 @@
       ],
       "proseCharacters": 2203,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1062,7 +1482,7 @@
       ],
       "proseCharacters": 2040,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1115,7 +1535,7 @@
       ],
       "proseCharacters": 2107,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1169,7 +1589,7 @@
       ],
       "proseCharacters": 1975,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1233,7 +1653,7 @@
       ],
       "proseCharacters": 1940,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1290,7 +1710,7 @@
       ],
       "proseCharacters": 1936,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1345,7 +1765,7 @@
       ],
       "proseCharacters": 2021,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1392,7 +1812,7 @@
       ],
       "proseCharacters": 1708,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1447,7 +1867,7 @@
       ],
       "proseCharacters": 1637,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1501,7 +1921,7 @@
       ],
       "proseCharacters": 1582,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1564,7 +1984,7 @@
       ],
       "proseCharacters": 1563,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1617,7 +2037,7 @@
       ],
       "proseCharacters": 1528,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1682,7 +2102,7 @@
       ],
       "proseCharacters": 1515,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1738,7 +2158,7 @@
       ],
       "proseCharacters": 1577,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1803,7 +2223,7 @@
       ],
       "proseCharacters": 1499,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1867,7 +2287,7 @@
       ],
       "proseCharacters": 1585,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1925,7 +2345,7 @@
       ],
       "proseCharacters": 1508,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -1981,7 +2401,7 @@
       ],
       "proseCharacters": 1476,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2039,7 +2459,7 @@
       ],
       "proseCharacters": 1486,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2105,7 +2525,7 @@
       ],
       "proseCharacters": 1477,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2162,7 +2582,7 @@
       ],
       "proseCharacters": 1536,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2218,7 +2638,7 @@
       ],
       "proseCharacters": 1539,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2283,7 +2703,7 @@
       ],
       "proseCharacters": 1434,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2331,7 +2751,7 @@
       ],
       "proseCharacters": 1393,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2387,7 +2807,7 @@
       ],
       "proseCharacters": 1448,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2444,7 +2864,7 @@
       ],
       "proseCharacters": 1387,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2500,7 +2920,7 @@
       ],
       "proseCharacters": 1474,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2555,7 +2975,7 @@
       ],
       "proseCharacters": 1416,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2610,7 +3030,7 @@
       ],
       "proseCharacters": 1488,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2664,7 +3084,7 @@
       ],
       "proseCharacters": 1436,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2721,7 +3141,7 @@
       ],
       "proseCharacters": 1447,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2774,7 +3194,7 @@
       ],
       "proseCharacters": 1527,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2839,7 +3259,7 @@
       ],
       "proseCharacters": 1480,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2904,7 +3324,7 @@
       ],
       "proseCharacters": 1505,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2941,7 +3361,7 @@
       ],
       "proseCharacters": 1405,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -2984,7 +3404,7 @@
       ],
       "proseCharacters": 1399,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3039,7 +3459,7 @@
       ],
       "proseCharacters": 1370,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3089,7 +3509,7 @@
       ],
       "proseCharacters": 1386,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3133,7 +3553,7 @@
       ],
       "proseCharacters": 1320,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3178,7 +3598,7 @@
       ],
       "proseCharacters": 1441,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3212,7 +3632,7 @@
       ],
       "proseCharacters": 1382,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3266,7 +3686,7 @@
       ],
       "proseCharacters": 1336,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3307,7 +3727,7 @@
       ],
       "proseCharacters": 1398,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3362,7 +3782,7 @@
       ],
       "proseCharacters": 1329,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3424,7 +3844,7 @@
       ],
       "proseCharacters": 1283,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3479,7 +3899,7 @@
       ],
       "proseCharacters": 1278,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3538,7 +3958,7 @@
       ],
       "proseCharacters": 1287,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3590,7 +4010,7 @@
       ],
       "proseCharacters": 1301,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3640,7 +4060,7 @@
       ],
       "proseCharacters": 1228,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3683,7 +4103,7 @@
       ],
       "proseCharacters": 1255,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3737,7 +4157,7 @@
       ],
       "proseCharacters": 1219,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3791,7 +4211,7 @@
       ],
       "proseCharacters": 1293,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3845,7 +4265,7 @@
       ],
       "proseCharacters": 1241,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3897,7 +4317,7 @@
       ],
       "proseCharacters": 1223,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -3954,7 +4374,7 @@
       ],
       "proseCharacters": 1219,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     },
     {
@@ -4018,7 +4438,7 @@
       ],
       "proseCharacters": 1236,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-3",
+      "edition": "material-grounded-stage-4",
       "sectionCount": 8
     }
   ]

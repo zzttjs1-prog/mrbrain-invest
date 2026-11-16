@@ -10,13 +10,13 @@ const chapter=id=>chapters.find(c=>c.id===id);
 const body=id=>chapter(id).sections.flatMap(s=>[s.title,...s.paragraphs,...s.answer]).join('\n');
 const near=(a,b,epsilon=1e-4)=>assert.ok(Math.abs(a-b)<epsilon,`${a} != ${b}`);
 
-test('stage3 all 68 stable IDs have authored chapters but 129 principles and eight book modules remain unfinished',()=>{
+test('all 68 stable IDs retain authored chapters; 217 principle studies and 13 source-bounded thematic book modules exist',()=>{
  const lessons=Array.from({length:13},(_,i)=>read('public/data/U'+(i+1)+'.json').lessons).flat();
  assert.equal(lessons.length,68);assert.equal(new Set(lessons.map(l=>l.id)).size,68);
  for(const l of lessons){const c=chapter(l.id);assert.ok(c.title);if(Number(l.id.split('l')[0].slice(1))>=6)assert.equal(c.title,l.title);assert.equal(c.sections.length,8);assert.equal(c.exerciseCount,2);assert.ok(c.proseCharacters>1100,l.id);}
  const summary=read('public/data/coverage.json').summary;
- assert.equal(summary.longformLessons,68);assert.equal(summary.independentPrinciples,88);assert.equal(summary.evidenceChecks,65);assert.equal(summary.thematicBookModules,5);
- assert.equal(217-summary.independentPrinciples,129);assert.equal(13-summary.thematicBookModules,8);
+ assert.equal(summary.longformLessons,68);assert.equal(summary.independentPrinciples,217);assert.equal(summary.evidenceChecks,65);assert.equal(summary.thematicBookModules,13);
+ assert.equal(217-summary.independentPrinciples,0);assert.equal(13-summary.thematicBookModules,0);
  assert.match(text('src/main.js'),/仍非13书全部讲透/);
 });
 
@@ -67,7 +67,7 @@ test('B1/B2 state actual material limits rather than reconstruct absent diagrams
  for(const c of chapters)for(const m of body(c.id).matchAll(/(V\d+)（(\d{4}-\d{2}-\d{2})）/g))assert.equal(m[2],dates[m[1]],c.id+' '+m[1]);
 });
 
-test('all65 check workflows and 88 independent studies have genuine distinct evidence/teaching fields and real anchors',()=>{
+test('all65 check workflows and 217 independent studies have genuine distinct evidence/teaching fields and real anchors',()=>{
  const checks=read('content/check-studies.json'),principles=read('content/principle-studies.json');
  assert.deepEqual(Object.keys(checks).map(Number).sort((a,b)=>a-b),Array.from({length:65},(_,i)=>i+1));
  const fingerprints=new Set();
@@ -77,7 +77,7 @@ test('all65 check workflows and 88 independent studies have genuine distinct evi
   const signature=keys.map(k=>study[k]).join('\n');assert.ok(!fingerprints.has(signature));fingerprints.add(signature);
   assert.ok(chapter(study.lesson).sections.some(s=>s.id===study.section),study.lesson+' '+study.section);
  }
- assert.equal(fingerprints.size,153);
+ assert.equal(fingerprints.size,282);
 });
 
 test('every new chapter position and answer survives backup, reopen, current-code and old-code merge without XP mutation',()=>{
@@ -89,5 +89,5 @@ test('every new chapter position and answer survives backup, reopen, current-cod
  const reopened=loadProgress(storage).state,imported=decode(encode(reopened));
  const merged=mergeProgress(imported,decode(btoa(unescape(encodeURIComponent(JSON.stringify(old))))));
  assert.deepEqual(merged.reading,state.reading);assert.equal(merged.xp,360);assert.equal(merged.current,'u1l7');assert.equal(Object.values(merged.lessons).reduce((sum,l)=>sum+l.stars,0),18);
- assert.equal(Object.keys(merged.reading).length,73);
+ assert.equal(Object.keys(merged.reading).length,81);
 });

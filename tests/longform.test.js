@@ -8,20 +8,20 @@ const catalog=read('public/data/chapters/index.json');
 const chapters=catalog.chapters.map(c=>read('public/data/chapters/'+c.id+'.json'));
 const ledger=read('public/data/coverage.json');
 const all=chapters.map(c=>c.sections.flatMap(s=>[...s.paragraphs,...s.answer]).join('\n'));
-test('stage has all 68 distinct course longforms and five explicitly source-bounded book modules',()=>{
+test('stage has all 68 distinct course longforms and 13 explicitly source-bounded thematic book modules',()=>{
  assert.deepEqual(chapters.filter(c=>c.id.startsWith('u')).map(c=>c.id),[7,6,7,8,6,9,5,5,3,3,2,4,3].flatMap((n,u)=>Array.from({length:n},(_,i)=>'u'+(u+1)+'l'+(i+1))).sort());
- assert.equal(chapters.length,73);for(const c of chapters){assert.ok(c.sections.length>=8);assert.equal(new Set(c.sections.map(s=>s.id)).size,c.sections.length);for(const s of c.sections)assert.ok(s.attribution&&s.paragraphs.length);}
- assert.equal(new Set(all).size,73);assert.match(chapters.find(c=>c.id==='B4').scope,/不是全书/);
- assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,145);
+ assert.equal(chapters.length,81);for(const c of chapters){assert.ok(c.sections.length>=8);assert.equal(new Set(c.sections.map(s=>s.id)).size,c.sections.length);for(const s of c.sections)assert.ok(s.attribution&&s.paragraphs.length);}
+ assert.equal(new Set(all).size,81);assert.match(chapters.find(c=>c.id==='B4').scope,/不是全书/);
+ assert.equal(chapters.flatMap(c=>c.sections).filter(s=>s.answer.length).length,161);
 });
 test('all 363 matrix rows have support, actual depth, explicit gaps and planned targets',()=>{
  assert.equal(ledger.rows.length,363);assert.equal(new Set(ledger.rows.map(r=>r.id)).size,363);
  for(const r of ledger.rows){assert.ok(r.supportedTopics&&r.depth&&r.gaps&&r.targets.length,r.id);assert.ok(r.sources.length,r.id+' source');}
  assert.equal(ledger.rows.filter(r=>r.type==='lesson'&&r.depth==='eight-section-longform').length,68);
- assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='independent-explanation').length,88);
+ assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='independent-explanation').length,217);
  assert.equal(ledger.rows.filter(r=>r.type==='check'&&r.depth==='evidence-procedure').length,65);
- assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only').length,59);
- assert.equal(ledger.rows.filter(r=>r.type==='book'&&r.depth==='eight-field-core-summary').length,8);
+ assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only').length,0);
+ assert.equal(ledger.rows.filter(r=>r.type==='book'&&r.depth==='eight-field-core-summary').length,0);
 });
 test('principle and checklist explanations link to actual stable sections, not invented anchors',()=>{
  const k=read('public/data/knowledge.json');

@@ -1,4 +1,4 @@
-const V='mb-v13-stage3-20261116';const B='/mrbrain-invest/';
+const V='mb-v14-stage4-20261116';const B='/mrbrain-invest/';
 self.addEventListener('install',e=>{e.waitUntil((async()=>{
  const response=await fetch(B+'data/chapters/index.json',{cache:'reload'});
  if(!response.ok)throw new Error('Chapter catalog unavailable; keep previous offline version');
