@@ -61,7 +61,7 @@ async function home(){
  const stars=Object.values(S.lessons).reduce((a,b)=>a+(b.stars||0),0);const total=idx.reduce((a,u)=>a+u.lessons.length,0);
  $('.pg').innerHTML=`
  <section class="hero card in"><div class="hl"><div class="lbl">精品课进度</div><div class="big">${done}<small> / ${all.length}</small></div><div class="ts">${total}课新增核心研习 · 13本书概念融入</div></div><div class="rw">${ring(all.length?done/all.length:0)}<b>${Math.round(all.length?done/all.length*100:0)}%</b></div></section>
- <p class="note">U1–U5共${COVERAGE.longformLessons}课已有各8节分章长讲；其他${68-COVERAGE.longformLessons}课仍为核心补充。《非对称风险》《证券分析》《康波》有独立主题研习，非13书全部讲透。<a class="src" href="#/coverage">查看逐项覆盖与缺口</a></p>
+ <p class="note">68课均已有8节分章长讲与独立题解；${COVERAGE.thematicBookModules}本书有材料范围内独立主题研习。原则独立解释${COVERAGE.independentPrinciples}/217、检查流程${COVERAGE.evidenceChecks}/65，仍非13书全部讲透。<a class="src" href="#/coverage">查看逐项覆盖与缺口</a></p>
  <section class="stats in d1"><div class="st">${ic('flame','a')}<b>${streak()}</b><span>连续天数</span></div><div class="st">${ic('bolt','a')}<b>${S.xp}</b><span>经验值</span></div><div class="st">${ic('star','a')}<b>${stars}</b><span>星星</span></div></section>
  <a class="cont card in d2 syn" href="#/sync"><div><div class="lbl">账号与进度同步</div><div class="ts">${USER?esc(cloudMessage):'本机浏览器保存 · 建议定期导出同步码备份'}</div></div><span class="go">${ic('arrow')}</span></a>
  <a class="cont card in d2" href="${learningHref(next.id)}"><div><div class="lbl">${done?'继续学习':'从这里开始'} · ${shortT(next.u.title)}</div><div class="ct">${esc(next.t)}</div><div class="ts">可分段学 · 机制/边界/反例/练习解析</div></div><span class="go">${ic('arrow')}</span></a>

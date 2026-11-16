@@ -42,7 +42,7 @@ test('manifest and icons have exactly one base in actual Vite dev and built prev
 });
 
 test('manifest generation equals authored content and exposes book scope without full-book claims',()=>{
- assert.equal(COVERAGE.longformLessons,34);assert.equal(COVERAGE.thematicBookModules,3);
+ assert.equal(COVERAGE.longformLessons,68);assert.equal(COVERAGE.thematicBookModules,5);
  for(const c of chapters)assert.equal(CHAPTERS[c.id].sectionCount,c.sections.length);
  assert.equal(CHAPTERS.B12.sectionCount,14);assert.equal(CHAPTERS.B13.sectionCount,12);
  assert.match(CHAPTERS.B12.scope,/不是本轮通读/);assert.match(CHAPTERS.B13.scope,/405/);
@@ -107,11 +107,11 @@ test('service worker installs every actual module, aborts safely if catalog fail
   runInNewContext(text('public/sw.js'),{
    self:{addEventListener:(name,fn)=>handlers[name]=fn,skipWaiting:async()=>skipped++,clients:{claim:async()=>{}}},
    fetch:async()=>({ok:healthy,json:async()=>read('public/data/chapters/index.json')}),
-   caches:{open:async()=>({addAll:async assets=>stored.push(...assets)}),keys:async()=>['mb-v11-stage1-20261116','mb-v12-stage2-20261116','another-app'],delete:async key=>deleted.push(key)},
+   caches:{open:async()=>({addAll:async assets=>stored.push(...assets)}),keys:async()=>['mb-v11-stage1-20261116','mb-v12-stage2-20261116','mb-v13-stage3-20261116','another-app'],delete:async key=>deleted.push(key)},
   });
   handlers.install({waitUntil:p=>wait=p});
   if(healthy){await wait;assert.equal(skipped,1);for(const id of Object.keys(CHAPTERS))assert.ok(stored.includes('/mrbrain-invest/data/chapters/'+id+'.json'),id);
-   handlers.activate({waitUntil:p=>wait=p});await wait;assert.deepEqual(deleted,['mb-v11-stage1-20261116']);
+   handlers.activate({waitUntil:p=>wait=p});await wait;assert.deepEqual(deleted,['mb-v11-stage1-20261116','mb-v12-stage2-20261116']);
   }else{await assert.rejects(wait,/keep previous offline version/);assert.equal(skipped,0);assert.deepEqual(deleted,[]);}
  }
  assert.doesNotMatch(text('public/sw.js'),/localStorage|indexedDB|mb-progress-v2/);

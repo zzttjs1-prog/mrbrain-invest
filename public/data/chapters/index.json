@@ -1,17 +1,65 @@
 {
-  "edition": "material-grounded-stage-2",
+  "edition": "material-grounded-stage-3",
   "notice": "覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。",
   "summary": {
     "lessons": 68,
-    "longformLessons": 34,
+    "longformLessons": 68,
     "books": 13,
-    "thematicBookModules": 3,
-    "independentPrinciples": 54,
-    "evidenceChecks": 37,
-    "principleIndexOnly": 62,
+    "thematicBookModules": 5,
+    "independentPrinciples": 88,
+    "evidenceChecks": 65,
+    "principleIndexOnly": 59,
     "unresolvedReferences": 4
   },
   "chapters": [
+    {
+      "id": "B1",
+      "title": "《随机漫步的傻瓜》：把运气、路径与判断质量拆开",
+      "principles": [
+        6,
+        14,
+        15,
+        16,
+        43,
+        44,
+        45
+      ],
+      "checks": [],
+      "books": [
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V105",
+          "date": "2026-10-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=jReyjmpAU5w",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "基于实读既有逐章笔记的十二节主题长讲；本轮未重新通读原书；图3-1/6-1/11-1等缺失，未补造；不是所有版本与技术细节的完备替代",
+      "proseCharacters": 1919,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 12
+    },
     {
       "id": "B12",
       "title": "证券分析：从证据到可承受价格",
@@ -58,7 +106,7 @@
       "scope": "依据实读既有笔记展开14节主要研究主题；不是本轮通读原书或整书全部讲透；历史全部案例、附录契约法律细节与逐表原文仍未逐一复核。",
       "proseCharacters": 3207,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 14
     },
     {
@@ -105,7 +153,54 @@
       "scope": "依据实读既有笔记展开12节可证主题与带日期预测审计；非原书18章逐章全覆盖，405图表完整数据及逐项行情核验仍缺，本轮不称整书讲透。",
       "proseCharacters": 2608,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 12
+    },
+    {
+      "id": "B2",
+      "title": "《黑天鹅》：在预测边界内设计可承受的后果",
+      "principles": [
+        14,
+        16,
+        43,
+        49,
+        51,
+        105
+      ],
+      "checks": [],
+      "books": [
+        "B2"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V95",
+          "date": "2026-09-17",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B2",
+          "locator": "第1–13、14–19章及后记；已有epub逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "scope": "依据实读既有epub逐章笔记的十二节主题长讲；原图表及部分公式缺失，未重建证明；非本轮重读全书，未覆盖全部章节争论与技术附录",
+      "proseCharacters": 1852,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
       "sectionCount": 12
     },
     {
@@ -156,7 +251,718 @@
       ],
       "proseCharacters": 2032,
       "exerciseCount": 1,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u10l1",
+      "title": "利率与估值：资产的引力",
+      "principles": [
+        97,
+        150,
+        160,
+        193
+      ],
+      "checks": [],
+      "books": [
+        "B12",
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V95",
+          "date": "2026-09-17",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1212,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u10l2",
+      "title": "信用货币、通胀与美林时钟",
+      "principles": [
+        29,
+        46,
+        150
+      ],
+      "checks": [
+        46
+      ],
+      "books": [
+        "B13",
+        "B10"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V9",
+          "date": "2025-11-13",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=4ewrGvc6PqM",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V95",
+          "date": "2026-09-17",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B10",
+          "locator": "第1–11章、后记与附录；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1273,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u10l3",
+      "title": "人口与熊市诱因",
+      "principles": [
+        74,
+        97,
+        159
+      ],
+      "checks": [
+        21
+      ],
+      "books": [
+        "B11",
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V57",
+          "date": "2026-09-06",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V65",
+          "date": "2026-04-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B11",
+          "locator": "第1–9章；已有扫描版OCR全文笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1241,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u11l1",
+      "title": "行业分析框架",
+      "principles": [
+        80,
+        123,
+        140,
+        178
+      ],
+      "checks": [
+        27,
+        41,
+        53
+      ],
+      "books": [
+        "B12",
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V105",
+          "date": "2026-10-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=jReyjmpAU5w",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V60",
+          "date": "2026-04-04",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V82",
+          "date": "2026-02-19",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1239,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u11l2",
+      "title": "上下游互验与卡位",
+      "principles": [
+        93,
+        105,
+        122,
+        137,
+        191
+      ],
+      "checks": [
+        39,
+        30,
+        56
+      ],
+      "books": [
+        "B8",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V88",
+          "date": "2026-03",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B8",
+          "locator": "道氏理论、形态、趋势与交易策略诸章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B4",
+          "locator": "第1–2、5–7、19章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1236,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u12l1",
+      "title": "建仓是一个过程",
+      "principles": [
+        88,
+        157,
+        186
+      ],
+      "checks": [
+        50
+      ],
+      "books": [
+        "B5",
+        "B7"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V96",
+          "date": "2026-09-21",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V106",
+          "date": "2026-10-04",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B5",
+          "locator": "第1–10章及后半部消息、派发叙述；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1235,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u12l2",
+      "title": "卖出决策树与先出本",
+      "principles": [
+        22,
+        23,
+        200,
+        213
+      ],
+      "checks": [
+        15,
+        59
+      ],
+      "books": [
+        "B5",
+        "B7",
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V6",
+          "date": "2025-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=nMEOcS8hzgg",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B5",
+          "locator": "第1–10章及后半部消息、派发叙述；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1243,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u12l3",
+      "title": "认错与分散代替止损",
+      "principles": [
+        139,
+        205,
+        212
+      ],
+      "checks": [
+        60,
+        63
+      ],
+      "books": [
+        "B7",
+        "B9",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V86",
+          "date": "2026-03-05",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V111",
+          "date": "2026-11-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B9",
+          "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B4",
+          "locator": "第1–2、5–7、19章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1255,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u12l4",
+      "title": "研究流程：从问题到结论",
+      "principles": [
+        68,
+        69,
+        102,
+        178,
+        190
+      ],
+      "checks": [],
+      "books": [
+        "B12",
+        "B7",
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V105",
+          "date": "2026-10-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=jReyjmpAU5w",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1282,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u13l1",
+      "title": "心态与回撤冷静机制",
+      "principles": [
+        8,
+        139,
+        205
+      ],
+      "checks": [],
+      "books": [
+        "B7",
+        "B5"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V10",
+          "date": "2025-11-16",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=Xa0mv5KAKE8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V86",
+          "date": "2026-03-05",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V111",
+          "date": "2026-11-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B7",
+          "locator": "第7、10–14章；第10–12章已有原文对校笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B5",
+          "locator": "第1–10章及后半部消息、派发叙述；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1248,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u13l2",
+      "title": "心力：投资是耗精力的",
+      "principles": [
+        36,
+        38,
+        198
+      ],
+      "checks": [],
+      "books": [
+        "B1",
+        "B3"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V33",
+          "date": "2026-02-12",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=TJ7607eKFAg",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B3",
+          "locator": "三元结构、可选择性、非线性、否定法、切身利害诸卷；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1256,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u13l3",
+      "title": "先投人力资本",
+      "principles": [
+        2,
+        3,
+        37,
+        169,
+        185
+      ],
+      "checks": [],
+      "books": [
+        "B10",
+        "B11",
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V10",
+          "date": "2025-11-16",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=Xa0mv5KAKE8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V5",
+          "date": "2025-10-15",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=_1C1mRhUYwo",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B10",
+          "locator": "第1–11章、后记与附录；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B11",
+          "locator": "第1–9章；已有扫描版OCR全文笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1291,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -209,7 +1015,7 @@
       ],
       "proseCharacters": 2203,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -256,7 +1062,7 @@
       ],
       "proseCharacters": 2040,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -309,7 +1115,7 @@
       ],
       "proseCharacters": 2107,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -363,7 +1169,7 @@
       ],
       "proseCharacters": 1975,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -427,7 +1233,7 @@
       ],
       "proseCharacters": 1940,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -484,7 +1290,7 @@
       ],
       "proseCharacters": 1936,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -539,7 +1345,7 @@
       ],
       "proseCharacters": 2021,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -586,7 +1392,7 @@
       ],
       "proseCharacters": 1708,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -639,9 +1445,9 @@
           "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "proseCharacters": 1631,
+      "proseCharacters": 1637,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -695,7 +1501,7 @@
       ],
       "proseCharacters": 1582,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -758,7 +1564,7 @@
       ],
       "proseCharacters": 1563,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -811,7 +1617,7 @@
       ],
       "proseCharacters": 1528,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -876,7 +1682,7 @@
       ],
       "proseCharacters": 1515,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -932,7 +1738,7 @@
       ],
       "proseCharacters": 1577,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -997,7 +1803,7 @@
       ],
       "proseCharacters": 1499,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1059,9 +1865,9 @@
           "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "proseCharacters": 1576,
+      "proseCharacters": 1585,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1117,9 +1923,9 @@
           "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "proseCharacters": 1507,
+      "proseCharacters": 1508,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1175,7 +1981,7 @@
       ],
       "proseCharacters": 1476,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1233,7 +2039,7 @@
       ],
       "proseCharacters": 1486,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1299,7 +2105,7 @@
       ],
       "proseCharacters": 1477,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1354,9 +2160,9 @@
           "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
         }
       ],
-      "proseCharacters": 1527,
+      "proseCharacters": 1536,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1412,7 +2218,7 @@
       ],
       "proseCharacters": 1539,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1477,7 +2283,7 @@
       ],
       "proseCharacters": 1434,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1525,7 +2331,7 @@
       ],
       "proseCharacters": 1393,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1581,7 +2387,7 @@
       ],
       "proseCharacters": 1448,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1638,7 +2444,7 @@
       ],
       "proseCharacters": 1387,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1694,7 +2500,7 @@
       ],
       "proseCharacters": 1474,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1749,7 +2555,7 @@
       ],
       "proseCharacters": 1416,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1804,7 +2610,7 @@
       ],
       "proseCharacters": 1488,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1858,7 +2664,7 @@
       ],
       "proseCharacters": 1436,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1915,7 +2721,7 @@
       ],
       "proseCharacters": 1447,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -1968,7 +2774,7 @@
       ],
       "proseCharacters": 1527,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -2033,7 +2839,7 @@
       ],
       "proseCharacters": 1480,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     },
     {
@@ -2098,7 +2904,1121 @@
       ],
       "proseCharacters": 1505,
       "exerciseCount": 2,
-      "edition": "material-grounded-stage-2",
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l1",
+      "title": "估值是什么：好公司 ≠ 好价格",
+      "principles": [
+        13,
+        67,
+        135
+      ],
+      "checks": [
+        9,
+        18
+      ],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1405,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l2",
+      "title": "PE：市盈率怎么用",
+      "principles": [
+        82,
+        135,
+        173
+      ],
+      "checks": [],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V65",
+          "date": "2026-04-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1399,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l3",
+      "title": "PB 与 ROE÷PB：把股票当债券看",
+      "principles": [
+        62,
+        95,
+        136,
+        214
+      ],
+      "checks": [
+        64
+      ],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V45",
+          "date": "2026-06-03",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V52",
+          "date": "2026-08-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V111",
+          "date": "2026-11-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1370,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l4",
+      "title": "PEG：给增长定价",
+      "principles": [
+        67,
+        140,
+        173
+      ],
+      "checks": [],
+      "books": [
+        "B12",
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V102",
+          "date": "2025-09-28",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=a4gJpWZHdD8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1386,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l5",
+      "title": "现金收益率：和无风险利率比",
+      "principles": [
+        66,
+        103,
+        111,
+        201
+      ],
+      "checks": [],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V70",
+          "date": "2026-06-14",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1320,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l6",
+      "title": "DCF 直觉：未来的钱值多少",
+      "principles": [
+        78,
+        87,
+        135
+      ],
+      "checks": [
+        64
+      ],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V59",
+          "date": "2026-04-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1441,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l7",
+      "title": "《证券分析》：平均收益与保守估值",
+      "principles": [
+        62,
+        85,
+        135
+      ],
+      "checks": [],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1382,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l8",
+      "title": "烟蒂股：格雷厄姆—施洛斯方法",
+      "principles": [
+        85,
+        86,
+        119
+      ],
+      "checks": [
+        23
+      ],
+      "books": [
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V65",
+          "date": "2026-04-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V77",
+          "date": "2026-08-13",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V78",
+          "date": "2026-08-27",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1336,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u6l9",
+      "title": "长期回报三分法",
+      "principles": [
+        4,
+        92,
+        168
+      ],
+      "checks": [],
+      "books": [
+        "B12",
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V99",
+          "date": "2025-10-11",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=nT8GGAkhwz0",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1398,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u7l1",
+      "title": "什么是周期",
+      "principles": [
+        26,
+        89,
+        97
+      ],
+      "checks": [
+        11,
+        25
+      ],
+      "books": [
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V11",
+          "date": "2026-02-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=VP09PAKYUq4",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V41",
+          "date": "2026-05-10",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V105",
+          "date": "2026-10-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=jReyjmpAU5w",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1329,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u7l2",
+      "title": "周期股的估值陷阱",
+      "principles": [
+        27,
+        62,
+        89,
+        155
+      ],
+      "checks": [
+        29
+      ],
+      "books": [
+        "B12",
+        "B13"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V69",
+          "date": "2026-06-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V96",
+          "date": "2026-09-21",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1283,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u7l3",
+      "title": "渗透率：新行业的生命周期",
+      "principles": [
+        27,
+        118,
+        134,
+        159
+      ],
+      "checks": [
+        21,
+        37,
+        27
+      ],
+      "books": [
+        "B13",
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V53",
+          "date": "2026-08-16",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V83",
+          "date": "2026-02-23",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1278,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u7l4",
+      "title": "商品价格通道与成本曲线",
+      "principles": [
+        89,
+        145,
+        189
+      ],
+      "checks": [],
+      "books": [
+        "B13",
+        "B12"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V79",
+          "date": "2026-02-09",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "仅AI摘要，不是原话；部分日期仅约2026-03"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V87",
+          "date": "2026-03",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "仅AI摘要，不是原话；部分日期仅约2026-03"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B13",
+          "locator": "第1–18章、序跋；已有2026-10-27通读笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1287,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u7l5",
+      "title": "下跌三分法：分清为什么跌",
+      "principles": [
+        65,
+        86,
+        109
+      ],
+      "checks": [
+        19
+      ],
+      "books": [
+        "B12",
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V43",
+          "date": "2026-05-24",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V69",
+          "date": "2026-06-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1301,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u8l1",
+      "title": "钟摆：市场在贪婪与恐惧之间摇摆",
+      "principles": [
+        12,
+        99,
+        147
+      ],
+      "checks": [],
+      "books": [
+        "B1",
+        "B2"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V51",
+          "date": "2026-07-19",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B2",
+          "locator": "第1–13、14–19章及后记；已有epub逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1228,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u8l2",
+      "title": "叙事谬误与幸存者偏差",
+      "principles": [
+        14,
+        43,
+        45
+      ],
+      "checks": [
+        13
+      ],
+      "books": [
+        "B1",
+        "B2"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B2",
+          "locator": "第1–13、14–19章及后记；已有epub逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1255,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u8l3",
+      "title": "共识与逆向",
+      "principles": [
+        107,
+        110,
+        147,
+        203
+      ],
+      "checks": [
+        32,
+        45
+      ],
+      "books": [
+        "B1",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V71",
+          "date": "2026-05-20",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V94",
+          "date": "2026-09-13",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B4",
+          "locator": "第1–2、5–7、19章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1219,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u8l4",
+      "title": "股价三层驱动",
+      "principles": [
+        98,
+        99,
+        116,
+        213
+      ],
+      "checks": [
+        26,
+        40
+      ],
+      "books": [
+        "B12",
+        "B2"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V67",
+          "date": "2026-05-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V111",
+          "date": "2026-11-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B12",
+          "locator": "第4、6–11、31–45、50–52章；既有笔记标PDF p153–155、p699–721、p782–791、p909–910等",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B2",
+          "locator": "第1–13、14–19章及后记；已有epub逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1293,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u8l5",
+      "title": "泡沫识别与恐慌底",
+      "principles": [
+        16,
+        104,
+        115,
+        179
+      ],
+      "checks": [
+        43,
+        62
+      ],
+      "books": [
+        "B2",
+        "B1"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V73",
+          "date": "2026-06-10",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V105",
+          "date": "2026-10-01",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=jReyjmpAU5w",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B2",
+          "locator": "第1–13、14–19章及后记；已有epub逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B1",
+          "locator": "第2–3、6–9章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1241,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u9l1",
+      "title": "均线：市场的平均成本",
+      "principles": [
+        25,
+        91,
+        137
+      ],
+      "checks": [
+        10
+      ],
+      "books": [
+        "B8",
+        "B9"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V7",
+          "date": "2025-10-22",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "https://www.youtube.com/watch?v=eV2YqJYfjUQ",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V88",
+          "date": "2026-03",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B8",
+          "locator": "道氏理论、形态、趋势与交易策略诸章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B9",
+          "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1223,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u9l2",
+      "title": "支撑、阻力与趋势",
+      "principles": [
+        91,
+        115,
+        137
+      ],
+      "checks": [],
+      "books": [
+        "B6",
+        "B8",
+        "B9"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V88",
+          "date": "2026-03",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V64",
+          "date": "2026-04-19",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B6",
+          "locator": "第4–12章的风险、规则、回撤与拟合；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B8",
+          "locator": "道氏理论、形态、趋势与交易策略诸章；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B9",
+          "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1219,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
+      "sectionCount": 8
+    },
+    {
+      "id": "u9l3",
+      "title": "左侧与右侧",
+      "principles": [
+        133,
+        157,
+        186,
+        216
+      ],
+      "checks": [
+        36,
+        55,
+        65
+      ],
+      "books": [
+        "B9",
+        "B6"
+      ],
+      "sources": [
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V106",
+          "date": "2026-10-04",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V107",
+          "date": "2026-10-08",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "脑总带日期历史观点",
+          "ref": "V111",
+          "date": "2026-11-02",
+          "scope": "依据既有材料的方法释义，不是现时交易建议；视频访问性未本轮逐场核实",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "ASR/二次整理，数字未逐项核实"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B9",
+          "locator": "第2–4章、下篇三线反转/砖形/钥匙图；已有扫描版OCR笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        },
+        {
+          "kind": "书作者观点的笔记释义",
+          "ref": "B6",
+          "locator": "第4–12章的风险、规则、回撤与拟合；已有逐章笔记",
+          "scope": "本轮依据实读既有笔记，未重新通读原书；现代工具与数字演算为AI原创，不冒充原作者案例"
+        }
+      ],
+      "proseCharacters": 1236,
+      "exerciseCount": 2,
+      "edition": "material-grounded-stage-3",
       "sectionCount": 8
     }
   ]

@@ -20,7 +20,9 @@ test('final audit keeps author periods distinct and qualifies financial arithmet
  assert.match(debt.examples[1].note,/不等于偿债必然安全/);assert.match(exit.cards[1].b,/并不保证/);assert.match(exit.cards[0].b,/未给出可核实题名/);
  assert.equal(exit.examples[1].tag,'教学假设 · 止损与再入场');assert.equal(90/100*105,94.5);
  assert.equal(read('content/source-index.json').principles.filter(p=>!p.lessons.length).length,75);
- assert.equal(knowledge.principles.filter(p=>!p.lessons.length).length,read('public/data/coverage.json').summary.principleIndexOnly);
+ const ledger=read('public/data/coverage.json');
+ for(const row of ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only')){const p=knowledge.principles.find(p=>'P'+p.id===row.id);assert.equal(p.lessons.length,0);assert.equal(row.authoredLinks.length,0);assert.ok(!p.study);}
+ assert.equal(ledger.rows.filter(r=>r.type==='principle'&&r.depth==='index-only').length,ledger.summary.principleIndexOnly);
  assert.match(books.find(b=>b.id==='B13').case,/时点晚约两年/);
 });
 test('legacy unavailable URLs are labeled and citations never imply a full verification',()=>{
