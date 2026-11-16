@@ -1,0 +1,17 @@
+{
+  "notice": "Unicode码点数，非词数。课程正文=讲解卡正文+小结+历史观点转述+deep各字符串；排除例表/选择题及解析。",
+  "lessons": 68,
+  "lessonProseChars": 54384,
+  "min": 625,
+  "median": 765.0,
+  "max": 1235,
+  "newDeepChars": 24899,
+  "books": 13,
+  "bookChars": 5379,
+  "oldExamples": 129,
+  "multipleChoice": 272,
+  "multipleChoiceExplanationChars": 4603,
+  "newOpenExercises": 68,
+  "newBookExercises": 13,
+  "remaining404Links": 7
+}

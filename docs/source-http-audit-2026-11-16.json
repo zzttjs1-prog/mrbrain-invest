@@ -1,0 +1,919 @@
+{
+  "notice": "2026-11-16 中国标准时间：仅HTTP可达性，不证明数字或引述正确；403/401/超时不代表页面不存在。检查的是修正前旧版110条去重来源。",
+  "results": [
+    {
+      "url": "https://investor.costco.com/financial-information/annual-reports/",
+      "status": 403,
+      "final": "https://investor.costco.com/financial-information/annual-reports/",
+      "lessons": [
+        "u3l1"
+      ]
+    },
+    {
+      "url": "https://www.adobe.com/investor-relations.html",
+      "status": 403,
+      "final": "https://www.adobe.com/investor-relations.html",
+      "lessons": [
+        "u3l1"
+      ]
+    },
+    {
+      "url": "https://www.berkshirehathaway.com/letters/letters.html",
+      "status": 200,
+      "final": "https://www.berkshirehathaway.com/letters/letters.html",
+      "lessons": [
+        "u3l2"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/article/us-kodak-bankruptcy-idUSTRE80I05920120119",
+      "status": 401,
+      "final": "https://www.reuters.com/article/us-kodak-bankruptcy-idUSTRE80I05920120119",
+      "lessons": [
+        "u3l2"
+      ]
+    },
+    {
+      "url": "http://www.cninfo.com.cn/",
+      "status": 500,
+      "final": "http://www.cninfo.com.cn/",
+      "lessons": [
+        "u3l3",
+        "u4l1",
+        "u4l3",
+        "u6l5",
+        "u5l6"
+      ]
+    },
+    {
+      "url": "https://investor.atmeta.com/",
+      "status": 200,
+      "final": "https://investor.atmeta.com/home/default.aspx",
+      "lessons": [
+        "u3l4"
+      ]
+    },
+    {
+      "url": "https://developer.apple.com/app-store/small-business-program/",
+      "status": 200,
+      "final": "https://developer.apple.com/app-store/small-business-program/",
+      "lessons": [
+        "u3l4"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/business/china-evergrande-ordered-be-liquidated-by-hong-kong-court-2024-01-29/",
+      "status": 401,
+      "final": "https://www.reuters.com/business/china-evergrande-ordered-be-liquidated-by-hong-kong-court-2024-01-29/",
+      "lessons": [
+        "u3l5",
+        "u4l4"
+      ]
+    },
+    {
+      "url": "https://www.berkshirehathaway.com/",
+      "status": 200,
+      "final": "https://www.berkshirehathaway.com/",
+      "lessons": [
+        "u3l5"
+      ]
+    },
+    {
+      "url": "https://www.berkshirehathaway.com/letters/2007ltr.pdf",
+      "status": 200,
+      "final": "https://www.berkshirehathaway.com/letters/2007ltr.pdf",
+      "lessons": [
+        "u3l6",
+        "u6l3",
+        "u5l4",
+        "u5l4"
+      ]
+    },
+    {
+      "url": "http://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=600519",
+      "status": 500,
+      "final": "http://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=600519",
+      "lessons": [
+        "u3l6"
+      ]
+    },
+    {
+      "url": "https://www.cnet.com/tech/tech-industry/pets-com-to-shut-down/",
+      "status": 404,
+      "final": "https://www.cnet.com/tech/tech-industry/pets-com-to-shut-down/",
+      "lessons": [
+        "u3l7"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.federalreservehistory.org/essays/ltcm-near-failure",
+      "status": 200,
+      "final": "https://www.federalreservehistory.org/essays/ltcm-near-failure",
+      "lessons": [
+        "u3l7"
+      ]
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging",
+      "status": 200,
+      "final": "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging",
+      "lessons": [
+        "u12l1"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/1320/nasdaq-historical-chart",
+      "status": 403,
+      "final": "https://www.macrotrends.net/1320/nasdaq-historical-chart",
+      "lessons": [
+        "u12l1",
+        "u7l3",
+        "u8l5"
+      ]
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing",
+      "status": 200,
+      "final": "https://www.investor.gov/introduction-investing",
+      "lessons": [
+        "u12l2"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/CSCO/cisco/stock-price-history",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/CSCO/cisco/stock-price-history",
+      "lessons": [
+        "u12l2"
+      ]
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/asset-allocation-diversification-and-rebalancing",
+      "status": 404,
+      "final": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/asset-allocation-diversification-and-rebalancing",
+      "lessons": [
+        "u12l3"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.macrotrends.net/2324/sp-500-historical-chart-data",
+      "status": 403,
+      "final": "https://www.macrotrends.net/2324/sp-500-historical-chart-data",
+      "lessons": [
+        "u12l3",
+        "u9l1",
+        "u10l3",
+        "u8l1",
+        "u8l3"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/edgar/search/",
+      "status": 403,
+      "final": "https://www.sec.gov/edgar/search/",
+      "lessons": [
+        "u12l4",
+        "u11l2"
+      ]
+    },
+    {
+      "url": "https://www.iea.org/reports/global-ev-outlook-2024",
+      "status": 200,
+      "final": "https://www.iea.org/reports/global-ev-outlook-2024",
+      "lessons": [
+        "u12l4"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=10-K",
+      "status": 403,
+      "final": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000320193&type=10-K",
+      "lessons": [
+        "u4l1",
+        "u4l2",
+        "u4l7"
+      ]
+    },
+    {
+      "url": "https://www.investopedia.com/terms/d/dupontanalysis.asp",
+      "status": 200,
+      "final": "https://www.investopedia.com/terms/d/dupontanalysis.asp",
+      "lessons": [
+        "u4l3"
+      ]
+    },
+    {
+      "url": "https://www.federalreservehistory.org/essays/lehman-brothers",
+      "status": 200,
+      "final": "https://www.federalreservehistory.org/not-found",
+      "lessons": [
+        "u4l5"
+      ]
+    },
+    {
+      "url": "https://www.investopedia.com/terms/i/interestcoverageratio.asp",
+      "status": 403,
+      "final": "https://www.investopedia.com/terms/i/interestcoverageratio.asp",
+      "lessons": [
+        "u4l5"
+      ]
+    },
+    {
+      "url": "http://www.csrc.gov.cn/",
+      "status": 500,
+      "final": "http://www.csrc.gov.cn/",
+      "lessons": [
+        "u4l6",
+        "u6l2",
+        "u5l6"
+      ]
+    },
+    {
+      "url": "https://www.investopedia.com/terms/c/cashflowstatement.asp",
+      "status": 403,
+      "final": "https://www.investopedia.com/terms/c/cashflowstatement.asp",
+      "lessons": [
+        "u4l6"
+      ]
+    },
+    {
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+      "status": 200,
+      "final": "https://www.investopedia.com/terms/f/freecashflow.asp",
+      "lessons": [
+        "u4l7"
+      ]
+    },
+    {
+      "url": "https://www.fbi.gov/history/famous-cases/enron",
+      "status": 200,
+      "final": "https://www.fbi.gov/history/cases-and-criminals/enron",
+      "lessons": [
+        "u4l8"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/article/us-wirecard-accounts-idUSKBN23W0ZA",
+      "status": 401,
+      "final": "https://www.reuters.com/article/us-wirecard-accounts-idUSKBN23W0ZA",
+      "lessons": [
+        "u4l8"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Long-Term_Capital_Management",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Long-Term_Capital_Management",
+      "lessons": [
+        "u1l1"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "lessons": [
+        "u1l2",
+        "u1l6"
+      ]
+    },
+    {
+      "url": "https://www.bbc.com/news/business-32429413",
+      "status": 200,
+      "final": "https://www.bbc.com/news/business-32429413",
+      "lessons": [
+        "u1l2"
+      ]
+    },
+    {
+      "url": "https://www.etf.com/sections/news/inverse-vix-etn-shuts-down",
+      "status": 403,
+      "final": "https://www.etf.com/sections/news/inverse-vix-etn-shuts-down",
+      "lessons": [
+        "u1l3"
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/credit-suisse-ag-announces-that-the-nasdaq-stock-market-intends-to-suspend-trading-of-the-xiv-etns-following-the-market-close-on-february-15-2018-and-institute-delisting-proceedings-300599025.html",
+      "status": 200,
+      "final": "https://www.prnewswire.com/news-releases/credit-suisse-ag-announces-that-the-nasdaq-stock-market-intends-to-suspend-trading-of-the-xiv-etns-following-the-market-close-on-february-15-2018-and-institute-delisting-proceedings-300599025.html",
+      "lessons": [
+        "u1l3"
+      ]
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/RS21115.html",
+      "status": 200,
+      "final": "https://www.everycrsreport.com/reports/RS21115.html",
+      "lessons": [
+        "u1l5"
+      ]
+    },
+    {
+      "url": "https://www.dol.gov/newsroom/releases/opa/opa20011205",
+      "status": 403,
+      "final": "https://www.dol.gov/newsroom/releases/opa/opa20011205",
+      "lessons": [
+        "u1l5"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/2526/sp-500-historical-annual-returns",
+      "status": 403,
+      "final": "https://www.macrotrends.net/2526/sp-500-historical-annual-returns",
+      "lessons": [
+        "u1l6",
+        "u7l5"
+      ]
+    },
+    {
+      "url": "https://www.court.gov.cn/zixun/xiangqing/372731.html",
+      "status": 403,
+      "final": "https://www.court.gov.cn/zixun/xiangqing/372731.html",
+      "lessons": [
+        "u1l7"
+      ]
+    },
+    {
+      "url": "https://www.bjnews.com.cn/detail/155152423214770.html",
+      "status": 200,
+      "final": "https://www.bjnews.com.cn/detail/155152423214770.html",
+      "lessons": [
+        "u1l7"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bernie_Madoff",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Bernie_Madoff",
+      "lessons": [
+        "u1l7"
+      ]
+    },
+    {
+      "url": "https://data.stats.gov.cn/",
+      "status": 200,
+      "final": "https://data.stats.gov.cn/dg/website/page.html#/pc/national/home",
+      "lessons": [
+        "u7l1"
+      ]
+    },
+    {
+      "url": "https://fbx.freightos.com/",
+      "status": 200,
+      "final": "https://www.freightos.com/enterprise/terminal/freightos-baltic-index-global-container-pricing-index/",
+      "lessons": [
+        "u7l1",
+        "u7l2"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/MU/micron-technology/pe-ratio",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/MU/micron-technology/pe-ratio",
+      "lessons": [
+        "u7l2"
+      ]
+    },
+    {
+      "url": "http://www.caam.org.cn/",
+      "status": 500,
+      "final": "http://www.caam.org.cn/",
+      "lessons": [
+        "u7l3"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart",
+      "status": 403,
+      "final": "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart",
+      "lessons": [
+        "u7l4"
+      ]
+    },
+    {
+      "url": "https://www.eia.gov/dnav/pet/hist/RWTCD.htm",
+      "status": 503,
+      "final": "https://www.eia.gov/dnav/pet/hist/RWTCD.htm",
+      "lessons": [
+        "u7l4"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/ZM/zoom-video-communications/stock-price-history",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/ZM/zoom-video-communications/stock-price-history",
+      "lessons": [
+        "u7l5"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/2593/nikkei-225-index-historical-chart-data",
+      "status": 403,
+      "final": "https://www.macrotrends.net/2593/nikkei-225-index-historical-chart-data",
+      "lessons": [
+        "u9l1",
+        "u8l5"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/revenue",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/NVDA/nvidia/revenue",
+      "lessons": [
+        "u9l2"
+      ]
+    },
+    {
+      "url": "https://www.sse.com.cn/",
+      "status": 200,
+      "final": "https://www.sse.com.cn/",
+      "lessons": [
+        "u9l2"
+      ]
+    },
+    {
+      "url": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+      "status": 200,
+      "final": "https://www.federalreservehistory.org/essays/great-recession-of-200709",
+      "lessons": [
+        "u9l3"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/KO/cocacola/dividend-yield-history",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/KO/cocacola/dividend-yield-history",
+      "lessons": [
+        "u9l3"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank",
+      "lessons": [
+        "u2l1"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Reserve_Primary_Fund",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Reserve_Primary_Fund",
+      "lessons": [
+        "u2l1"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Luckin_Coffee",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Luckin_Coffee",
+      "lessons": [
+        "u2l2"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nikkei_225",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Nikkei_225",
+      "lessons": [
+        "u2l3"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/markets/asia/japans-nikkei-hits-record-high-first-time-since-1989-2024-02-22/",
+      "status": 401,
+      "final": "https://www.reuters.com/markets/asia/japans-nikkei-hits-record-high-first-time-since-1989-2024-02-22/",
+      "lessons": [
+        "u2l3"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/SSE_Composite_Index",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/SSE_Composite_Index",
+      "lessons": [
+        "u2l3"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+      "lessons": [
+        "u2l4"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average",
+      "lessons": [
+        "u2l4"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/markets/currencies/",
+      "status": 401,
+      "final": "https://www.reuters.com/markets/currencies/",
+      "lessons": [
+        "u2l5"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Japanese_yen",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Japanese_yen",
+      "lessons": [
+        "u2l5"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
+      "lessons": [
+        "u2l5"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Gold_as_an_investment",
+      "lessons": [
+        "u2l6"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+      "lessons": [
+        "u2l6"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+      "status": 200,
+      "final": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+      "lessons": [
+        "u2l6"
+      ]
+    },
+    {
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "status": "network-error",
+      "error": "The read operation timed out",
+      "lessons": [
+        "u10l1"
+      ]
+    },
+    {
+      "url": "https://fred.stlouisfed.org/series/FEDFUNDS",
+      "status": "network-error",
+      "error": "The read operation timed out",
+      "lessons": [
+        "u10l1"
+      ]
+    },
+    {
+      "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+      "status": "network-error",
+      "error": "The read operation timed out",
+      "lessons": [
+        "u10l2"
+      ]
+    },
+    {
+      "url": "https://www.bls.gov/cpi/",
+      "status": 403,
+      "final": "https://www.bls.gov/cpi/",
+      "lessons": [
+        "u10l2"
+      ]
+    },
+    {
+      "url": "https://data.worldbank.org/country/japan",
+      "status": 200,
+      "final": "https://data.worldbank.org/country/japan",
+      "lessons": [
+        "u10l3"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/KO/cocacola/pe-ratio",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/KO/cocacola/pe-ratio",
+      "lessons": [
+        "u6l1"
+      ]
+    },
+    {
+      "url": "https://investor.cisco.com/stock-information/historical-price-lookup/default.aspx",
+      "status": 404,
+      "final": "https://investor.cisco.com/stock-information/historical-price-lookup/default.aspx",
+      "lessons": [
+        "u6l1"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=601919",
+      "status": 500,
+      "final": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=601919",
+      "lessons": [
+        "u6l2"
+      ]
+    },
+    {
+      "url": "https://yield.chinabond.com.cn/",
+      "status": 200,
+      "final": "https://yield.chinabond.com.cn/cbweb-mn/",
+      "lessons": [
+        "u6l3"
+      ]
+    },
+    {
+      "url": "https://www.fidelity.com/learning-center/trading-investing/peter-lynch",
+      "status": 403,
+      "final": "https://www.fidelity.com/learning-center/trading-investing/peter-lynch",
+      "lessons": [
+        "u6l4"
+      ]
+    },
+    {
+      "url": "https://www.investopedia.com/terms/d/davis-double-play.asp",
+      "status": 403,
+      "final": "https://www.investopedia.com/terms/d/davis-double-play.asp",
+      "lessons": [
+        "u6l4"
+      ]
+    },
+    {
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "status": 404,
+      "final": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates",
+      "lessons": [
+        "u6l5"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://insight.factset.com/topic/earnings",
+      "status": 200,
+      "final": "https://insight.factset.com/topic/earnings",
+      "lessons": [
+        "u6l5"
+      ]
+    },
+    {
+      "url": "https://pages.stern.nyu.edu/~adamodar/",
+      "status": 200,
+      "final": "https://pages.stern.nyu.edu/~adamodar/",
+      "lessons": [
+        "u6l6"
+      ]
+    },
+    {
+      "url": "https://www.ark-funds.com/funds/arkk",
+      "status": 403,
+      "final": "https://www.ark-funds.com/funds/arkk",
+      "lessons": [
+        "u6l6"
+      ]
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+      "status": 200,
+      "final": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+      "lessons": [
+        "u6l6"
+      ]
+    },
+    {
+      "url": "http://www.econ.yale.edu/~shiller/data.htm",
+      "status": 500,
+      "final": "http://www.econ.yale.edu/~shiller/data.htm",
+      "lessons": [
+        "u6l7"
+      ]
+    },
+    {
+      "url": "https://archive.org/search?query=security+analysis+graham",
+      "status": 200,
+      "final": "https://archive.org/search?query=security+analysis+graham",
+      "lessons": [
+        "u6l7"
+      ]
+    },
+    {
+      "url": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville.pdf",
+      "status": 404,
+      "final": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville.pdf",
+      "lessons": [
+        "u6l8"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.berkshirehathaway.com/letters/2014ltr.pdf",
+      "status": 200,
+      "final": "https://www.berkshirehathaway.com/letters/2014ltr.pdf",
+      "lessons": [
+        "u6l8"
+      ]
+    },
+    {
+      "url": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225",
+      "status": 200,
+      "final": "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225",
+      "lessons": [
+        "u6l9"
+      ]
+    },
+    {
+      "url": "https://www.vanguard.com/",
+      "status": 200,
+      "final": "https://investor.vanguard.com/corporate-portal",
+      "lessons": [
+        "u6l9"
+      ]
+    },
+    {
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance",
+      "status": 404,
+      "final": "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance",
+      "lessons": [
+        "u13l1"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.dalbar.com/",
+      "status": 403,
+      "final": "https://www.dalbar.com/",
+      "lessons": [
+        "u13l1"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/sleep/",
+      "status": 403,
+      "final": "https://www.cdc.gov/sleep/",
+      "lessons": [
+        "u13l2"
+      ]
+    },
+    {
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1018033108",
+      "status": 403,
+      "final": "https://www.pnas.org/doi/10.1073/pnas.1018033108",
+      "lessons": [
+        "u13l2"
+      ]
+    },
+    {
+      "url": "https://www.bls.gov/emp/chart-unemployment-earnings-education.htm",
+      "status": 403,
+      "final": "https://www.bls.gov/emp/chart-unemployment-earnings-education.htm",
+      "lessons": [
+        "u13l3",
+        "u13l3"
+      ]
+    },
+    {
+      "url": "https://www.cboe.com/tradable_products/vix/vix_historical_data/",
+      "status": 200,
+      "final": "https://www.cboe.com/tradable-products/vix/vix-historical-data",
+      "lessons": [
+        "u8l1"
+      ]
+    },
+    {
+      "url": "https://www.spglobal.com/spdji/en/research-insights/spiva/",
+      "status": 403,
+      "final": "https://www.spglobal.com/spdji/en/research-insights/spiva/",
+      "lessons": [
+        "u8l2"
+      ]
+    },
+    {
+      "url": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville_Warren_Buffett.pdf",
+      "status": 404,
+      "final": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville_Warren_Buffett.pdf",
+      "lessons": [
+        "u8l2"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/GME/gamestop/stock-price-history",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/GME/gamestop/stock-price-history",
+      "lessons": [
+        "u8l3"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/AAPL/apple/pe-ratio",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/AAPL/apple/pe-ratio",
+      "lessons": [
+        "u8l4"
+      ]
+    },
+    {
+      "url": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/pe-ratio",
+      "status": 403,
+      "final": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/pe-ratio",
+      "lessons": [
+        "u8l4"
+      ]
+    },
+    {
+      "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=600519",
+      "status": 500,
+      "final": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=600519",
+      "lessons": [
+        "u5l1",
+        "u5l5"
+      ]
+    },
+    {
+      "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=601012",
+      "status": 500,
+      "final": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=601012",
+      "lessons": [
+        "u5l1"
+      ]
+    },
+    {
+      "url": "https://www.icbc-ltd.com/column/1438058341489590354.html",
+      "status": 404,
+      "final": "https://www.icbc-ltd.com/column/1438058341489590354.html",
+      "lessons": [
+        "u5l2"
+      ],
+      "getStatus": 404
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings",
+      "status": 200,
+      "final": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings",
+      "lessons": [
+        "u5l2"
+      ]
+    },
+    {
+      "url": "https://investor.apple.com/sec-filings/default.aspx",
+      "status": 403,
+      "final": "https://investor.apple.com/sec-filings/default.aspx",
+      "lessons": [
+        "u5l3",
+        "u5l5"
+      ]
+    },
+    {
+      "url": "https://www.hkexnews.hk/",
+      "status": 503,
+      "final": "https://www.hkexnews.hk/",
+      "lessons": [
+        "u5l3"
+      ]
+    },
+    {
+      "url": "https://investor.autozone.com/",
+      "status": "network-error",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>",
+      "lessons": [
+        "u11l1"
+      ]
+    },
+    {
+      "url": "https://www.iea.org/energy-system/renewables/solar-pv",
+      "status": 200,
+      "final": "https://www.iea.org/energy-system/renewables/solar-pv",
+      "lessons": [
+        "u11l1"
+      ]
+    },
+    {
+      "url": "https://investor.nvidia.com/",
+      "status": 200,
+      "final": "https://investor.nvidia.com/home/default.aspx",
+      "lessons": [
+        "u11l2"
+      ]
+    },
+    {
+      "url": "https://investor.tsmc.com/",
+      "status": 403,
+      "final": "https://investor.tsmc.com/",
+      "lessons": [
+        "u11l2"
+      ]
+    }
+  ]
+}
