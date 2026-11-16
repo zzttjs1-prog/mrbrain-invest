@@ -302,9 +302,10 @@
           "src": [
             {
               "n": "Columbia Business School · The Superinvestors of Graham-and-Doddsville",
-              "u": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville_Warren_Buffett.pdf",
+              "u": "",
               "d": "2026-10-29 访问",
-              "audit": "本轮HEAD与GET均返回404，旧链接保留追踪，尚待更正来源"
+              "audit": "旧引用返回404；已撤下可点击链接，尚未核验可支持原断言的替代，不用它支持结论。",
+              "unverifiedUrl": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joel_Greenblatt/Superinvestors_of_Graham_and_Doddsville_Warren_Buffett.pdf"
             }
           ]
         }

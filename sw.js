@@ -1,5 +1,12 @@
-const V='mb-v10-deep-20261116';const B='/mrbrain-invest/';
-self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll([B,B+'data/index.json',B+'data/news.json',B+'data/qa.json',B+'data/books.json',B+'data/knowledge.json',...Array.from({length:13},(_,i)=>B+'data/U'+(i+1)+'.json'),B+'manifest.webmanifest'])).then(()=>self.skipWaiting()))});
+const V='mb-v15-review-20261116';const B='/mrbrain-invest/';
+self.addEventListener('install',e=>{e.waitUntil((async()=>{
+ const response=await fetch(B+'data/chapters/index.json',{cache:'reload'});
+ if(!response.ok)throw new Error('Chapter catalog unavailable; keep previous offline version');
+ const catalog=await response.json();
+ const assets=[B,...['index','news','qa','books','knowledge','coverage'].map(id=>B+'data/'+id+'.json'),B+'data/chapters/index.json',...catalog.chapters.map(c=>B+'data/chapters/'+c.id+'.json'),...Array.from({length:13},(_,i)=>B+'data/U'+(i+1)+'.json'),B+'manifest.webmanifest'];
+ await (await caches.open(V)).addAll(assets);
+ await self.skipWaiting();
+})())});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('mb-')&&k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin)return;
  const isData=u.pathname.includes('/data/')||r.mode==='navigate';
