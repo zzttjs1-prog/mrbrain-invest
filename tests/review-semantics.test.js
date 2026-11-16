@@ -20,8 +20,8 @@ r=pathlib.Path.cwd();sys.path.insert(0,str(r/'content'));out={}
 for name in ['u2.py','u6.py','u9.py']:
  p=r/'content'/name;m=ast.parse(p.read_text());m.body=m.body[:-2] if name!='u9.py' else m.body[:-1];ns={'__file__':str(p)};exec(compile(m,str(p),'exec'),ns);out.update({l['id']:l for l in ns['L']})
 print(json.dumps(out,ensure_ascii=False))`],{cwd:new URL('..',import.meta.url),encoding:'utf8'}));
- for(const id of ['u2l1','u6l3','u6l5','u6l6','u6l8','u9l1'])for(const key of ['cards','diagram','summary','quiz'])assert.deepEqual(lesson(id)[key],raw[id][key],id+' '+key);
- for(const id of ['u2l1','u6l3','u6l5','u6l6','u6l8','u9l1'])assert.equal(lesson(id).quizRevision,quizRevision(id));
+ for(const id of ['u2l1','u6l3','u6l5','u6l6','u6l8','u6l9','u9l1'])for(const key of ['cards','diagram','summary','quiz'])assert.deepEqual(lesson(id)[key],raw[id][key],id+' '+key);
+ for(const id of ['u2l1','u6l3','u6l5','u6l6','u6l8','u6l9','u9l1'])assert.equal(lesson(id).quizRevision,quizRevision(id));
 });
 
 test('actual selected answers teach same-denominator earnings yield, not cash return; SMA is not traded cost',()=>{
@@ -125,4 +125,28 @@ test('B13 inventory levels, first changes and second changes reconcile actual pr
  const rows=cases.inventory.rows;assert.deepEqual(rows.map(r=>r.stock),[90,70,60,60,70]);assert.deepEqual(rows.map(r=>r.production),[90,80,90,100,110]);
  for(const [i,r] of rows.entries()){assert.equal(r.stock-r.opening,r.change);assert.equal(r.production,r.sales+r.change);if(i){assert.equal(r.changeOfChange,r.change-rows[i-1].change);assert.equal(r.production-rows[i-1].production,r.changeOfChange)}assert.ok(text('B13','inventory-worked').includes(`期末库存${r.stock}，生产${r.production}`))}
  const answer=section('B13','inventory-worked').answer.join('');assert.ok(answer.includes('生产=95−10=85，相对80只升5'));assert.equal(95+rows[2].change-rows[1].production,5);assert.ok(answer.includes('库存水平70→60仍在降'));
+});
+
+
+test('u6l9 selected answers use exact EPS×PE factors and explicit dividend paths, not ordinary-rate addition',()=>{
+ const l=lesson('u6l9'),q=l.quiz[0],a=correct(q);
+ const m=q.q.match(/EPS五年增(\d+)%、PE(\d+)→(\d+)/);assert.ok(m);const epsFactor=1+(+m[1])/100,peFactor=(+m[3])/(+m[2]),exact=epsFactor*peFactor-1,ordinary=epsFactor**.2-1+peFactor**.2-1;
+ near(exact,0);assert.ok(ordinary>0);assert.equal((ordinary*100).toFixed(3),'0.658');assert.equal(a,`${exact*100}%；普通年化率相加约${(ordinary*100).toFixed(3)}%不精确`);
+ near((1+(epsFactor**.2-1))*(1+(peFactor**.2-1))-1,0);near(Math.log(epsFactor)+Math.log(peFactor),0);
+ assert.equal(100/100,150/150);assert.equal(correct(l.quiz[1]),'EPS不变，价格回报0%');assert.equal(1*1.5/1.5,1);
+ const reinvested=100*1.05**2,notReinvested=100+5+5;near(reinvested,110.25);assert.equal(correct(l.quiz[2]),`再投${Number(reinvested.toFixed(2))}，不再投${notReinvested}`);
+ assert.equal(correct(l.quiz[3]),'近似框架；普通价格增长因子相乘，精确分红总回报需现金流或再投路径');
+ const layers=[...l.cards.map(c=>c.b),JSON.stringify(l.diagram),l.summary];for(const layer of layers)assert.doesNotMatch(layer,/利润每年增长多少|＝ 长期年化回报|长期回报＝股息＋盈利增长＋估值变化/);
+ assert.ok(l.summary.includes('近似'));assert.ok(l.diagram.foot.includes('(1+g价格)=(1+gEPS)×(1+gPE)'));assert.equal(l.quizRevision,'semantic-review-20261116b');
+ const state=normalize({xp:410,days:[],lessons:{u6l9:{done:true,best:4,stars:3}},drafts:{u6l9:{slide:15,answers:{0:1}}}});const before=structuredClone(state);reconcileQuiz(state,'u6l9');assert.deepEqual(state.drafts.u6l9.answers,{});assert.deepEqual(state.drafts.u6l9.history[0].answers,{0:1});assert.equal(state.xp,410);assert.deepEqual(state.lessons,before.lessons);
+});
+
+test('P171 actual segment evidence reconciles growth20=core10+new10 and price example starts from EPS1',()=>{
+ const d=read('content/p171-dossier.json'),f=d.find(x=>x.id==='focus'),p=d.find(x=>x.id==='price');const match=f.evidence.match(/销售(\d+)\/(\d+)\/(\d+)，其中原耗材(\d+)\/(\d+)\/(\d+)/);assert.ok(match);
+ const group=+match[3]-+match[1],core=+match[6]-+match[4],newBoard=group-core;assert.equal(group,20);assert.equal(core,10);assert.equal(newBoard,10);assert.ok(f.conflict.includes(`集团增长${group}中有${newBoard}来自新板块`));assert.ok(section('u3l5','p171-focus').answer.join('').includes(`新板块增长=(120−100)−(100−90)=${newBoard}，非20`));
+ const eps=+p.evidence.match(/初始EPS(\d+)元/)[1];assert.equal(eps,1);const final=eps*1.2**3*20;near(final,34.56);near(final/(eps*40)-1,-.136);near((eps*1.2**3/1.2)*20/(eps*40)-1,-.28);assert.ok(p.counterevidence.includes('另设集团净利仍按基准增长72.8%'));assert.ok(p.counterevidence.includes('EPS1.728/1.2=1.44'));assert.ok(section('u3l5','p171-price').paragraphs.some(x=>x===`证据（全为教学假设）：${p.evidence}`));
+});
+
+test('U9 counterexample raises the moving average with unchanged EPS, so profit is only a possible historical explanation',()=>{
+ const card=lesson('u9l1').cards[4].b,m=card.match(/EPS一直(\d+)、连续收盘(\d+)\/(\d+)\/(\d+)/);assert.ok(m);assert.equal(+m[1],1);const previous=(+m[2]+ +m[3])/2,next=(+m[3]+ +m[4])/2;assert.ok(next>previous);assert.ok(card.includes(`两日均线仍从${previous}升到${next}`));assert.ok(card.includes('均线上移不证明利润增长'));assert.ok(card.includes('一种可能历史解释'));assert.ok(!card.includes('答案在利润里'));
 });
