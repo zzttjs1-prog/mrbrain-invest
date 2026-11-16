@@ -58,31 +58,33 @@
           "title": "同样跌 30%",
           "rows": [
             [
-              "本金占身家 5%",
-              "亏损可以承受"
+              "投资额占总资源5%",
+              "是否承受仍取决于付款与责任"
             ],
             [
-              "本金占身家 80%",
-              "可能夜不能寐"
+              "投资额占总资源80%",
+              "更需核查现金流，不自动断定不能承受"
             ],
             [
-              "区别",
-              "不是性格，是仓位"
+              "相同跌幅",
+              "金额、到期义务与收入相关性可能不同"
             ],
             [
-              "做法",
-              "先把比例降到睡得着"
+              "研究步骤",
+              "先画个人现金时间表，不照搬统一仓位"
             ]
           ],
-          "note": "对应“心态是用钱堆出来的”。（教育示意。）",
+          "note": "心态既受财务结构也受个人因素影响，不是只靠一个比例。",
           "src": [
             {
-              "n": "SEC · 风险承受能力",
-              "u": "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance",
-              "d": "2026-10-29 访问",
-              "audit": "本轮HEAD与GET均返回404，旧链接保留追踪，尚待更正来源"
+              "n": "Investor.gov · Gauge Your Risk Tolerance",
+              "u": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/gauge-your-risk-tolerance",
+              "d": "2026-11-16 本轮实读",
+              "audit": "支持目标、期限与风险承受力相关；本课比例不是该机构建议。",
+              "supersededUrl": "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance"
             }
-          ]
+          ],
+          "auditNotice": "两个人的比例为教学假设，不是SEC原案例；官方页面只支持期限、目标与承受本金损失的能力需结合考虑。"
         },
         {
           "tag": "真实研究 · 投资者行为",

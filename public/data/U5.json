@@ -276,9 +276,10 @@
           "src": [
             {
               "n": "工商银行 2023 年报",
-              "u": "https://www.icbc-ltd.com/column/1438058341489590354.html",
+              "u": "",
               "d": "2026-10-29 访问",
-              "audit": "本轮HEAD与GET均返回404，旧链接保留追踪，尚待更正来源"
+              "audit": "旧引用返回404；已撤下可点击链接，尚未核验可支持原断言的替代，不用它支持结论。",
+              "unverifiedUrl": "https://www.icbc-ltd.com/column/1438058341489590354.html"
             }
           ]
         },

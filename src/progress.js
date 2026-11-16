@@ -15,8 +15,14 @@ export function normalize(raw) {
   for (const [id,d] of Object.entries(object(raw.drafts)?raw.drafts:{})) {
     if (/^u\d+l\d+$/.test(id) && object(d)) drafts[id]={slide:number(d.slide)?d.slide:0, answers:object(d.answers)?d.answers:{}};
   }
+  const reading = {};
+  for (const [id,r] of Object.entries(object(raw.reading)?raw.reading:{})) {
+    if (!/^(u\d+l\d+|B\d+)$/.test(id) || !object(r)) continue;
+    const responses=Object.fromEntries(Object.entries(object(r.responses)?r.responses:{}).filter(([key,value])=>/^[a-z][a-z0-9-]*$/.test(key)&&typeof value==='string'));
+    reading[id]={section:typeof r.section==='string'?r.section:'',responses};
+  }
   return {...raw, schema:SCHEMA, theme:raw.theme==='light'?'light':'dark', xp:raw.xp,
-    days:[...new Set(raw.days.filter(d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)))].sort(), lessons,drafts,
+    days:[...new Set(raw.days.filter(d=>typeof d==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(d)))].sort(), lessons,drafts,reading,
     wrong:object(raw.wrong)?raw.wrong:{}, notes:object(raw.notes)?raw.notes:{}, current:typeof raw.current==='string'&&/^u\d+l\d+$/.test(raw.current)?raw.current:null};
 }
 export const empty = () => normalize({xp:0,days:[],lessons:{}});
@@ -42,7 +48,10 @@ export function mergeProgress(state, incoming) {
   for(const [id,v] of Object.entries(other.lessons)){const c=out.lessons[id]||{};out.lessons[id]={...c,done:!!(c.done||v.done),stars:Math.max(c.stars||0,v.stars),best:Math.max(c.best||0,v.best)};}
   // Existing local drafts win; legacy codes cannot erase newer personal data.
   for(const key of ['drafts','wrong','notes'])out[key]={...other[key],...out[key]};
+  for(const [id,r] of Object.entries(other.reading)) {
+    const local=out.reading[id];out.reading[id]=local?{...r,...local,responses:{...r.responses,...local.responses}}:r;
+  }
   out.current=out.current||other.current;return out;
 }
-export function encode(state) {const data=normalize(state);return btoa(unescape(encodeURIComponent(JSON.stringify({schema:SCHEMA,xp:data.xp,days:data.days,lessons:data.lessons,drafts:data.drafts,wrong:data.wrong,notes:data.notes,current:data.current}))));}
+export function encode(state) {const data=normalize(state);return btoa(unescape(encodeURIComponent(JSON.stringify({schema:SCHEMA,xp:data.xp,days:data.days,lessons:data.lessons,drafts:data.drafts,wrong:data.wrong,notes:data.notes,current:data.current,reading:data.reading}))));}
 export function decode(code) {if(typeof code!=='string'||code.length>4000000)throw Error('同步码过长');return normalize(JSON.parse(decodeURIComponent(escape(atob(code.trim())))));}

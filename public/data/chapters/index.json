@@ -1,0 +1,434 @@
+{
+  "edition": "material-grounded-stage-1",
+  "notice": "覆盖矩阵是工作账，不是完备证书。关联、计划和已独立讲解分别记录；13书未全部讲透。",
+  "summary": {
+    "lessons": 68,
+    "longformLessons": 7,
+    "books": 13,
+    "thematicBookModules": 1,
+    "independentPrinciples": 10,
+    "evidenceChecks": 7,
+    "principleIndexOnly": 63,
+    "unresolvedReferences": 4
+  },
+  "chapters": [
+    {
+      "id": "B4",
+      "title": "《非对称风险》：谁拿奖励，谁承担不可逆后果",
+      "principles": [
+        6,
+        15,
+        21,
+        39,
+        40,
+        41,
+        58,
+        163,
+        205
+      ],
+      "checks": [
+        2,
+        6,
+        8,
+        14,
+        60
+      ],
+      "books": [
+        "B4"
+      ],
+      "scope": "本轮深入讲解风险共担、代理人激励、吸收态与重复暴露四条投资主线；不是全书19章及技术附录的完整精讲",
+      "sources": [
+        {
+          "kind": "书作者观点",
+          "ref": "B4",
+          "locator": "本轮实读既有《非对称风险》逐章笔记：绪论、第1–14章相关条目、第19章、后记及附录2；宗教政治论述不作为本模块投资结论"
+        },
+        {
+          "kind": "材料缺口",
+          "ref": "B4技术附录",
+          "locator": "既有笔记注明公式和附图多处缺失；本轮未重新通读原书，不重建缺失定理"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "逻辑认错与分散；不等同塔勒布的一切操作",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l1",
+      "title": "活下来：把收益问题改写成路径问题",
+      "principles": [
+        6,
+        39,
+        43,
+        51,
+        163
+      ],
+      "checks": [
+        1,
+        2
+      ],
+      "books": [
+        "B1",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "破产状态与生存优先",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B4",
+          "locator": "既有《非对称风险》逐章笔记，第5、7、19章及附录2；附录部分公式缺失"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B1",
+          "locator": "既有《随机漫步的傻瓜》笔记，第2、3、5、6章"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V38",
+          "date": "2025-12-08",
+          "scope": "创业方向、资源与兑现期限的历史回顾",
+          "url": "https://www.youtube.com/watch?v=wvTHsJ7UjZs",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l2",
+      "title": "回撤、复利与胜率：先把分母算对",
+      "principles": [
+        4,
+        7,
+        15,
+        165
+      ],
+      "checks": [
+        9,
+        16
+      ],
+      "books": [
+        "B1",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V13",
+          "date": "2026-01-07",
+          "scope": "赔率、仓位与复利风险",
+          "url": "https://www.youtube.com/watch?v=6WjdqxcEjR8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V97",
+          "date": "2025-09-26",
+          "scope": "成本操作不等于价值安全边际；ASR口述",
+          "url": "https://www.youtube.com/watch?v=ahybIlepFGE",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B1",
+          "locator": "既有逐章笔记，第3、6、8–9章"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l3",
+      "title": "拆开包装：借贷、强平、期权与每日杠杆",
+      "principles": [
+        10,
+        41,
+        139,
+        156
+      ],
+      "checks": [
+        2,
+        49
+      ],
+      "books": [
+        "B1",
+        "B2",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V96",
+          "date": "2026-09-21",
+          "scope": "杠杆ETF每日再平衡、事前纪律；个人做法不适用于新手",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V39",
+          "date": "2025-12-10",
+          "scope": "高杠杆、渠道激励和对手方",
+          "url": "https://www.youtube.com/watch?v=40KGev30ss8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B1",
+          "locator": "既有笔记第5–7章；作者用期权、期货的操作不可照搬"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B2",
+          "locator": "既有提炼第13章与后记二表述有差异"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l4",
+      "title": "现金流防线：按日期安排钱，而非按余额想象安全",
+      "principles": [
+        3,
+        8,
+        32,
+        40,
+        170
+      ],
+      "checks": [
+        1,
+        2,
+        17
+      ],
+      "books": [
+        "B2",
+        "B3"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V10",
+          "date": "2025-11-16",
+          "scope": "安全垫、场外收入与输得起",
+          "url": "https://www.youtube.com/watch?v=Xa0mv5KAKE8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V100",
+          "date": "2025-10-02",
+          "scope": "负债用途与个人资产负债表；ASR未逐项核实",
+          "url": "https://www.youtube.com/watch?v=enU1--8gK3s",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B2",
+          "locator": "既有《黑天鹅》笔记，后记二现金冗余与投机性债务"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B3",
+          "locator": "既有《反脆弱》笔记，第11–12章生活杠铃、可选择性"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l5",
+      "title": "组合风险：权重会相加，资产名称不会自动分散",
+      "principles": [
+        7,
+        52,
+        70,
+        106,
+        117,
+        175,
+        192,
+        196,
+        205
+      ],
+      "checks": [
+        16,
+        20,
+        31,
+        57,
+        60
+      ],
+      "books": [
+        "B1",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V78",
+          "date": "2026-08-27",
+          "scope": "阵型、机会成本与个人仓位比喻",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V108",
+          "date": "2026-10-11",
+          "scope": "满仓、集中经历与能力圈；不适用于新手",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V109",
+          "date": "2026-10-18",
+          "scope": "用分散替代个股机械止损的个人做法",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B4",
+          "locator": "既有笔记第19章，个人路径与系统性风险"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l6",
+      "title": "杠铃与选择权：先隔离坏结果，再谈开放上行",
+      "principles": [
+        9,
+        10,
+        11,
+        35,
+        40,
+        199
+      ],
+      "checks": [
+        1,
+        2,
+        31,
+        58
+      ],
+      "books": [
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "书作者观点",
+          "ref": "B2",
+          "locator": "《黑天鹅》既有笔记第13章及后记二，原文立场与表述差异保留"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B3",
+          "locator": "《反脆弱》既有笔记第11–12章"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V15",
+          "date": "2025-11-09",
+          "scope": "小额试错、智能信任与杠铃",
+          "url": "https://www.youtube.com/watch?v=ggzw_6EBHBY",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "脑总历史观点",
+          "ref": "V85",
+          "date": "2026-03-01",
+          "scope": "个人杠铃和中间地带讨论；历史比例非建议",
+          "url": "",
+          "access": "用户提供的会员/系统课材料，未附可公开核验链接；不拼造网址",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    },
+    {
+      "id": "u1l7",
+      "title": "识别骗局：追踪真实付款，而不是比赛谁更会怀疑",
+      "principles": [
+        14,
+        21,
+        41,
+        42,
+        58,
+        184,
+        187
+      ],
+      "checks": [
+        6,
+        8,
+        14,
+        54
+      ],
+      "books": [
+        "B1",
+        "B4"
+      ],
+      "sources": [
+        {
+          "kind": "脑总历史观点",
+          "ref": "V39",
+          "date": "2025-12-10",
+          "scope": "高息资金盘经历、托管与对手方；自述不是本轮案件鉴定",
+          "url": "https://www.youtube.com/watch?v=40KGev30ss8",
+          "access": "既有来源清单中的原链接；本轮未逐场验证视频可访问性",
+          "reliability": "既有学习材料；部分系统课仅AI摘要，见提示"
+        },
+        {
+          "kind": "书作者观点",
+          "ref": "B4",
+          "locator": "既有笔记绪论、第1、9、19章及附录2，代理人激励与尾部风险"
+        },
+        {
+          "kind": "公开案件资料",
+          "ref": "最高人民法院2022-09-22典型案例",
+          "url": "https://www.court.gov.cn/zixun/xiangqing/372731.html",
+          "scope": "本项目上一轮2026-11-16实读，e租宝资金与用途"
+        },
+        {
+          "kind": "公开案件资料",
+          "ref": "新京报2017-11-30终审报道",
+          "url": "https://www.bjnews.com.cn/detail/155152423214770.html",
+          "scope": "本项目上一轮实读，终审日期及累计/去重金额口径"
+        }
+      ],
+      "edition": "material-grounded-stage-1",
+      "sectionCount": 8
+    }
+  ]
+}

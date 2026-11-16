@@ -61,3 +61,7 @@ for uid in range(1,14):
    for source in example['src']:
     if source.get('u') in link_checks:source['audit']=link_checks[source['u']]
  dump(p,u)
+
+# Longform authored modules and transparent unfinished coverage.
+import runpy
+runpy.run_path(str(root/"content/build-chapters.py"))

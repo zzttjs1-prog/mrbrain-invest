@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "npm run content && vite build",
     "dev": "vite",
-    "test": "node --test tests/*.test.js",
+    "test": "npm run content && node --test tests/*.test.js",
     "content": "python3 content/build-deep.py"
   },
   "devDependencies": {

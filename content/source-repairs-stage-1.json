@@ -1,0 +1,20 @@
+{
+  "https://www.cnet.com/tech/tech-industry/pets-com-to-shut-down/": {
+    "n": "SEC存档 · Pets.com 2000-11-07公司8-K",
+    "u": "https://www.sec.gov/Archives/edgar/data/1100683/000109581100004383/f66158e8-k.txt",
+    "d": "2026-11-16 本轮实读",
+    "audit": "正文仅支持无可行注资/收购、退出与资产出售安排，不证明全部旧叙事。"
+  },
+  "https://www.investor.gov/introduction-investing/investing-basics/assessing-your-risk-tolerance": {
+    "n": "Investor.gov · Gauge Your Risk Tolerance",
+    "u": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/gauge-your-risk-tolerance",
+    "d": "2026-11-16 本轮实读",
+    "audit": "支持目标、期限与风险承受力相关；本课比例不是该机构建议。"
+  },
+  "https://home.treasury.gov/resource-center/data-chart-center/interest-rates": {
+    "n": "美国财政部 · Interest Rate Statistics方法入口",
+    "u": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics",
+    "d": "2026-11-16 本轮实读",
+    "audit": "页面支持官方曲线的报价与统计方法；本例数值改为教学假设，不作为2023或今日报价证据。"
+  }
+}
